@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_875b3b65014af472105ae3993b32120c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_875b3b65014af472105ae3993b32120c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_875b3b65014af472105ae3993b32120c = L.map(
+                "map_875b3b65014af472105ae3993b32120c",
+                {
+                    center: [37.609027, 127.021988],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4484637081717234ef665722a2658a5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c4484637081717234ef665722a2658a5.addTo(map_875b3b65014af472105ae3993b32120c);
+        
+    
+            var marker_cluster_cf0f0761274479304011c0ccb87df537 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_4ab192f5f1c163c8bae491cf88cbd5bc = L.marker(
+                [37.61032671, 127.0231465],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_c1e28a3a6a6bd515948fbcca855dff1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac85ac9548e75eed2eb739d2828f337f = $(`<div id="html_ac85ac9548e75eed2eb739d2828f337f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 숭인로 2길 28<br>         <b>위도:</b> 37.61032671<br>         <b>경도:</b> 127.0231465     </div>     </div>`)[0];
+                popup_c1e28a3a6a6bd515948fbcca855dff1e.setContent(html_ac85ac9548e75eed2eb739d2828f337f);
+            
+        
+
+        marker_4ab192f5f1c163c8bae491cf88cbd5bc.bindPopup(popup_c1e28a3a6a6bd515948fbcca855dff1e)
+        ;
+
+        
+    
+    
+            marker_4ab192f5f1c163c8bae491cf88cbd5bc.bindTooltip(
+                `<div>
+                     서울특별시 성북구 숭인로 2길 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cf5c16bca0bb4111ce9cecb6d7f5ca6 = L.marker(
+                [37.61083706, 127.0227548],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_859f19fa6ca8378ddac800a6301c251a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8aeb89872400d765736e43e491a0feaf = $(`<div id="html_8aeb89872400d765736e43e491a0feaf" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 숭인로 2길 14<br>         <b>위도:</b> 37.61083706<br>         <b>경도:</b> 127.0227548     </div>     </div>`)[0];
+                popup_859f19fa6ca8378ddac800a6301c251a.setContent(html_8aeb89872400d765736e43e491a0feaf);
+            
+        
+
+        marker_8cf5c16bca0bb4111ce9cecb6d7f5ca6.bindPopup(popup_859f19fa6ca8378ddac800a6301c251a)
+        ;
+
+        
+    
+    
+            marker_8cf5c16bca0bb4111ce9cecb6d7f5ca6.bindTooltip(
+                `<div>
+                     서울특별시 성북구 숭인로 2길 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_924d72813e951598758a961477bd58f7 = L.marker(
+                [37.60572414, 127.0255397],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_d508fb55a6a14fefe7098cd2ae891ed1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_afd4fcd337da821ac8235806e26e3360 = $(`<div id="html_afd4fcd337da821ac8235806e26e3360" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 삼양로 2길 22<br>         <b>위도:</b> 37.60572414<br>         <b>경도:</b> 127.0255397     </div>     </div>`)[0];
+                popup_d508fb55a6a14fefe7098cd2ae891ed1.setContent(html_afd4fcd337da821ac8235806e26e3360);
+            
+        
+
+        marker_924d72813e951598758a961477bd58f7.bindPopup(popup_d508fb55a6a14fefe7098cd2ae891ed1)
+        ;
+
+        
+    
+    
+            marker_924d72813e951598758a961477bd58f7.bindTooltip(
+                `<div>
+                     서울특별시 성북구 삼양로 2길 22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c90b951c5630bd4d6c4aff93188255f = L.marker(
+                [37.60566411, 127.0248157],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_97b0abfe1a51eb155c63bfeb7b0026ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66f245ca0b2c9f630fbe2361ecf17aba = $(`<div id="html_66f245ca0b2c9f630fbe2361ecf17aba" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 삼양로 2길 19-5<br>         <b>위도:</b> 37.60566411<br>         <b>경도:</b> 127.0248157     </div>     </div>`)[0];
+                popup_97b0abfe1a51eb155c63bfeb7b0026ca.setContent(html_66f245ca0b2c9f630fbe2361ecf17aba);
+            
+        
+
+        marker_4c90b951c5630bd4d6c4aff93188255f.bindPopup(popup_97b0abfe1a51eb155c63bfeb7b0026ca)
+        ;
+
+        
+    
+    
+            marker_4c90b951c5630bd4d6c4aff93188255f.bindTooltip(
+                `<div>
+                     서울특별시 성북구 삼양로 2길 19-5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0e654455bffec8cc8f06d6abdb3fe66 = L.marker(
+                [37.60603218, 127.0246523],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_0a633e95969b9a1c6f22d10d9d44309d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a45a04eb2938603237afe3f53d28e409 = $(`<div id="html_a45a04eb2938603237afe3f53d28e409" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 삼양로 4길 11<br>         <b>위도:</b> 37.60603218<br>         <b>경도:</b> 127.0246523     </div>     </div>`)[0];
+                popup_0a633e95969b9a1c6f22d10d9d44309d.setContent(html_a45a04eb2938603237afe3f53d28e409);
+            
+        
+
+        marker_a0e654455bffec8cc8f06d6abdb3fe66.bindPopup(popup_0a633e95969b9a1c6f22d10d9d44309d)
+        ;
+
+        
+    
+    
+            marker_a0e654455bffec8cc8f06d6abdb3fe66.bindTooltip(
+                `<div>
+                     서울특별시 성북구 삼양로 4길 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d10a86a7285f67f379b1c1ce0eaf2542 = L.marker(
+                [37.60688565, 127.0243467],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_613d03f37a63573912bcd37fb6ea372b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2410a2694652c7b224cb568fb0ecddd = $(`<div id="html_a2410a2694652c7b224cb568fb0ecddd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 삼양로 4길 33<br>         <b>위도:</b> 37.60688565<br>         <b>경도:</b> 127.0243467     </div>     </div>`)[0];
+                popup_613d03f37a63573912bcd37fb6ea372b.setContent(html_a2410a2694652c7b224cb568fb0ecddd);
+            
+        
+
+        marker_d10a86a7285f67f379b1c1ce0eaf2542.bindPopup(popup_613d03f37a63573912bcd37fb6ea372b)
+        ;
+
+        
+    
+    
+            marker_d10a86a7285f67f379b1c1ce0eaf2542.bindTooltip(
+                `<div>
+                     서울특별시 성북구 삼양로 4길 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c544a2c919936b6571ec7811616eaf7a = L.marker(
+                [37.60784713, 127.0240284],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_c4defa1a593427a96d215c339ab269e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77203b1a8075dd222cfcfa6844631c28 = $(`<div id="html_77203b1a8075dd222cfcfa6844631c28" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 숭인로 2길 84<br>         <b>위도:</b> 37.60784713<br>         <b>경도:</b> 127.0240284     </div>     </div>`)[0];
+                popup_c4defa1a593427a96d215c339ab269e6.setContent(html_77203b1a8075dd222cfcfa6844631c28);
+            
+        
+
+        marker_c544a2c919936b6571ec7811616eaf7a.bindPopup(popup_c4defa1a593427a96d215c339ab269e6)
+        ;
+
+        
+    
+    
+            marker_c544a2c919936b6571ec7811616eaf7a.bindTooltip(
+                `<div>
+                     서울특별시 성북구 숭인로 2길 84
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a299a2a63044da66536482ebdb10334 = L.marker(
+                [37.60896102, 127.0236174],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_0e132d354abee8fe4482be3ec70c3479 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1ef4c597e5dd67b2142c9061f35e507 = $(`<div id="html_c1ef4c597e5dd67b2142c9061f35e507" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 숭인로 2길 60<br>         <b>위도:</b> 37.60896102<br>         <b>경도:</b> 127.0236174     </div>     </div>`)[0];
+                popup_0e132d354abee8fe4482be3ec70c3479.setContent(html_c1ef4c597e5dd67b2142c9061f35e507);
+            
+        
+
+        marker_4a299a2a63044da66536482ebdb10334.bindPopup(popup_0e132d354abee8fe4482be3ec70c3479)
+        ;
+
+        
+    
+    
+            marker_4a299a2a63044da66536482ebdb10334.bindTooltip(
+                `<div>
+                     서울특별시 성북구 숭인로 2길 60
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_110397382a14c4e988c26f7dc989821a = L.marker(
+                [37.60681072, 127.027281],
+                {}
+            ).addTo(marker_cluster_cf0f0761274479304011c0ccb87df537);
+        
+    
+        var popup_99882e16b472139fd751ea642a010bc7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be61248a640105dc77c530b30c300bc7 = $(`<div id="html_be61248a640105dc77c530b30c300bc7" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 삼양로 2길 70<br>         <b>위도:</b> 37.60681072<br>         <b>경도:</b> 127.027281     </div>     </div>`)[0];
+                popup_99882e16b472139fd751ea642a010bc7.setContent(html_be61248a640105dc77c530b30c300bc7);
+            
+        
+
+        marker_110397382a14c4e988c26f7dc989821a.bindPopup(popup_99882e16b472139fd751ea642a010bc7)
+        ;
+
+        
+    
+    
+            marker_110397382a14c4e988c26f7dc989821a.bindTooltip(
+                `<div>
+                     서울특별시 성북구 삼양로 2길 70
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_cf0f0761274479304011c0ccb87df537.addTo(map_875b3b65014af472105ae3993b32120c);
+        
+</script>
+</html>

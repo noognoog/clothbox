@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ee18ec1607504cc815dfb3f9dbec18f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ee18ec1607504cc815dfb3f9dbec18f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ee18ec1607504cc815dfb3f9dbec18f = L.map(
+                "map_2ee18ec1607504cc815dfb3f9dbec18f",
+                {
+                    center: [37.543864, 127.013965],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_582812641bdf0839feda26f54c6ba342 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_582812641bdf0839feda26f54c6ba342.addTo(map_2ee18ec1607504cc815dfb3f9dbec18f);
+        
+    
+            var marker_cluster_aaa938680eddd69e87513fe26c393856 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_749e614fa27c53de6dd011ad22065645 = L.marker(
+                [37.54097859, 127.0107661],
+                {}
+            ).addTo(marker_cluster_aaa938680eddd69e87513fe26c393856);
+        
+    
+        var popup_ae2e0982010a9aae5d6fd12c2bac72b8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a026bb4f03073a02a3f7b5108630e647 = $(`<div id="html_a026bb4f03073a02a3f7b5108630e647" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성동구 독서당로39길 43<br>         <b>위도:</b> 37.54097859<br>         <b>경도:</b> 127.0107661     </div>     </div>`)[0];
+                popup_ae2e0982010a9aae5d6fd12c2bac72b8.setContent(html_a026bb4f03073a02a3f7b5108630e647);
+            
+        
+
+        marker_749e614fa27c53de6dd011ad22065645.bindPopup(popup_ae2e0982010a9aae5d6fd12c2bac72b8)
+        ;
+
+        
+    
+    
+            marker_749e614fa27c53de6dd011ad22065645.bindTooltip(
+                `<div>
+                     서울특별시 성동구 독서당로39길 43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eed7cae7dd482bd12dfb299d1d4088c0 = L.marker(
+                [37.54002633, 127.0111068],
+                {}
+            ).addTo(marker_cluster_aaa938680eddd69e87513fe26c393856);
+        
+    
+        var popup_3596ddb9a5544175a06daac7477cac27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55e4b5a3c728bf8d444adc700b073a20 = $(`<div id="html_55e4b5a3c728bf8d444adc700b073a20" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성동구 독서당로39길 46-50<br>         <b>위도:</b> 37.54002633<br>         <b>경도:</b> 127.0111068     </div>     </div>`)[0];
+                popup_3596ddb9a5544175a06daac7477cac27.setContent(html_55e4b5a3c728bf8d444adc700b073a20);
+            
+        
+
+        marker_eed7cae7dd482bd12dfb299d1d4088c0.bindPopup(popup_3596ddb9a5544175a06daac7477cac27)
+        ;
+
+        
+    
+    
+            marker_eed7cae7dd482bd12dfb299d1d4088c0.bindTooltip(
+                `<div>
+                     서울특별시 성동구 독서당로39길 46-50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cd3c8d6d804199008fdd81bcac83cb = L.marker(
+                [37.54107102, 127.0121227],
+                {}
+            ).addTo(marker_cluster_aaa938680eddd69e87513fe26c393856);
+        
+    
+        var popup_5d2485de754f24b5caa40ecb51fc58c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0b90a59f27327b9757751606c8dfb48 = $(`<div id="html_c0b90a59f27327b9757751606c8dfb48" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성동구 한림말길 10<br>         <b>위도:</b> 37.54107102<br>         <b>경도:</b> 127.0121227     </div>     </div>`)[0];
+                popup_5d2485de754f24b5caa40ecb51fc58c2.setContent(html_c0b90a59f27327b9757751606c8dfb48);
+            
+        
+
+        marker_a6cd3c8d6d804199008fdd81bcac83cb.bindPopup(popup_5d2485de754f24b5caa40ecb51fc58c2)
+        ;
+
+        
+    
+    
+            marker_a6cd3c8d6d804199008fdd81bcac83cb.bindTooltip(
+                `<div>
+                     서울특별시 성동구 한림말길 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2a288a9045443fde4f00266a69af014 = L.marker(
+                [37.54385168, 127.0170992],
+                {}
+            ).addTo(marker_cluster_aaa938680eddd69e87513fe26c393856);
+        
+    
+        var popup_801890c82c1c5d9f7787fea1b1c12045 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7b1bb9a05032f7c962f2a769bc261b98 = $(`<div id="html_7b1bb9a05032f7c962f2a769bc261b98" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성동구 독서당로40길 13<br>         <b>위도:</b> 37.54385168<br>         <b>경도:</b> 127.0170992     </div>     </div>`)[0];
+                popup_801890c82c1c5d9f7787fea1b1c12045.setContent(html_7b1bb9a05032f7c962f2a769bc261b98);
+            
+        
+
+        marker_a2a288a9045443fde4f00266a69af014.bindPopup(popup_801890c82c1c5d9f7787fea1b1c12045)
+        ;
+
+        
+    
+    
+            marker_a2a288a9045443fde4f00266a69af014.bindTooltip(
+                `<div>
+                     서울특별시 성동구 독서당로40길 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_aaa938680eddd69e87513fe26c393856.addTo(map_2ee18ec1607504cc815dfb3f9dbec18f);
+        
+</script>
+</html>

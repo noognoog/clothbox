@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b85ad944f8235b87c285c21309dc269d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b85ad944f8235b87c285c21309dc269d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b85ad944f8235b87c285c21309dc269d = L.map(
+                "map_b85ad944f8235b87c285c21309dc269d",
+                {
+                    center: [37.542618, 126.934187],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_396aaebe507070bbba7054393951919e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_396aaebe507070bbba7054393951919e.addTo(map_b85ad944f8235b87c285c21309dc269d);
+        
+    
+            var marker_cluster_76a330d40df19ac3533ea509f8bab955 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_48f138c8e6949beef3f81dd17e7ca5ef = L.marker(
+                [37.54398556, 126.9337651],
+                {}
+            ).addTo(marker_cluster_76a330d40df19ac3533ea509f8bab955);
+        
+    
+        var popup_bd97bb276d258e4424d39d740de62a99 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6627abf9a8f0c8c310ac21c3264b3830 = $(`<div id="html_6627abf9a8f0c8c310ac21c3264b3830" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 마포구 신수로 25-8<br>         <b>위도:</b> 37.54398556<br>         <b>경도:</b> 126.9337651     </div>     </div>`)[0];
+                popup_bd97bb276d258e4424d39d740de62a99.setContent(html_6627abf9a8f0c8c310ac21c3264b3830);
+            
+        
+
+        marker_48f138c8e6949beef3f81dd17e7ca5ef.bindPopup(popup_bd97bb276d258e4424d39d740de62a99)
+        ;
+
+        
+    
+    
+            marker_48f138c8e6949beef3f81dd17e7ca5ef.bindTooltip(
+                `<div>
+                     서울특별시 마포구 신수로 25-8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82d3783e840df6893e99f0931b29462d = L.marker(
+                [37.54231333, 126.9331778],
+                {}
+            ).addTo(marker_cluster_76a330d40df19ac3533ea509f8bab955);
+        
+    
+        var popup_ea65f9cb05132f14b9ab039209053d66 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62137404a37ae688dd4f52281dc29ac1 = $(`<div id="html_62137404a37ae688dd4f52281dc29ac1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 마포구 신수로3길 3-13<br>         <b>위도:</b> 37.54231333<br>         <b>경도:</b> 126.9331778     </div>     </div>`)[0];
+                popup_ea65f9cb05132f14b9ab039209053d66.setContent(html_62137404a37ae688dd4f52281dc29ac1);
+            
+        
+
+        marker_82d3783e840df6893e99f0931b29462d.bindPopup(popup_ea65f9cb05132f14b9ab039209053d66)
+        ;
+
+        
+    
+    
+            marker_82d3783e840df6893e99f0931b29462d.bindTooltip(
+                `<div>
+                     서울특별시 마포구 신수로3길 3-13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_76a330d40df19ac3533ea509f8bab955.addTo(map_b85ad944f8235b87c285c21309dc269d);
+        
+</script>
+</html>
