@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_957709c1414685669c466a799d95d0de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_957709c1414685669c466a799d95d0de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_957709c1414685669c466a799d95d0de = L.map(
+                "map_957709c1414685669c466a799d95d0de",
+                {
+                    center: [37.586514, 127.026065],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_011d36de946fe9e2abefc79152df6753 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_011d36de946fe9e2abefc79152df6753.addTo(map_957709c1414685669c466a799d95d0de);
+        
+    
+            var marker_cluster_2ead0d6fa72c88e0f521795abc926267 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_932e15805f499e2c61b57e8bb0e6cbe5 = L.marker(
+                [37.58582419, 127.0216661],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_a4aa18b987ef08994fae3dbf7f8a793f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_52290c453123524876026a0a29dc904a = $(`<div id="html_52290c453123524876026a0a29dc904a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 고려대로 10길 3<br>         <b>위도:</b> 37.58582419<br>         <b>경도:</b> 127.0216661     </div>     </div>`)[0];
+                popup_a4aa18b987ef08994fae3dbf7f8a793f.setContent(html_52290c453123524876026a0a29dc904a);
+            
+        
+
+        marker_932e15805f499e2c61b57e8bb0e6cbe5.bindPopup(popup_a4aa18b987ef08994fae3dbf7f8a793f)
+        ;
+
+        
+    
+    
+            marker_932e15805f499e2c61b57e8bb0e6cbe5.bindTooltip(
+                `<div>
+                     서울특별시 성북구 고려대로 10길 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80426e3a4af3ae3196a0fd40cb76c4e8 = L.marker(
+                [37.58446808, 127.0222046],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_9ae8449523ac9cecd3d0f0a551ce57ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa74b55c2cc3879ff15bd247bcd93c96 = $(`<div id="html_fa74b55c2cc3879ff15bd247bcd93c96" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 고려대로 10길 37<br>         <b>위도:</b> 37.58446808<br>         <b>경도:</b> 127.0222046     </div>     </div>`)[0];
+                popup_9ae8449523ac9cecd3d0f0a551ce57ff.setContent(html_fa74b55c2cc3879ff15bd247bcd93c96);
+            
+        
+
+        marker_80426e3a4af3ae3196a0fd40cb76c4e8.bindPopup(popup_9ae8449523ac9cecd3d0f0a551ce57ff)
+        ;
+
+        
+    
+    
+            marker_80426e3a4af3ae3196a0fd40cb76c4e8.bindTooltip(
+                `<div>
+                     서울특별시 성북구 고려대로 10길 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22ed4d934280f3dfcfb9cc34d92ceeab = L.marker(
+                [37.58327017, 127.0233525],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_a628b3c2cf7a94d5b97d02461e18cdde = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e59421c4a3bd17656ac9a866e2173b8 = $(`<div id="html_3e59421c4a3bd17656ac9a866e2173b8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 고려대로 12길 69<br>         <b>위도:</b> 37.58327017<br>         <b>경도:</b> 127.0233525     </div>     </div>`)[0];
+                popup_a628b3c2cf7a94d5b97d02461e18cdde.setContent(html_3e59421c4a3bd17656ac9a866e2173b8);
+            
+        
+
+        marker_22ed4d934280f3dfcfb9cc34d92ceeab.bindPopup(popup_a628b3c2cf7a94d5b97d02461e18cdde)
+        ;
+
+        
+    
+    
+            marker_22ed4d934280f3dfcfb9cc34d92ceeab.bindTooltip(
+                `<div>
+                     서울특별시 성북구 고려대로 12길 69
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01a38211b2d97a809479a9ddfa60a9f2 = L.marker(
+                [37.5845636, 127.0228601],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_12d3f28104818781a9fed2462571c99f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_170c7fc2fe93296f71d6a0e526c50b25 = $(`<div id="html_170c7fc2fe93296f71d6a0e526c50b25" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 고려대로 14길 44<br>         <b>위도:</b> 37.5845636<br>         <b>경도:</b> 127.0228601     </div>     </div>`)[0];
+                popup_12d3f28104818781a9fed2462571c99f.setContent(html_170c7fc2fe93296f71d6a0e526c50b25);
+            
+        
+
+        marker_01a38211b2d97a809479a9ddfa60a9f2.bindPopup(popup_12d3f28104818781a9fed2462571c99f)
+        ;
+
+        
+    
+    
+            marker_01a38211b2d97a809479a9ddfa60a9f2.bindTooltip(
+                `<div>
+                     서울특별시 성북구 고려대로 14길 44
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_593ca36962cda1c59b8c45474d1d32fe = L.marker(
+                [37.58525188, 127.0287501],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_611b08266e91685c2562c3c2a1cb7d30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d992d51660020f441663a6eed2735f8 = $(`<div id="html_0d992d51660020f441663a6eed2735f8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 고려대로 22길 41<br>         <b>위도:</b> 37.58525188<br>         <b>경도:</b> 127.0287501     </div>     </div>`)[0];
+                popup_611b08266e91685c2562c3c2a1cb7d30.setContent(html_0d992d51660020f441663a6eed2735f8);
+            
+        
+
+        marker_593ca36962cda1c59b8c45474d1d32fe.bindPopup(popup_611b08266e91685c2562c3c2a1cb7d30)
+        ;
+
+        
+    
+    
+            marker_593ca36962cda1c59b8c45474d1d32fe.bindTooltip(
+                `<div>
+                     서울특별시 성북구 고려대로 22길 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df3ecb5ab404b5b778daf1d0dff01728 = L.marker(
+                [37.57958377, 127.0243063],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_bc601451ace68f1fc5ef98b03d7e85b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_125c2ab3efc08017c58ed2e26defdb99 = $(`<div id="html_125c2ab3efc08017c58ed2e26defdb99" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 안암로 5길 8<br>         <b>위도:</b> 37.57958377<br>         <b>경도:</b> 127.0243063     </div>     </div>`)[0];
+                popup_bc601451ace68f1fc5ef98b03d7e85b5.setContent(html_125c2ab3efc08017c58ed2e26defdb99);
+            
+        
+
+        marker_df3ecb5ab404b5b778daf1d0dff01728.bindPopup(popup_bc601451ace68f1fc5ef98b03d7e85b5)
+        ;
+
+        
+    
+    
+            marker_df3ecb5ab404b5b778daf1d0dff01728.bindTooltip(
+                `<div>
+                     서울특별시 성북구 안암로 5길 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d536bf3bc7f39dad61924ff924b63c0e = L.marker(
+                [37.58181484, 127.023881],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_bcce0ba31806dfb93d03ad8f0ee27003 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2f8f3f751d07194ec4c6bf50444eb1c = $(`<div id="html_a2f8f3f751d07194ec4c6bf50444eb1c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 안암로 9길 49<br>         <b>위도:</b> 37.58181484<br>         <b>경도:</b> 127.023881     </div>     </div>`)[0];
+                popup_bcce0ba31806dfb93d03ad8f0ee27003.setContent(html_a2f8f3f751d07194ec4c6bf50444eb1c);
+            
+        
+
+        marker_d536bf3bc7f39dad61924ff924b63c0e.bindPopup(popup_bcce0ba31806dfb93d03ad8f0ee27003)
+        ;
+
+        
+    
+    
+            marker_d536bf3bc7f39dad61924ff924b63c0e.bindTooltip(
+                `<div>
+                     서울특별시 성북구 안암로 9길 49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_119982921b5ccd0db539cd753186b84c = L.marker(
+                [37.5839954, 127.0304534],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_f9afccb229125b5aca4f588f647b8239 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d520df17b985a7da781436ad44a6a8e = $(`<div id="html_7d520df17b985a7da781436ad44a6a8e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 안암로 89-3<br>         <b>위도:</b> 37.5839954<br>         <b>경도:</b> 127.0304534     </div>     </div>`)[0];
+                popup_f9afccb229125b5aca4f588f647b8239.setContent(html_7d520df17b985a7da781436ad44a6a8e);
+            
+        
+
+        marker_119982921b5ccd0db539cd753186b84c.bindPopup(popup_f9afccb229125b5aca4f588f647b8239)
+        ;
+
+        
+    
+    
+            marker_119982921b5ccd0db539cd753186b84c.bindTooltip(
+                `<div>
+                     서울특별시 성북구 안암로 89-3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2115e105b55fd1a5fa2a6e7cbcd2f0c = L.marker(
+                [37.58265781, 127.028863],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_7388d3a147c2baddd80ae0b136372869 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b37c800fa9650afceddc6ca8c2a8a7aa = $(`<div id="html_b37c800fa9650afceddc6ca8c2a8a7aa" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 안암로 69-1<br>         <b>위도:</b> 37.58265781<br>         <b>경도:</b> 127.028863     </div>     </div>`)[0];
+                popup_7388d3a147c2baddd80ae0b136372869.setContent(html_b37c800fa9650afceddc6ca8c2a8a7aa);
+            
+        
+
+        marker_d2115e105b55fd1a5fa2a6e7cbcd2f0c.bindPopup(popup_7388d3a147c2baddd80ae0b136372869)
+        ;
+
+        
+    
+    
+            marker_d2115e105b55fd1a5fa2a6e7cbcd2f0c.bindTooltip(
+                `<div>
+                     서울특별시 성북구 안암로 69-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_003fa594d3b6876db9e6f8d77abf6b33 = L.marker(
+                [37.5808657, 127.0224215],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_6224b4967383eed71beb4ba92fa61fca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83bf383cc2c24d1880ca13ce396a5f68 = $(`<div id="html_83bf383cc2c24d1880ca13ce396a5f68" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 안암로 1길<br>         <b>위도:</b> 37.5808657<br>         <b>경도:</b> 127.0224215     </div>     </div>`)[0];
+                popup_6224b4967383eed71beb4ba92fa61fca.setContent(html_83bf383cc2c24d1880ca13ce396a5f68);
+            
+        
+
+        marker_003fa594d3b6876db9e6f8d77abf6b33.bindPopup(popup_6224b4967383eed71beb4ba92fa61fca)
+        ;
+
+        
+    
+    
+            marker_003fa594d3b6876db9e6f8d77abf6b33.bindTooltip(
+                `<div>
+                     서울특별시 성북구 안암로 1길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cf7bd5957941b5f9cf23a0931bfb32f = L.marker(
+                [37.59007233, 127.0298312],
+                {}
+            ).addTo(marker_cluster_2ead0d6fa72c88e0f521795abc926267);
+        
+    
+        var popup_71b42f59298baf75e31ff9c3d84b73dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff50b4b38e70352eb44331662028ee2f = $(`<div id="html_ff50b4b38e70352eb44331662028ee2f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 성북구 개운사길 76-1<br>         <b>위도:</b> 37.59007233<br>         <b>경도:</b> 127.0298312     </div>     </div>`)[0];
+                popup_71b42f59298baf75e31ff9c3d84b73dd.setContent(html_ff50b4b38e70352eb44331662028ee2f);
+            
+        
+
+        marker_1cf7bd5957941b5f9cf23a0931bfb32f.bindPopup(popup_71b42f59298baf75e31ff9c3d84b73dd)
+        ;
+
+        
+    
+    
+            marker_1cf7bd5957941b5f9cf23a0931bfb32f.bindTooltip(
+                `<div>
+                     서울특별시 성북구 개운사길 76-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_2ead0d6fa72c88e0f521795abc926267.addTo(map_957709c1414685669c466a799d95d0de);
+        
+</script>
+</html>
