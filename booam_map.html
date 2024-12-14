@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_de82a8afd2d5e2a15e3d002fc1e7d454 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_de82a8afd2d5e2a15e3d002fc1e7d454" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_de82a8afd2d5e2a15e3d002fc1e7d454 = L.map(
+                "map_de82a8afd2d5e2a15e3d002fc1e7d454",
+                {
+                    center: [37.598199, 126.962143],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c497a5211df8429ef6b968ba0c85f21 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9c497a5211df8429ef6b968ba0c85f21.addTo(map_de82a8afd2d5e2a15e3d002fc1e7d454);
+        
+    
+            var marker_cluster_dd02500d04835e42b0f3a26b9f9763af = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_39b48f4c2e019d9247a4a30a5b1095a4 = L.marker(
+                [37.60737971, 126.9597532],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_dabe4de195aa0ea5fbc749ab7f7c9190 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3ad00663130f9829d7c0de0ae27a5c6 = $(`<div id="html_e3ad00663130f9829d7c0de0ae27a5c6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 진흥로 477-5 (신영동)<br>         <b>위도:</b> 37.60737971<br>         <b>경도:</b> 126.9597532     </div>     </div>`)[0];
+                popup_dabe4de195aa0ea5fbc749ab7f7c9190.setContent(html_e3ad00663130f9829d7c0de0ae27a5c6);
+            
+        
+
+        marker_39b48f4c2e019d9247a4a30a5b1095a4.bindPopup(popup_dabe4de195aa0ea5fbc749ab7f7c9190)
+        ;
+
+        
+    
+    
+            marker_39b48f4c2e019d9247a4a30a5b1095a4.bindTooltip(
+                `<div>
+                     서울특별시 종로구 진흥로 477-5 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21d8b02d35b32d775a7f63e7ef3bd78 = L.marker(
+                [37.60197263, 126.9590436],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_51a8408004de2b24edb16d7a54666c5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9a57a4e35b0c00878479b8182c9ba25 = $(`<div id="html_e9a57a4e35b0c00878479b8182c9ba25" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로7길 64 (신영동)<br>         <b>위도:</b> 37.60197263<br>         <b>경도:</b> 126.9590436     </div>     </div>`)[0];
+                popup_51a8408004de2b24edb16d7a54666c5f.setContent(html_e9a57a4e35b0c00878479b8182c9ba25);
+            
+        
+
+        marker_f21d8b02d35b32d775a7f63e7ef3bd78.bindPopup(popup_51a8408004de2b24edb16d7a54666c5f)
+        ;
+
+        
+    
+    
+            marker_f21d8b02d35b32d775a7f63e7ef3bd78.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로7길 64 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_399f2eea0e4be8cf27c6fb84538a6b81 = L.marker(
+                [37.60237091, 126.9602349],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_2f18e55f8d46c467fffa1e1a7162fb4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3d7e29903d8e41506eeb827cf39ae76b = $(`<div id="html_3d7e29903d8e41506eeb827cf39ae76b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로7가길 17 (신영동)<br>         <b>위도:</b> 37.60237091<br>         <b>경도:</b> 126.9602349     </div>     </div>`)[0];
+                popup_2f18e55f8d46c467fffa1e1a7162fb4b.setContent(html_3d7e29903d8e41506eeb827cf39ae76b);
+            
+        
+
+        marker_399f2eea0e4be8cf27c6fb84538a6b81.bindPopup(popup_2f18e55f8d46c467fffa1e1a7162fb4b)
+        ;
+
+        
+    
+    
+            marker_399f2eea0e4be8cf27c6fb84538a6b81.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로7가길 17 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20933b783e77361afc8af8f0558e201d = L.marker(
+                [37.60262269, 126.960613],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_d1319760a7ac7bbe0437b1047bf0292f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1978f7788052260dd663df712d6bd5f8 = $(`<div id="html_1978f7788052260dd663df712d6bd5f8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 신영동 206<br>         <b>위도:</b> 37.60262269<br>         <b>경도:</b> 126.960613     </div>     </div>`)[0];
+                popup_d1319760a7ac7bbe0437b1047bf0292f.setContent(html_1978f7788052260dd663df712d6bd5f8);
+            
+        
+
+        marker_20933b783e77361afc8af8f0558e201d.bindPopup(popup_d1319760a7ac7bbe0437b1047bf0292f)
+        ;
+
+        
+    
+    
+            marker_20933b783e77361afc8af8f0558e201d.bindTooltip(
+                `<div>
+                     서울특별시 종로구 신영동 206
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cb8be1093699b7481f5449a988a7774 = L.marker(
+                [37.60237091, 126.9602349],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_e2e915cf795f299d18bacf655fbd9ca4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad270f959f0ad7bece1229c7b2e8a904 = $(`<div id="html_ad270f959f0ad7bece1229c7b2e8a904" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로7가길 6 (신영동)<br>         <b>위도:</b> 37.60237091<br>         <b>경도:</b> 126.9602349     </div>     </div>`)[0];
+                popup_e2e915cf795f299d18bacf655fbd9ca4.setContent(html_ad270f959f0ad7bece1229c7b2e8a904);
+            
+        
+
+        marker_8cb8be1093699b7481f5449a988a7774.bindPopup(popup_e2e915cf795f299d18bacf655fbd9ca4)
+        ;
+
+        
+    
+    
+            marker_8cb8be1093699b7481f5449a988a7774.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로7가길 6 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e7447beb84f4d557b82322090533d2 = L.marker(
+                [37.59760032, 126.962054],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_b2656ed78ae91db9af19841d777a5c9d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbc341b68225c491df4b010cf74df872 = $(`<div id="html_bbc341b68225c491df4b010cf74df872" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로7길 19 (신영동)<br>         <b>위도:</b> 37.59760032<br>         <b>경도:</b> 126.962054     </div>     </div>`)[0];
+                popup_b2656ed78ae91db9af19841d777a5c9d.setContent(html_bbc341b68225c491df4b010cf74df872);
+            
+        
+
+        marker_35e7447beb84f4d557b82322090533d2.bindPopup(popup_b2656ed78ae91db9af19841d777a5c9d)
+        ;
+
+        
+    
+    
+            marker_35e7447beb84f4d557b82322090533d2.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로7길 19 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c3fab94f8e6db29e7afb311d4ff9c22 = L.marker(
+                [37.59300958, 126.9631804],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_7160cc9be8e6298fc47e02dc2f61324a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd5d5766d317628a9a3e93cff0ec8d03 = $(`<div id="html_fd5d5766d317628a9a3e93cff0ec8d03" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로41길 6 (부암동, 현대빌라)<br>         <b>위도:</b> 37.59300958<br>         <b>경도:</b> 126.9631804     </div>     </div>`)[0];
+                popup_7160cc9be8e6298fc47e02dc2f61324a.setContent(html_fd5d5766d317628a9a3e93cff0ec8d03);
+            
+        
+
+        marker_5c3fab94f8e6db29e7afb311d4ff9c22.bindPopup(popup_7160cc9be8e6298fc47e02dc2f61324a)
+        ;
+
+        
+    
+    
+            marker_5c3fab94f8e6db29e7afb311d4ff9c22.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로41길 6 (부암동, 현대빌라)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3056b7a492787ad17317859510d416c = L.marker(
+                [37.5938495, 126.96293],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_a6e63378c24221f4212ec750181622a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2864df590597deb735646817b0c79598 = $(`<div id="html_2864df590597deb735646817b0c79598" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로11길 9 (부암동)<br>         <b>위도:</b> 37.5938495<br>         <b>경도:</b> 126.96293     </div>     </div>`)[0];
+                popup_a6e63378c24221f4212ec750181622a9.setContent(html_2864df590597deb735646817b0c79598);
+            
+        
+
+        marker_e3056b7a492787ad17317859510d416c.bindPopup(popup_a6e63378c24221f4212ec750181622a9)
+        ;
+
+        
+    
+    
+            marker_e3056b7a492787ad17317859510d416c.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로11길 9 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27730dd04330b2b2093eb4a48391a5ac = L.marker(
+                [37.59286304, 126.9608226],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_3461a7ee23ae4c8d5ab837656f73b26a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a28265bd38e1b638b1efc0ff7c792204 = $(`<div id="html_a28265bd38e1b638b1efc0ff7c792204" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로 149-7 (부암동)<br>         <b>위도:</b> 37.59286304<br>         <b>경도:</b> 126.9608226     </div>     </div>`)[0];
+                popup_3461a7ee23ae4c8d5ab837656f73b26a.setContent(html_a28265bd38e1b638b1efc0ff7c792204);
+            
+        
+
+        marker_27730dd04330b2b2093eb4a48391a5ac.bindPopup(popup_3461a7ee23ae4c8d5ab837656f73b26a)
+        ;
+
+        
+    
+    
+            marker_27730dd04330b2b2093eb4a48391a5ac.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로 149-7 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_596ec5cc9e72e7797b190096e013d257 = L.marker(
+                [37.59151747, 126.9623907],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_6558e230b39d274a15b6241e64c980c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f264df40e5c576acb2c17a6ae339583 = $(`<div id="html_6f264df40e5c576acb2c17a6ae339583" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로9가길 11 (부암동)<br>         <b>위도:</b> 37.59151747<br>         <b>경도:</b> 126.9623907     </div>     </div>`)[0];
+                popup_6558e230b39d274a15b6241e64c980c3.setContent(html_6f264df40e5c576acb2c17a6ae339583);
+            
+        
+
+        marker_596ec5cc9e72e7797b190096e013d257.bindPopup(popup_6558e230b39d274a15b6241e64c980c3)
+        ;
+
+        
+    
+    
+            marker_596ec5cc9e72e7797b190096e013d257.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로9가길 11 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ceea462e105a999b92c6d71884029b3 = L.marker(
+                [37.59108591, 126.9641818],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_6b02085b853ccfe781e9f31a53efce71 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f9406617162820bb0b3d874be4a132e = $(`<div id="html_2f9406617162820bb0b3d874be4a132e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로5가길 10-7 (부암동)<br>         <b>위도:</b> 37.59108591<br>         <b>경도:</b> 126.9641818     </div>     </div>`)[0];
+                popup_6b02085b853ccfe781e9f31a53efce71.setContent(html_2f9406617162820bb0b3d874be4a132e);
+            
+        
+
+        marker_8ceea462e105a999b92c6d71884029b3.bindPopup(popup_6b02085b853ccfe781e9f31a53efce71)
+        ;
+
+        
+    
+    
+            marker_8ceea462e105a999b92c6d71884029b3.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로5가길 10-7 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bea8f98ca99da0857197f2bf450ae35 = L.marker(
+                [37.59418648, 126.9678952],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_4910005759f3fe4611a4cb57a4d4e5fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c8b5dda84e4fad66f8f12828dc0bfb0 = $(`<div id="html_8c8b5dda84e4fad66f8f12828dc0bfb0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로5길 34 (부암동)<br>         <b>위도:</b> 37.59418648<br>         <b>경도:</b> 126.9678952     </div>     </div>`)[0];
+                popup_4910005759f3fe4611a4cb57a4d4e5fd.setContent(html_8c8b5dda84e4fad66f8f12828dc0bfb0);
+            
+        
+
+        marker_9bea8f98ca99da0857197f2bf450ae35.bindPopup(popup_4910005759f3fe4611a4cb57a4d4e5fd)
+        ;
+
+        
+    
+    
+            marker_9bea8f98ca99da0857197f2bf450ae35.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로5길 34 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20c7ae908bfb580040cc8f38b98a5d30 = L.marker(
+                [37.58979303, 126.9637363],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_f34a91db92a058db84b24168d4df9f32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f72442d7fc4e9f1397c2d19e4c1abd8 = $(`<div id="html_2f72442d7fc4e9f1397c2d19e4c1abd8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로5나길 2 (부암동)<br>         <b>위도:</b> 37.58979303<br>         <b>경도:</b> 126.9637363     </div>     </div>`)[0];
+                popup_f34a91db92a058db84b24168d4df9f32.setContent(html_2f72442d7fc4e9f1397c2d19e4c1abd8);
+            
+        
+
+        marker_20c7ae908bfb580040cc8f38b98a5d30.bindPopup(popup_f34a91db92a058db84b24168d4df9f32)
+        ;
+
+        
+    
+    
+            marker_20c7ae908bfb580040cc8f38b98a5d30.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로5나길 2 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37cf8b51746f6170040b8ddccb7161c3 = L.marker(
+                [37.59500706, 126.9642813],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_e5f4294556367201675d3ca7bfee91dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1c28fea077745aa2a3c60e6a66bc5f5 = $(`<div id="html_c1c28fea077745aa2a3c60e6a66bc5f5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 백석동길 61 (부암동)<br>         <b>위도:</b> 37.59500706<br>         <b>경도:</b> 126.9642813     </div>     </div>`)[0];
+                popup_e5f4294556367201675d3ca7bfee91dc.setContent(html_c1c28fea077745aa2a3c60e6a66bc5f5);
+            
+        
+
+        marker_37cf8b51746f6170040b8ddccb7161c3.bindPopup(popup_e5f4294556367201675d3ca7bfee91dc)
+        ;
+
+        
+    
+    
+            marker_37cf8b51746f6170040b8ddccb7161c3.bindTooltip(
+                `<div>
+                     서울특별시 종로구 백석동길 61 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02b609df73e5ee17b2c73d82a702bc1a = L.marker(
+                [37.59407038, 126.9654745],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_2281907c51a342a846b6806d84900c0d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_16fc7ac0278ef23216b90d0a575e9d5f = $(`<div id="html_16fc7ac0278ef23216b90d0a575e9d5f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로38길 41 (부암동)<br>         <b>위도:</b> 37.59407038<br>         <b>경도:</b> 126.9654745     </div>     </div>`)[0];
+                popup_2281907c51a342a846b6806d84900c0d.setContent(html_16fc7ac0278ef23216b90d0a575e9d5f);
+            
+        
+
+        marker_02b609df73e5ee17b2c73d82a702bc1a.bindPopup(popup_2281907c51a342a846b6806d84900c0d)
+        ;
+
+        
+    
+    
+            marker_02b609df73e5ee17b2c73d82a702bc1a.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로38길 41 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b12d458289703b38b7bf75fec45679d1 = L.marker(
+                [37.59524367, 126.9652162],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_2a970a29b19748ceb4811de561916aae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_386c6d2a10e1cce3e63a7a21d3df3a17 = $(`<div id="html_386c6d2a10e1cce3e63a7a21d3df3a17" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로40가길 9 (부암동, 피닉스파크빌)<br>         <b>위도:</b> 37.59524367<br>         <b>경도:</b> 126.9652162     </div>     </div>`)[0];
+                popup_2a970a29b19748ceb4811de561916aae.setContent(html_386c6d2a10e1cce3e63a7a21d3df3a17);
+            
+        
+
+        marker_b12d458289703b38b7bf75fec45679d1.bindPopup(popup_2a970a29b19748ceb4811de561916aae)
+        ;
+
+        
+    
+    
+            marker_b12d458289703b38b7bf75fec45679d1.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로40가길 9 (부암동, 피닉스파크빌)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c986c6f4172b6c9be9b4cca4d2ee926 = L.marker(
+                [37.59467225, 126.9658004],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_ae704a0688003d4e80b8dd18985d25ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_53c4bf84b738305b38465e404fa7d847 = $(`<div id="html_53c4bf84b738305b38465e404fa7d847" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로40길 33 (부암동)<br>         <b>위도:</b> 37.59467225<br>         <b>경도:</b> 126.9658004     </div>     </div>`)[0];
+                popup_ae704a0688003d4e80b8dd18985d25ec.setContent(html_53c4bf84b738305b38465e404fa7d847);
+            
+        
+
+        marker_2c986c6f4172b6c9be9b4cca4d2ee926.bindPopup(popup_ae704a0688003d4e80b8dd18985d25ec)
+        ;
+
+        
+    
+    
+            marker_2c986c6f4172b6c9be9b4cca4d2ee926.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로40길 33 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8039594f23cfa73abe7fd4c23714bb18 = L.marker(
+                [37.59370788, 126.9641587],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_e02c1083147a7992d7ce88a75c14456a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d1f703d406e6ffa87a3190ff8a05fd0b = $(`<div id="html_d1f703d406e6ffa87a3190ff8a05fd0b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로40길 49 (부암동)<br>         <b>위도:</b> 37.59370788<br>         <b>경도:</b> 126.9641587     </div>     </div>`)[0];
+                popup_e02c1083147a7992d7ce88a75c14456a.setContent(html_d1f703d406e6ffa87a3190ff8a05fd0b);
+            
+        
+
+        marker_8039594f23cfa73abe7fd4c23714bb18.bindPopup(popup_e02c1083147a7992d7ce88a75c14456a)
+        ;
+
+        
+    
+    
+            marker_8039594f23cfa73abe7fd4c23714bb18.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로40길 49 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a8ce1be0e7f915a3cbd58954971e875 = L.marker(
+                [37.59717571, 126.9656979],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_79623a0126947b62c7b9143ee8d047f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df1555b1a2a0482b0d6fca7412fe76f8 = $(`<div id="html_df1555b1a2a0482b0d6fca7412fe76f8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 창의문로10길 17 (부암동)<br>         <b>위도:</b> 37.59717571<br>         <b>경도:</b> 126.9656979     </div>     </div>`)[0];
+                popup_79623a0126947b62c7b9143ee8d047f9.setContent(html_df1555b1a2a0482b0d6fca7412fe76f8);
+            
+        
+
+        marker_7a8ce1be0e7f915a3cbd58954971e875.bindPopup(popup_79623a0126947b62c7b9143ee8d047f9)
+        ;
+
+        
+    
+    
+            marker_7a8ce1be0e7f915a3cbd58954971e875.bindTooltip(
+                `<div>
+                     서울특별시 종로구 창의문로10길 17 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1be5c324f848eb3860fd93ccb035f71 = L.marker(
+                [37.59752701, 126.9644904],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_e7f03dd155821a1da92666ca03a73942 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_643f01c2510f2de44bfde9f2588df143 = $(`<div id="html_643f01c2510f2de44bfde9f2588df143" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 백석동길 267 (부암동)<br>         <b>위도:</b> 37.59752701<br>         <b>경도:</b> 126.9644904     </div>     </div>`)[0];
+                popup_e7f03dd155821a1da92666ca03a73942.setContent(html_643f01c2510f2de44bfde9f2588df143);
+            
+        
+
+        marker_a1be5c324f848eb3860fd93ccb035f71.bindPopup(popup_e7f03dd155821a1da92666ca03a73942)
+        ;
+
+        
+    
+    
+            marker_a1be5c324f848eb3860fd93ccb035f71.bindTooltip(
+                `<div>
+                     서울특별시 종로구 백석동길 267 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65ad1d73321d24a9fe11c758cc6f5a56 = L.marker(
+                [37.60365065, 126.9578126],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_5ab53563e906b1a12fda1741c57c16f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c03d89c2a7d3bd144bed5b5d10a25869 = $(`<div id="html_c03d89c2a7d3bd144bed5b5d10a25869" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 백석동길 286-20 (부암동, 부암빌라)<br>         <b>위도:</b> 37.60365065<br>         <b>경도:</b> 126.9578126     </div>     </div>`)[0];
+                popup_5ab53563e906b1a12fda1741c57c16f7.setContent(html_c03d89c2a7d3bd144bed5b5d10a25869);
+            
+        
+
+        marker_65ad1d73321d24a9fe11c758cc6f5a56.bindPopup(popup_5ab53563e906b1a12fda1741c57c16f7)
+        ;
+
+        
+    
+    
+            marker_65ad1d73321d24a9fe11c758cc6f5a56.bindTooltip(
+                `<div>
+                     서울특별시 종로구 백석동길 286-20 (부암동, 부암빌라)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b8969fc1c0e51c2fad8b7e18c51fc1f = L.marker(
+                [37.6029052, 126.9578869],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_59c5dbce400e0a462b14913914eccc94 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0de152a08f4efda77768af3c2520f793 = $(`<div id="html_0de152a08f4efda77768af3c2520f793" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 백석동길 292 (부암동)<br>         <b>위도:</b> 37.6029052<br>         <b>경도:</b> 126.9578869     </div>     </div>`)[0];
+                popup_59c5dbce400e0a462b14913914eccc94.setContent(html_0de152a08f4efda77768af3c2520f793);
+            
+        
+
+        marker_0b8969fc1c0e51c2fad8b7e18c51fc1f.bindPopup(popup_59c5dbce400e0a462b14913914eccc94)
+        ;
+
+        
+    
+    
+            marker_0b8969fc1c0e51c2fad8b7e18c51fc1f.bindTooltip(
+                `<div>
+                     서울특별시 종로구 백석동길 292 (부암동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7487d88ca5920fbdc91e485609b6aca = L.marker(
+                [37.59795469, 126.9647244],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_c0ed062d00676c7773044087ee52806d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_007ef21a1e82a7c681069bce1dab4777 = $(`<div id="html_007ef21a1e82a7c681069bce1dab4777" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 홍지문길 56 (홍지동, 완성빌라)<br>         <b>위도:</b> 37.59795469<br>         <b>경도:</b> 126.9647244     </div>     </div>`)[0];
+                popup_c0ed062d00676c7773044087ee52806d.setContent(html_007ef21a1e82a7c681069bce1dab4777);
+            
+        
+
+        marker_b7487d88ca5920fbdc91e485609b6aca.bindPopup(popup_c0ed062d00676c7773044087ee52806d)
+        ;
+
+        
+    
+    
+            marker_b7487d88ca5920fbdc91e485609b6aca.bindTooltip(
+                `<div>
+                     서울특별시 종로구 홍지문길 56 (홍지동, 완성빌라)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccbeefb75c686f9d536e59f5caa9705a = L.marker(
+                [37.6090362, 126.9562703],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_08e29bb3fd362e275a304a36dc8bab22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a3cc88a3c6099a1d9ff91a7da440232 = $(`<div id="html_9a3cc88a3c6099a1d9ff91a7da440232" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 홍지문길 48 (홍지동, 정은맨션)<br>         <b>위도:</b> 37.6090362<br>         <b>경도:</b> 126.9562703     </div>     </div>`)[0];
+                popup_08e29bb3fd362e275a304a36dc8bab22.setContent(html_9a3cc88a3c6099a1d9ff91a7da440232);
+            
+        
+
+        marker_ccbeefb75c686f9d536e59f5caa9705a.bindPopup(popup_08e29bb3fd362e275a304a36dc8bab22)
+        ;
+
+        
+    
+    
+            marker_ccbeefb75c686f9d536e59f5caa9705a.bindTooltip(
+                `<div>
+                     서울특별시 종로구 홍지문길 48 (홍지동, 정은맨션)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36ec08bb5b5e3d7a25ffe707d6256ad2 = L.marker(
+                [37.60179503, 126.9579881],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_db8d2968803e947bfd9be3b694cd2826 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19f043c00d0f3e7f71ef74c552943347 = $(`<div id="html_19f043c00d0f3e7f71ef74c552943347" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 홍지문길 36 (홍지동, 경진주택)<br>         <b>위도:</b> 37.60179503<br>         <b>경도:</b> 126.9579881     </div>     </div>`)[0];
+                popup_db8d2968803e947bfd9be3b694cd2826.setContent(html_19f043c00d0f3e7f71ef74c552943347);
+            
+        
+
+        marker_36ec08bb5b5e3d7a25ffe707d6256ad2.bindPopup(popup_db8d2968803e947bfd9be3b694cd2826)
+        ;
+
+        
+    
+    
+            marker_36ec08bb5b5e3d7a25ffe707d6256ad2.bindTooltip(
+                `<div>
+                     서울특별시 종로구 홍지문길 36 (홍지동, 경진주택)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b6d8022fc07fb71c62e0664b3d0c37e = L.marker(
+                [37.60158658, 126.9568555],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_ec2ddc03056417ec0cba70b9cd6aed1b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d04c56d5b16a25de26657e8c10d093b = $(`<div id="html_2d04c56d5b16a25de26657e8c10d093b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 홍지문길 23 (홍지동)<br>         <b>위도:</b> 37.60158658<br>         <b>경도:</b> 126.9568555     </div>     </div>`)[0];
+                popup_ec2ddc03056417ec0cba70b9cd6aed1b.setContent(html_2d04c56d5b16a25de26657e8c10d093b);
+            
+        
+
+        marker_3b6d8022fc07fb71c62e0664b3d0c37e.bindPopup(popup_ec2ddc03056417ec0cba70b9cd6aed1b)
+        ;
+
+        
+    
+    
+            marker_3b6d8022fc07fb71c62e0664b3d0c37e.bindTooltip(
+                `<div>
+                     서울특별시 종로구 홍지문길 23 (홍지동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba92d1ddc05c17e6d3fb99ed12d7c4b2 = L.marker(
+                [37.60055366, 126.9598321],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_287736751b092b555ab24c91e8f4b740 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_71720ac4b6b255e943d3fca788e50638 = $(`<div id="html_71720ac4b6b255e943d3fca788e50638" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 자하문로 312-7 (홍지동)<br>         <b>위도:</b> 37.60055366<br>         <b>경도:</b> 126.9598321     </div>     </div>`)[0];
+                popup_287736751b092b555ab24c91e8f4b740.setContent(html_71720ac4b6b255e943d3fca788e50638);
+            
+        
+
+        marker_ba92d1ddc05c17e6d3fb99ed12d7c4b2.bindPopup(popup_287736751b092b555ab24c91e8f4b740)
+        ;
+
+        
+    
+    
+            marker_ba92d1ddc05c17e6d3fb99ed12d7c4b2.bindTooltip(
+                `<div>
+                     서울특별시 종로구 자하문로 312-7 (홍지동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6513ce3dc65e48dffc381e331c7722ec = L.marker(
+                [37.60016244, 126.9587582],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_b86eca90332ef56123f219bd00e67642 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_892a343c75633d74876459f39cb45757 = $(`<div id="html_892a343c75633d74876459f39cb45757" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로6길 10 (신영동)<br>         <b>위도:</b> 37.60016244<br>         <b>경도:</b> 126.9587582     </div>     </div>`)[0];
+                popup_b86eca90332ef56123f219bd00e67642.setContent(html_892a343c75633d74876459f39cb45757);
+            
+        
+
+        marker_6513ce3dc65e48dffc381e331c7722ec.bindPopup(popup_b86eca90332ef56123f219bd00e67642)
+        ;
+
+        
+    
+    
+            marker_6513ce3dc65e48dffc381e331c7722ec.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로6길 10 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0adeec62acdf0cf62bd456566fe7824a = L.marker(
+                [37.6000434, 126.9610924],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_793ca5b4ad59fd895fc5c2437ab77525 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec323a2707bb4547f5eae2143b0e0cf8 = $(`<div id="html_ec323a2707bb4547f5eae2143b0e0cf8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로6길 38 (신영동)<br>         <b>위도:</b> 37.6000434<br>         <b>경도:</b> 126.9610924     </div>     </div>`)[0];
+                popup_793ca5b4ad59fd895fc5c2437ab77525.setContent(html_ec323a2707bb4547f5eae2143b0e0cf8);
+            
+        
+
+        marker_0adeec62acdf0cf62bd456566fe7824a.bindPopup(popup_793ca5b4ad59fd895fc5c2437ab77525)
+        ;
+
+        
+    
+    
+            marker_0adeec62acdf0cf62bd456566fe7824a.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로6길 38 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4430427d4b6260b86c8f52914df57827 = L.marker(
+                [37.60178731, 126.9617675],
+                {}
+            ).addTo(marker_cluster_dd02500d04835e42b0f3a26b9f9763af);
+        
+    
+        var popup_718bb8b9071b5a67f58c23a35a701c83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_639fcd2ccfcf9c5a8fe41160d2314f04 = $(`<div id="html_639fcd2ccfcf9c5a8fe41160d2314f04" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 세검정로6다길 1 (신영동)<br>         <b>위도:</b> 37.60178731<br>         <b>경도:</b> 126.9617675     </div>     </div>`)[0];
+                popup_718bb8b9071b5a67f58c23a35a701c83.setContent(html_639fcd2ccfcf9c5a8fe41160d2314f04);
+            
+        
+
+        marker_4430427d4b6260b86c8f52914df57827.bindPopup(popup_718bb8b9071b5a67f58c23a35a701c83)
+        ;
+
+        
+    
+    
+            marker_4430427d4b6260b86c8f52914df57827.bindTooltip(
+                `<div>
+                     서울특별시 종로구 세검정로6다길 1 (신영동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_dd02500d04835e42b0f3a26b9f9763af.addTo(map_de82a8afd2d5e2a15e3d002fc1e7d454);
+        
+</script>
+</html>

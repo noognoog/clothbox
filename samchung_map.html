@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f8d32e8d64228c41b90eaf45a1bff8b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f8d32e8d64228c41b90eaf45a1bff8b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f8d32e8d64228c41b90eaf45a1bff8b = L.map(
+                "map_3f8d32e8d64228c41b90eaf45a1bff8b",
+                {
+                    center: [37.590759, 126.980931],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da793df373c542f018757440f8cf7fe4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_da793df373c542f018757440f8cf7fe4.addTo(map_3f8d32e8d64228c41b90eaf45a1bff8b);
+        
+    
+            var marker_cluster_a9008ff998a7503c5792081ab73182e6 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_d0f334d90e9a09efe4b7a2b711a0400c = L.marker(
+                [37.5871888, 126.9826758],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_d72faa7e4bbba092e2aa55f8e9e2cc18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbcaee60c756027215fb638f85af279b = $(`<div id="html_bbcaee60c756027215fb638f85af279b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 북촌로 141 (삼청동)<br>         <b>위도:</b> 37.5871888<br>         <b>경도:</b> 126.9826758     </div>     </div>`)[0];
+                popup_d72faa7e4bbba092e2aa55f8e9e2cc18.setContent(html_bbcaee60c756027215fb638f85af279b);
+            
+        
+
+        marker_d0f334d90e9a09efe4b7a2b711a0400c.bindPopup(popup_d72faa7e4bbba092e2aa55f8e9e2cc18)
+        ;
+
+        
+    
+    
+            marker_d0f334d90e9a09efe4b7a2b711a0400c.bindTooltip(
+                `<div>
+                     서울특별시 종로구 북촌로 141 (삼청동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c0279c748d9c405ecce934ce22a648c = L.marker(
+                [37.57992585, 126.9819402],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_78782fbf66bc030001c33c0e36461a29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cedf0a4fb5bd542e68e514fe01f55966 = $(`<div id="html_cedf0a4fb5bd542e68e514fe01f55966" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 북촌로5나길 114 (삼청동)<br>         <b>위도:</b> 37.57992585<br>         <b>경도:</b> 126.9819402     </div>     </div>`)[0];
+                popup_78782fbf66bc030001c33c0e36461a29.setContent(html_cedf0a4fb5bd542e68e514fe01f55966);
+            
+        
+
+        marker_4c0279c748d9c405ecce934ce22a648c.bindPopup(popup_78782fbf66bc030001c33c0e36461a29)
+        ;
+
+        
+    
+    
+            marker_4c0279c748d9c405ecce934ce22a648c.bindTooltip(
+                `<div>
+                     서울특별시 종로구 북촌로5나길 114 (삼청동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd6ea8cdb0e865d2f50b4118bf1f75d6 = L.marker(
+                [37.58532155, 126.9832809],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_41d03da90efabdd91f5693fbcfb2798b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef0488a0549ba0581179a6ff8cb67e87 = $(`<div id="html_ef0488a0549ba0581179a6ff8cb67e87" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 북촌로5나길 74 (삼청동)<br>         <b>위도:</b> 37.58532155<br>         <b>경도:</b> 126.9832809     </div>     </div>`)[0];
+                popup_41d03da90efabdd91f5693fbcfb2798b.setContent(html_ef0488a0549ba0581179a6ff8cb67e87);
+            
+        
+
+        marker_fd6ea8cdb0e865d2f50b4118bf1f75d6.bindPopup(popup_41d03da90efabdd91f5693fbcfb2798b)
+        ;
+
+        
+    
+    
+            marker_fd6ea8cdb0e865d2f50b4118bf1f75d6.bindTooltip(
+                `<div>
+                     서울특별시 종로구 북촌로5나길 74 (삼청동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24b7220035d2c4aa3c6f872f06a96690 = L.marker(
+                [37.58221902, 126.9822744],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_0b57214fa525692b1208de1285f35f77 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7659d1ef2f5a60dce33c4264d87cea6d = $(`<div id="html_7659d1ef2f5a60dce33c4264d87cea6d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 북촌로11나길 26 (삼청동)<br>         <b>위도:</b> 37.58221902<br>         <b>경도:</b> 126.9822744     </div>     </div>`)[0];
+                popup_0b57214fa525692b1208de1285f35f77.setContent(html_7659d1ef2f5a60dce33c4264d87cea6d);
+            
+        
+
+        marker_24b7220035d2c4aa3c6f872f06a96690.bindPopup(popup_0b57214fa525692b1208de1285f35f77)
+        ;
+
+        
+    
+    
+            marker_24b7220035d2c4aa3c6f872f06a96690.bindTooltip(
+                `<div>
+                     서울특별시 종로구 북촌로11나길 26 (삼청동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a943eaff7cecb6a196efb2cda51a42eb = L.marker(
+                [37.5828853, 126.9888747],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_5104c85fbf5a6fed250201bb8b508584 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2780bb9381de0b2ebef15cdf9725370 = $(`<div id="html_e2780bb9381de0b2ebef15cdf9725370" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 북촌로5길 56 (소격동)<br>         <b>위도:</b> 37.5828853<br>         <b>경도:</b> 126.9888747     </div>     </div>`)[0];
+                popup_5104c85fbf5a6fed250201bb8b508584.setContent(html_e2780bb9381de0b2ebef15cdf9725370);
+            
+        
+
+        marker_a943eaff7cecb6a196efb2cda51a42eb.bindPopup(popup_5104c85fbf5a6fed250201bb8b508584)
+        ;
+
+        
+    
+    
+            marker_a943eaff7cecb6a196efb2cda51a42eb.bindTooltip(
+                `<div>
+                     서울특별시 종로구 북촌로5길 56 (소격동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2a49f9932d36ff187129e2dff407b7d = L.marker(
+                [37.61392194, 126.9806668],
+                {}
+            ).addTo(marker_cluster_a9008ff998a7503c5792081ab73182e6);
+        
+    
+        var popup_806309814fb6b379f37eaa028c2fc365 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed21f4b948223c26a8ef97cc405bd3b0 = $(`<div id="html_ed21f4b948223c26a8ef97cc405bd3b0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서울특별시 종로구 삼청로5길 30 (팔판동)<br>         <b>위도:</b> 37.61392194<br>         <b>경도:</b> 126.9806668     </div>     </div>`)[0];
+                popup_806309814fb6b379f37eaa028c2fc365.setContent(html_ed21f4b948223c26a8ef97cc405bd3b0);
+            
+        
+
+        marker_c2a49f9932d36ff187129e2dff407b7d.bindPopup(popup_806309814fb6b379f37eaa028c2fc365)
+        ;
+
+        
+    
+    
+            marker_c2a49f9932d36ff187129e2dff407b7d.bindTooltip(
+                `<div>
+                     서울특별시 종로구 삼청로5길 30 (팔판동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_a9008ff998a7503c5792081ab73182e6.addTo(map_3f8d32e8d64228c41b90eaf45a1bff8b);
+        
+</script>
+</html>
