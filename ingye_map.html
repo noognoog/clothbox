@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1c89ab061b48d2bfb483801e0e53279 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c1c89ab061b48d2bfb483801e0e53279" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c1c89ab061b48d2bfb483801e0e53279 = L.map(
+                "map_c1c89ab061b48d2bfb483801e0e53279",
+                {
+                    center: [37.268858, 127.030115],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6fadc44cf5a1a75cd69c88caa8087fd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e6fadc44cf5a1a75cd69c88caa8087fd.addTo(map_c1c89ab061b48d2bfb483801e0e53279);
+        
+    
+            var marker_cluster_a0b85ae63f397d2b223211d153c4f941 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_7e3bd088148ef76a102ae8dce329a6cf = L.marker(
+                [37.27512797, 127.0201531],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_2ddafe95fcd5f2eae4c1e6fa83bd9b5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ea0563657017203e5dc145d0a8a3f50 = $(`<div id="html_7ea0563657017203e5dc145d0a8a3f50" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 중부대로 30<br>         <b>위도:</b> 37.27512797<br>         <b>경도:</b> 127.0201531     </div>     </div>`)[0];
+                popup_2ddafe95fcd5f2eae4c1e6fa83bd9b5d.setContent(html_7ea0563657017203e5dc145d0a8a3f50);
+            
+        
+
+        marker_7e3bd088148ef76a102ae8dce329a6cf.bindPopup(popup_2ddafe95fcd5f2eae4c1e6fa83bd9b5d)
+        ;
+
+        
+    
+    
+            marker_7e3bd088148ef76a102ae8dce329a6cf.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 중부대로 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b01a819d529b76bf75b9bfaf7e3cad2 = L.marker(
+                [37.27512797, 127.0201531],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_761bb02dddfab48ff808db9f5a55ec99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc44e91a1950957ea0644bae88d2de9c = $(`<div id="html_bc44e91a1950957ea0644bae88d2de9c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 중부대로 30<br>         <b>위도:</b> 37.27512797<br>         <b>경도:</b> 127.0201531     </div>     </div>`)[0];
+                popup_761bb02dddfab48ff808db9f5a55ec99.setContent(html_bc44e91a1950957ea0644bae88d2de9c);
+            
+        
+
+        marker_2b01a819d529b76bf75b9bfaf7e3cad2.bindPopup(popup_761bb02dddfab48ff808db9f5a55ec99)
+        ;
+
+        
+    
+    
+            marker_2b01a819d529b76bf75b9bfaf7e3cad2.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 중부대로 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a6a0935d86374a190760bade9a1f168 = L.marker(
+                [37.27322876, 127.0372512],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_e0210718e8edeb7ddef02fccbe54a006 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da352dcdc0034bfdbb3e401a0f95ef1b = $(`<div id="html_da352dcdc0034bfdbb3e401a0f95ef1b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 권광로 290번길 14<br>         <b>위도:</b> 37.27322876<br>         <b>경도:</b> 127.0372512     </div>     </div>`)[0];
+                popup_e0210718e8edeb7ddef02fccbe54a006.setContent(html_da352dcdc0034bfdbb3e401a0f95ef1b);
+            
+        
+
+        marker_3a6a0935d86374a190760bade9a1f168.bindPopup(popup_e0210718e8edeb7ddef02fccbe54a006)
+        ;
+
+        
+    
+    
+            marker_3a6a0935d86374a190760bade9a1f168.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 권광로 290번길 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ffd54649f3fad38bb9120654665618e8 = L.marker(
+                [37.27253113, 127.0371153],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_7f9f0dd8d45b8d646935451cd5a8e583 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff1d5f8aa1178241983c17950bb35231 = $(`<div id="html_ff1d5f8aa1178241983c17950bb35231" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 권광로 276번길 33-15<br>         <b>위도:</b> 37.27253113<br>         <b>경도:</b> 127.0371153     </div>     </div>`)[0];
+                popup_7f9f0dd8d45b8d646935451cd5a8e583.setContent(html_ff1d5f8aa1178241983c17950bb35231);
+            
+        
+
+        marker_ffd54649f3fad38bb9120654665618e8.bindPopup(popup_7f9f0dd8d45b8d646935451cd5a8e583)
+        ;
+
+        
+    
+    
+            marker_ffd54649f3fad38bb9120654665618e8.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 권광로 276번길 33-15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_028eab033c8ce67b1ddc46ac609e9c1b = L.marker(
+                [37.27202901, 127.037576],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_ea044e0c418d4ecdbdf98b7dc2bd5205 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_250c82e4f41c2ff7d75cadca49ef368f = $(`<div id="html_250c82e4f41c2ff7d75cadca49ef368f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 권광로 276번길 31<br>         <b>위도:</b> 37.27202901<br>         <b>경도:</b> 127.037576     </div>     </div>`)[0];
+                popup_ea044e0c418d4ecdbdf98b7dc2bd5205.setContent(html_250c82e4f41c2ff7d75cadca49ef368f);
+            
+        
+
+        marker_028eab033c8ce67b1ddc46ac609e9c1b.bindPopup(popup_ea044e0c418d4ecdbdf98b7dc2bd5205)
+        ;
+
+        
+    
+    
+            marker_028eab033c8ce67b1ddc46ac609e9c1b.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 권광로 276번길 31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1aedcbf99ce507d362f88c8d07ae8dc = L.marker(
+                [37.27332253, 127.0373579],
+                {
+}
+            ).addTo(marker_cluster_a0b85ae63f397d2b223211d153c4f941);
+        
+    
+        var popup_042b5d93cd89877ff548c91bcf880900 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fb1799bf017d6cea21b085d8da3403a = $(`<div id="html_1fb1799bf017d6cea21b085d8da3403a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 수원시 팔달구 권광로 290번길 18-4<br>         <b>위도:</b> 37.27332253<br>         <b>경도:</b> 127.0373579     </div>     </div>`)[0];
+                popup_042b5d93cd89877ff548c91bcf880900.setContent(html_1fb1799bf017d6cea21b085d8da3403a);
+            
+        
+
+        marker_a1aedcbf99ce507d362f88c8d07ae8dc.bindPopup(popup_042b5d93cd89877ff548c91bcf880900)
+        ;
+
+        
+    
+    
+            marker_a1aedcbf99ce507d362f88c8d07ae8dc.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 권광로 290번길 18-4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_a0b85ae63f397d2b223211d153c4f941.addTo(map_c1c89ab061b48d2bfb483801e0e53279);
+        
+</script>
+</html>
