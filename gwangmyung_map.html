@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20be73343c55e880cf2eb6ef49f696df {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20be73343c55e880cf2eb6ef49f696df" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20be73343c55e880cf2eb6ef49f696df = L.map(
+                "map_20be73343c55e880cf2eb6ef49f696df",
+                {
+                    center: [37.442295, 126.846183],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_185416e3ff7435c0a9c2277d8bd33208 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_185416e3ff7435c0a9c2277d8bd33208.addTo(map_20be73343c55e880cf2eb6ef49f696df);
+        
+    
+            var marker_cluster_decca1996c4d689c9e9028db37286cd0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_cfa95d59c994c6865c31f9b546735ab2 = L.marker(
+                [37.4803, 126.8569],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_0a249558e1c1cf036069dfc74608b1b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c1b7ebb2e0e48cbe845406548519743 = $(`<div id="html_1c1b7ebb2e0e48cbe845406548519743" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 광명로 928번길 18-20(광명3동 행정복지센터)<br>         <b>위도:</b> 37.4803<br>         <b>경도:</b> 126.8569     </div>     </div>`)[0];
+                popup_0a249558e1c1cf036069dfc74608b1b4.setContent(html_1c1b7ebb2e0e48cbe845406548519743);
+            
+        
+
+        marker_cfa95d59c994c6865c31f9b546735ab2.bindPopup(popup_0a249558e1c1cf036069dfc74608b1b4)
+        ;
+
+        
+    
+    
+            marker_cfa95d59c994c6865c31f9b546735ab2.bindTooltip(
+                `<div>
+                     경기도 광명시 광명로 928번길 18-20(광명3동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a7adf146f9a51831736b034853a42839 = L.marker(
+                [37.4809, 126.8504],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_7204fe6e9c65afd9ba8bdc2d9d16b8ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9801452708b89568648a204b5cbb147d = $(`<div id="html_9801452708b89568648a204b5cbb147d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 오리로 1018(광명종합사회복지관)<br>         <b>위도:</b> 37.4809<br>         <b>경도:</b> 126.8504     </div>     </div>`)[0];
+                popup_7204fe6e9c65afd9ba8bdc2d9d16b8ac.setContent(html_9801452708b89568648a204b5cbb147d);
+            
+        
+
+        marker_a7adf146f9a51831736b034853a42839.bindPopup(popup_7204fe6e9c65afd9ba8bdc2d9d16b8ac)
+        ;
+
+        
+    
+    
+            marker_a7adf146f9a51831736b034853a42839.bindTooltip(
+                `<div>
+                     경기도 광명시 오리로 1018(광명종합사회복지관)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_efb3606e44773c9df471d0153058c59d = L.marker(
+                [37.4787, 126.8475],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_8097fa4ec83be5baf86ac2334a382cde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e33ae08b2a6167ddb1f7b142ab13d65e = $(`<div id="html_e33ae08b2a6167ddb1f7b142ab13d65e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 너부대로35번길 20(광명5동 행정복지센터)<br>         <b>위도:</b> 37.4787<br>         <b>경도:</b> 126.8475     </div>     </div>`)[0];
+                popup_8097fa4ec83be5baf86ac2334a382cde.setContent(html_e33ae08b2a6167ddb1f7b142ab13d65e);
+            
+        
+
+        marker_efb3606e44773c9df471d0153058c59d.bindPopup(popup_8097fa4ec83be5baf86ac2334a382cde)
+        ;
+
+        
+    
+    
+            marker_efb3606e44773c9df471d0153058c59d.bindTooltip(
+                `<div>
+                     경기도 광명시 너부대로35번길 20(광명5동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcae61263a93acda06831fd79c76b804 = L.marker(
+                [37.4711, 126.8487],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_471dc60364dccccfa87e7a2ee7ff0fc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b3f093b60bb1462624274a4055f729b = $(`<div id="html_4b3f093b60bb1462624274a4055f729b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 광명로 791번길 6(광명6동 행정복지센터)<br>         <b>위도:</b> 37.4711<br>         <b>경도:</b> 126.8487     </div>     </div>`)[0];
+                popup_471dc60364dccccfa87e7a2ee7ff0fc7.setContent(html_4b3f093b60bb1462624274a4055f729b);
+            
+        
+
+        marker_bcae61263a93acda06831fd79c76b804.bindPopup(popup_471dc60364dccccfa87e7a2ee7ff0fc7)
+        ;
+
+        
+    
+    
+            marker_bcae61263a93acda06831fd79c76b804.bindTooltip(
+                `<div>
+                     경기도 광명시 광명로 791번길 6(광명6동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c3e0cbd45485995d4e99fddd4a55f51 = L.marker(
+                [37.4694, 126.8532],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_37fa2a48f495159a5843c7eafab2824c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3174310ebbaab5fe89e210823a274c5 = $(`<div id="html_c3174310ebbaab5fe89e210823a274c5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 식곡길 34(광명6동 옥길경로당)<br>         <b>위도:</b> 37.4694<br>         <b>경도:</b> 126.8532     </div>     </div>`)[0];
+                popup_37fa2a48f495159a5843c7eafab2824c.setContent(html_c3174310ebbaab5fe89e210823a274c5);
+            
+        
+
+        marker_4c3e0cbd45485995d4e99fddd4a55f51.bindPopup(popup_37fa2a48f495159a5843c7eafab2824c)
+        ;
+
+        
+    
+    
+            marker_4c3e0cbd45485995d4e99fddd4a55f51.bindTooltip(
+                `<div>
+                     경기도 광명시 식곡길 34(광명6동 옥길경로당)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_925663d4615a15f332ea1f34c770c45c = L.marker(
+                [37.4694, 126.8532],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_21877f6c0fd95721f6c52b7df725d1e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f40b54b5f8fe93ed43f0047956f6999b = $(`<div id="html_f40b54b5f8fe93ed43f0047956f6999b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 새터로 13(광명7동 행정복지센터)<br>         <b>위도:</b> 37.4694<br>         <b>경도:</b> 126.8532     </div>     </div>`)[0];
+                popup_21877f6c0fd95721f6c52b7df725d1e7.setContent(html_f40b54b5f8fe93ed43f0047956f6999b);
+            
+        
+
+        marker_925663d4615a15f332ea1f34c770c45c.bindPopup(popup_21877f6c0fd95721f6c52b7df725d1e7)
+        ;
+
+        
+    
+    
+            marker_925663d4615a15f332ea1f34c770c45c.bindTooltip(
+                `<div>
+                     경기도 광명시 새터로 13(광명7동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_26aae63d727baf3674800c3638beb200 = L.marker(
+                [37.4908, 126.8678],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_66452b3c0269a4c743290ffe30e947d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c987cc625fda20fd98ebf0676c7ead2 = $(`<div id="html_4c987cc625fda20fd98ebf0676c7ead2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 사성로 121(철산1동 행정복지센터)<br>         <b>위도:</b> 37.4908<br>         <b>경도:</b> 126.8678     </div>     </div>`)[0];
+                popup_66452b3c0269a4c743290ffe30e947d8.setContent(html_4c987cc625fda20fd98ebf0676c7ead2);
+            
+        
+
+        marker_26aae63d727baf3674800c3638beb200.bindPopup(popup_66452b3c0269a4c743290ffe30e947d8)
+        ;
+
+        
+    
+    
+            marker_26aae63d727baf3674800c3638beb200.bindTooltip(
+                `<div>
+                     경기도 광명시 사성로 121(철산1동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e5b0b0fc16112195ad582149eba8061 = L.marker(
+                [37.485, 126.8664],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_b8915590dd3dbfba38f3c18497739c11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d15394562e115c80bdde847c73e987a = $(`<div id="html_9d15394562e115c80bdde847c73e987a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 시청로 93(도로 맞은편 현충근린공원 버스정류장)<br>         <b>위도:</b> 37.485<br>         <b>경도:</b> 126.8664     </div>     </div>`)[0];
+                popup_b8915590dd3dbfba38f3c18497739c11.setContent(html_9d15394562e115c80bdde847c73e987a);
+            
+        
+
+        marker_7e5b0b0fc16112195ad582149eba8061.bindPopup(popup_b8915590dd3dbfba38f3c18497739c11)
+        ;
+
+        
+    
+    
+            marker_7e5b0b0fc16112195ad582149eba8061.bindTooltip(
+                `<div>
+                     경기도 광명시 시청로 93(도로 맞은편 현충근린공원 버스정류장)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09bcd930e9b8e5b944576bc928fe277e = L.marker(
+                [37.4652, 126.8692],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_8fbdb6dea4a46433d77b8155926d645c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1130f86d2eba82005d062db4298ca196 = $(`<div id="html_1130f86d2eba82005d062db4298ca196" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 오리로 747(하안1동 행정복지센터)<br>         <b>위도:</b> 37.4652<br>         <b>경도:</b> 126.8692     </div>     </div>`)[0];
+                popup_8fbdb6dea4a46433d77b8155926d645c.setContent(html_1130f86d2eba82005d062db4298ca196);
+            
+        
+
+        marker_09bcd930e9b8e5b944576bc928fe277e.bindPopup(popup_8fbdb6dea4a46433d77b8155926d645c)
+        ;
+
+        
+    
+    
+            marker_09bcd930e9b8e5b944576bc928fe277e.bindTooltip(
+                `<div>
+                     경기도 광명시 오리로 747(하안1동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7fa0c06f67366232a04fd08fef9cd360 = L.marker(
+                [37.4559, 126.8784],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_81d71e8f5916d82d4db6ec59adb9932b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b4ff3b6b5a23fd07307bb485d2b23b1 = $(`<div id="html_2b4ff3b6b5a23fd07307bb485d2b23b1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 오리로 613(광명보건소 앞 재활용마당)<br>         <b>위도:</b> 37.4559<br>         <b>경도:</b> 126.8784     </div>     </div>`)[0];
+                popup_81d71e8f5916d82d4db6ec59adb9932b.setContent(html_2b4ff3b6b5a23fd07307bb485d2b23b1);
+            
+        
+
+        marker_7fa0c06f67366232a04fd08fef9cd360.bindPopup(popup_81d71e8f5916d82d4db6ec59adb9932b)
+        ;
+
+        
+    
+    
+            marker_7fa0c06f67366232a04fd08fef9cd360.bindTooltip(
+                `<div>
+                     경기도 광명시 오리로 613(광명보건소 앞 재활용마당)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fcc3b8c59d93be8991b26289d20f1e2f = L.marker(
+                [37.4612, 126.8747],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_45e49cdfe7fc9411b0cf261efdf70dca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_705d8dbf35526b7e80a30a2a7123c340 = $(`<div id="html_705d8dbf35526b7e80a30a2a7123c340" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 안재로2번길 43(단독필지삼거리 입구)<br>         <b>위도:</b> 37.4612<br>         <b>경도:</b> 126.8747     </div>     </div>`)[0];
+                popup_45e49cdfe7fc9411b0cf261efdf70dca.setContent(html_705d8dbf35526b7e80a30a2a7123c340);
+            
+        
+
+        marker_fcc3b8c59d93be8991b26289d20f1e2f.bindPopup(popup_45e49cdfe7fc9411b0cf261efdf70dca)
+        ;
+
+        
+    
+    
+            marker_fcc3b8c59d93be8991b26289d20f1e2f.bindTooltip(
+                `<div>
+                     경기도 광명시 안재로2번길 43(단독필지삼거리 입구)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_88da7180c190ec931c785fcbbbf4e6f8 = L.marker(
+                [37.4524, 126.885],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_a827f87db00b6c1b06f7793225fa9020 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_251501a7f4f6df56b49c63be7c58a2b0 = $(`<div id="html_251501a7f4f6df56b49c63be7c58a2b0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 소하로 25(소하1동 행정복지센터)<br>         <b>위도:</b> 37.4524<br>         <b>경도:</b> 126.885     </div>     </div>`)[0];
+                popup_a827f87db00b6c1b06f7793225fa9020.setContent(html_251501a7f4f6df56b49c63be7c58a2b0);
+            
+        
+
+        marker_88da7180c190ec931c785fcbbbf4e6f8.bindPopup(popup_a827f87db00b6c1b06f7793225fa9020)
+        ;
+
+        
+    
+    
+            marker_88da7180c190ec931c785fcbbbf4e6f8.bindTooltip(
+                `<div>
+                     경기도 광명시 소하로 25(소하1동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a72bb6665361bc3c0d75a362ac9842c4 = L.marker(
+                [37.4321, 126.8801],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_fadccd781b061a7eee455c0e60992736 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cc1a2587503d2f5b1bb06216feed4cd = $(`<div id="html_6cc1a2587503d2f5b1bb06216feed4cd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 성채로 52(소하2동 행정복지센터)<br>         <b>위도:</b> 37.4321<br>         <b>경도:</b> 126.8801     </div>     </div>`)[0];
+                popup_fadccd781b061a7eee455c0e60992736.setContent(html_6cc1a2587503d2f5b1bb06216feed4cd);
+            
+        
+
+        marker_a72bb6665361bc3c0d75a362ac9842c4.bindPopup(popup_fadccd781b061a7eee455c0e60992736)
+        ;
+
+        
+    
+    
+            marker_a72bb6665361bc3c0d75a362ac9842c4.bindTooltip(
+                `<div>
+                     경기도 광명시 성채로 52(소하2동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87ab4dc0f2e5699cfdd4984186a045db = L.marker(
+                [37.4321, 126.8801],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_b0e0bb908b81f1436395cb9f04477acd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9056e2ca33b4de341a1928de4db644d = $(`<div id="html_d9056e2ca33b4de341a1928de4db644d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 설월로 10(소하2동 복지회관)<br>         <b>위도:</b> 37.4321<br>         <b>경도:</b> 126.8801     </div>     </div>`)[0];
+                popup_b0e0bb908b81f1436395cb9f04477acd.setContent(html_d9056e2ca33b4de341a1928de4db644d);
+            
+        
+
+        marker_87ab4dc0f2e5699cfdd4984186a045db.bindPopup(popup_b0e0bb908b81f1436395cb9f04477acd)
+        ;
+
+        
+    
+    
+            marker_87ab4dc0f2e5699cfdd4984186a045db.bindTooltip(
+                `<div>
+                     경기도 광명시 설월로 10(소하2동 복지회관)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_53d245718b78acdcf49cb02a3da5895e = L.marker(
+                [37.4156, 126.8513],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_1229cee99a1467ec8ac0a94e8eac1e0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de5e7419ea3418ed4ba89efc375f5cc6 = $(`<div id="html_de5e7419ea3418ed4ba89efc375f5cc6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 서독로 104번길 14(학온동 행정복지센터)<br>         <b>위도:</b> 37.4156<br>         <b>경도:</b> 126.8513     </div>     </div>`)[0];
+                popup_1229cee99a1467ec8ac0a94e8eac1e0f.setContent(html_de5e7419ea3418ed4ba89efc375f5cc6);
+            
+        
+
+        marker_53d245718b78acdcf49cb02a3da5895e.bindPopup(popup_1229cee99a1467ec8ac0a94e8eac1e0f)
+        ;
+
+        
+    
+    
+            marker_53d245718b78acdcf49cb02a3da5895e.bindTooltip(
+                `<div>
+                     경기도 광명시 서독로 104번길 14(학온동 행정복지센터)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ab15a65fe0a622c83ff8706b6e0b221 = L.marker(
+                [37.4328, 126.8765],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_10d268700e168479e77b66bfa3b9c589 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff670be6f8f7300e42b3183402c93d2b = $(`<div id="html_ff670be6f8f7300e42b3183402c93d2b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 영우로 26<br>         <b>위도:</b> 37.4328<br>         <b>경도:</b> 126.8765     </div>     </div>`)[0];
+                popup_10d268700e168479e77b66bfa3b9c589.setContent(html_ff670be6f8f7300e42b3183402c93d2b);
+            
+        
+
+        marker_5ab15a65fe0a622c83ff8706b6e0b221.bindPopup(popup_10d268700e168479e77b66bfa3b9c589)
+        ;
+
+        
+    
+    
+            marker_5ab15a65fe0a622c83ff8706b6e0b221.bindTooltip(
+                `<div>
+                     경기도 광명시 영우로 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_478ae0bba6c81d53679daa0d5e83e7f5 = L.marker(
+                [37.4187, 126.8792],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_1a5ad11d394c438af91382336adf878e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c83bc7a71f6de0b282eac1d465378300 = $(`<div id="html_c83bc7a71f6de0b282eac1d465378300" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 오리로 191번길 20 호봉골마을 새터공원<br>         <b>위도:</b> 37.4187<br>         <b>경도:</b> 126.8792     </div>     </div>`)[0];
+                popup_1a5ad11d394c438af91382336adf878e.setContent(html_c83bc7a71f6de0b282eac1d465378300);
+            
+        
+
+        marker_478ae0bba6c81d53679daa0d5e83e7f5.bindPopup(popup_1a5ad11d394c438af91382336adf878e)
+        ;
+
+        
+    
+    
+            marker_478ae0bba6c81d53679daa0d5e83e7f5.bindTooltip(
+                `<div>
+                     경기도 광명시 오리로 191번길 20 호봉골마을 새터공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d222113a106be07e91db391deacab91 = L.marker(
+                [37.4212, 126.8904],
+                {
+}
+            ).addTo(marker_cluster_decca1996c4d689c9e9028db37286cd0);
+        
+    
+        var popup_d945385b0419c13dd37d2fa8bbfde132 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eec66a3925274eb6ee9aeb9018b7d48 = $(`<div id="html_1eec66a3925274eb6ee9aeb9018b7d48" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 경기도 광명시 일직동 534-1(자경마을 어린이공원2)<br>         <b>위도:</b> 37.4212<br>         <b>경도:</b> 126.8904     </div>     </div>`)[0];
+                popup_d945385b0419c13dd37d2fa8bbfde132.setContent(html_1eec66a3925274eb6ee9aeb9018b7d48);
+            
+        
+
+        marker_1d222113a106be07e91db391deacab91.bindPopup(popup_d945385b0419c13dd37d2fa8bbfde132)
+        ;
+
+        
+    
+    
+            marker_1d222113a106be07e91db391deacab91.bindTooltip(
+                `<div>
+                     경기도 광명시 일직동 534-1(자경마을 어린이공원2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_decca1996c4d689c9e9028db37286cd0.addTo(map_20be73343c55e880cf2eb6ef49f696df);
+        
+</script>
+</html>
