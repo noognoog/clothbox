@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3139168f268791f6e01dae1e4d9b351b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3139168f268791f6e01dae1e4d9b351b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3139168f268791f6e01dae1e4d9b351b = L.map(
+                "map_3139168f268791f6e01dae1e4d9b351b",
+                {
+                    center: [37.508535, 130.856082],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_270d40d8850ffa9329893625d6b5e0ac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_270d40d8850ffa9329893625d6b5e0ac.addTo(map_3139168f268791f6e01dae1e4d9b351b);
+        
+    
+            var marker_cluster_f3561f3a4ec4a479013862cca21e7d5c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_cc8d13520279da9a319d23988ad8b1c9 = L.marker(
+                [37.5000029, 130.908548],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_6c6a9d1fd7ba8d6822062a7d6fefe771 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3e78d107c2f9dd23f808a0be5b9cf15 = $(`<div id="html_e3e78d107c2f9dd23f808a0be5b9cf15" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 울릉읍 저동리 48-16<br>         <b>위도:</b> 37.5000029<br>         <b>경도:</b> 130.908548     </div>     </div>`)[0];
+                popup_6c6a9d1fd7ba8d6822062a7d6fefe771.setContent(html_e3e78d107c2f9dd23f808a0be5b9cf15);
+            
+        
+
+        marker_cc8d13520279da9a319d23988ad8b1c9.bindPopup(popup_6c6a9d1fd7ba8d6822062a7d6fefe771)
+        ;
+
+        
+    
+    
+            marker_cc8d13520279da9a319d23988ad8b1c9.bindTooltip(
+                `<div>
+                     울릉읍 저동리 48-16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e23d85e3d94ddbf124c663d87b8095e0 = L.marker(
+                [37.4959628, 130.9088683],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_a20233d1f65ea71e5d00e44120625b9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_604cde0a68638656c210816c44b59a45 = $(`<div id="html_604cde0a68638656c210816c44b59a45" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 울릉읍 도동리 300-1<br>         <b>위도:</b> 37.4959628<br>         <b>경도:</b> 130.9088683     </div>     </div>`)[0];
+                popup_a20233d1f65ea71e5d00e44120625b9c.setContent(html_604cde0a68638656c210816c44b59a45);
+            
+        
+
+        marker_e23d85e3d94ddbf124c663d87b8095e0.bindPopup(popup_a20233d1f65ea71e5d00e44120625b9c)
+        ;
+
+        
+    
+    
+            marker_e23d85e3d94ddbf124c663d87b8095e0.bindTooltip(
+                `<div>
+                     울릉읍 도동리 300-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1304ea49d0081966a8f04e207f23b6a5 = L.marker(
+                [37.4885534, 130.9020453],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_60805cf87514b112eaac6677b700b419 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cefef99b003f38eb76db770b80e3a49a = $(`<div id="html_cefef99b003f38eb76db770b80e3a49a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 울릉읍 도동리 251-2<br>         <b>위도:</b> 37.4885534<br>         <b>경도:</b> 130.9020453     </div>     </div>`)[0];
+                popup_60805cf87514b112eaac6677b700b419.setContent(html_cefef99b003f38eb76db770b80e3a49a);
+            
+        
+
+        marker_1304ea49d0081966a8f04e207f23b6a5.bindPopup(popup_60805cf87514b112eaac6677b700b419)
+        ;
+
+        
+    
+    
+            marker_1304ea49d0081966a8f04e207f23b6a5.bindTooltip(
+                `<div>
+                     울릉읍 도동리 251-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e9142864c10b3e779ce1ed7bca92246 = L.marker(
+                [37.4865719, 130.9060092],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_2912e47ca560c37de82c78a9c9212d1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c780c50349224f580a44759006a42132 = $(`<div id="html_c780c50349224f580a44759006a42132" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 울릉읍 도동리 56<br>         <b>위도:</b> 37.4865719<br>         <b>경도:</b> 130.9060092     </div>     </div>`)[0];
+                popup_2912e47ca560c37de82c78a9c9212d1d.setContent(html_c780c50349224f580a44759006a42132);
+            
+        
+
+        marker_1e9142864c10b3e779ce1ed7bca92246.bindPopup(popup_2912e47ca560c37de82c78a9c9212d1d)
+        ;
+
+        
+    
+    
+            marker_1e9142864c10b3e779ce1ed7bca92246.bindTooltip(
+                `<div>
+                     울릉읍 도동리 56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c8baa6f20588c72b24b74c5d8155b7b = L.marker(
+                [37.4713298, 130.8352412],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_8a5dd5a814ca472c919c535a6b5c36eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6d4007d072f1a285ccd622a3cb35a00 = $(`<div id="html_e6d4007d072f1a285ccd622a3cb35a00" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 서면 남양리 619-1<br>         <b>위도:</b> 37.4713298<br>         <b>경도:</b> 130.8352412     </div>     </div>`)[0];
+                popup_8a5dd5a814ca472c919c535a6b5c36eb.setContent(html_e6d4007d072f1a285ccd622a3cb35a00);
+            
+        
+
+        marker_9c8baa6f20588c72b24b74c5d8155b7b.bindPopup(popup_8a5dd5a814ca472c919c535a6b5c36eb)
+        ;
+
+        
+    
+    
+            marker_9c8baa6f20588c72b24b74c5d8155b7b.bindTooltip(
+                `<div>
+                     서면 남양리 619-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5db13edf5c3ad2c0f57f42ffa49fec94 = L.marker(
+                [37.5459664, 130.8739798],
+                {
+}
+            ).addTo(marker_cluster_f3561f3a4ec4a479013862cca21e7d5c);
+        
+    
+        var popup_2e4464c938eef28f7845dd6feeeb517b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43fc30e471ddebc8e0320dcbfd5278a5 = $(`<div id="html_43fc30e471ddebc8e0320dcbfd5278a5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 북면 천부리 718-52<br>         <b>위도:</b> 37.5459664<br>         <b>경도:</b> 130.8739798     </div>     </div>`)[0];
+                popup_2e4464c938eef28f7845dd6feeeb517b.setContent(html_43fc30e471ddebc8e0320dcbfd5278a5);
+            
+        
+
+        marker_5db13edf5c3ad2c0f57f42ffa49fec94.bindPopup(popup_2e4464c938eef28f7845dd6feeeb517b)
+        ;
+
+        
+    
+    
+            marker_5db13edf5c3ad2c0f57f42ffa49fec94.bindTooltip(
+                `<div>
+                     북면 천부리 718-52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_f3561f3a4ec4a479013862cca21e7d5c.addTo(map_3139168f268791f6e01dae1e4d9b351b);
+        
+</script>
+</html>
