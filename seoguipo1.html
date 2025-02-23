@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3763b97ccd8343d490a31a6dde2961ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3763b97ccd8343d490a31a6dde2961ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3763b97ccd8343d490a31a6dde2961ef = L.map(
+                "map_3763b97ccd8343d490a31a6dde2961ef",
+                {
+                    center: [33.262335, 126.247653],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_19ff4b35919c52dcf2668d3a1863c83e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_19ff4b35919c52dcf2668d3a1863c83e.addTo(map_3763b97ccd8343d490a31a6dde2961ef);
+        
+    
+            var marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_8d95099251e8e7570c000bd816ad9877 = L.marker(
+                [33.22143514, 126.2557452],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_676a3538b03b7349ab5b3ea2efc8e18a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8167770ff4fea153686d8da9c775fae = $(`<div id="html_b8167770ff4fea153686d8da9c775fae" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 814-2 대정읍 매일시장 뒤<br>         <b>위도:</b> 33.22143514<br>         <b>경도:</b> 126.2557452     </div>     </div>`)[0];
+                popup_676a3538b03b7349ab5b3ea2efc8e18a.setContent(html_b8167770ff4fea153686d8da9c775fae);
+            
+        
+
+        marker_8d95099251e8e7570c000bd816ad9877.bindPopup(popup_676a3538b03b7349ab5b3ea2efc8e18a)
+        ;
+
+        
+    
+    
+            marker_8d95099251e8e7570c000bd816ad9877.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 814-2 대정읍 매일시장 뒤
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_50b55ee44a2715eabe187e1cb69ea613 = L.marker(
+                [33.2089437, 126.2903297],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_7fb99952daf00cb468a9983eabc655b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f15d3603d222c8b6c7036c10c7f77be = $(`<div id="html_5f15d3603d222c8b6c7036c10c7f77be" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 125-1 대정읍 산이수동 버스정류장<br>         <b>위도:</b> 33.2089437<br>         <b>경도:</b> 126.2903297     </div>     </div>`)[0];
+                popup_7fb99952daf00cb468a9983eabc655b9.setContent(html_5f15d3603d222c8b6c7036c10c7f77be);
+            
+        
+
+        marker_50b55ee44a2715eabe187e1cb69ea613.bindPopup(popup_7fb99952daf00cb468a9983eabc655b9)
+        ;
+
+        
+    
+    
+            marker_50b55ee44a2715eabe187e1cb69ea613.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 125-1 대정읍 산이수동 버스정류장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ada96350c6999f10c5475f0f863c6848 = L.marker(
+                [33.22654685, 126.2691233],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_6ea069a22c05a89ae28e382192eb39e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6d41a9dd4b926272ee517bc6ef62960 = $(`<div id="html_c6d41a9dd4b926272ee517bc6ef62960" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 2652-1 대정읍 상모1리사무소<br>         <b>위도:</b> 33.22654685<br>         <b>경도:</b> 126.2691233     </div>     </div>`)[0];
+                popup_6ea069a22c05a89ae28e382192eb39e0.setContent(html_c6d41a9dd4b926272ee517bc6ef62960);
+            
+        
+
+        marker_ada96350c6999f10c5475f0f863c6848.bindPopup(popup_6ea069a22c05a89ae28e382192eb39e0)
+        ;
+
+        
+    
+    
+            marker_ada96350c6999f10c5475f0f863c6848.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 2652-1 대정읍 상모1리사무소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8cc6e12a8d09be8a20d0b00504d791c1 = L.marker(
+                [33.27838871, 126.2460981],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_065c9abd7f47dfb7ee98cb10b2c2ff1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_991b51c9f443cc94262cf8661b3bd819 = $(`<div id="html_991b51c9f443cc94262cf8661b3bd819" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 무릉리 132-1 대정읍 인향동 경로당<br>         <b>위도:</b> 33.27838871<br>         <b>경도:</b> 126.2460981     </div>     </div>`)[0];
+                popup_065c9abd7f47dfb7ee98cb10b2c2ff1c.setContent(html_991b51c9f443cc94262cf8661b3bd819);
+            
+        
+
+        marker_8cc6e12a8d09be8a20d0b00504d791c1.bindPopup(popup_065c9abd7f47dfb7ee98cb10b2c2ff1c)
+        ;
+
+        
+    
+    
+            marker_8cc6e12a8d09be8a20d0b00504d791c1.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 무릉리 132-1 대정읍 인향동 경로당
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_639cea61bb9a71999707642a7be65cc7 = L.marker(
+                [33.27394152, 126.2337896],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_85ba71123c79f2b700a2cccabd547779 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28d8e9d193ff128781cb0d835bc5cd6b = $(`<div id="html_28d8e9d193ff128781cb0d835bc5cd6b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 무릉리 569-2 대정읍 좌기동놀이터<br>         <b>위도:</b> 33.27394152<br>         <b>경도:</b> 126.2337896     </div>     </div>`)[0];
+                popup_85ba71123c79f2b700a2cccabd547779.setContent(html_28d8e9d193ff128781cb0d835bc5cd6b);
+            
+        
+
+        marker_639cea61bb9a71999707642a7be65cc7.bindPopup(popup_85ba71123c79f2b700a2cccabd547779)
+        ;
+
+        
+    
+    
+            marker_639cea61bb9a71999707642a7be65cc7.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 무릉리 569-2 대정읍 좌기동놀이터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86b4a8208b8cd6a35bf2fdd44015a92f = L.marker(
+                [33.28120134, 126.2238445],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_6c08a4bcd537fabeb5710884db14cb42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2001778758a18733e9aa6d8950b8eacd = $(`<div id="html_2001778758a18733e9aa6d8950b8eacd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 무릉리 973-1 대정읍 평지동 마을회관<br>         <b>위도:</b> 33.28120134<br>         <b>경도:</b> 126.2238445     </div>     </div>`)[0];
+                popup_6c08a4bcd537fabeb5710884db14cb42.setContent(html_2001778758a18733e9aa6d8950b8eacd);
+            
+        
+
+        marker_86b4a8208b8cd6a35bf2fdd44015a92f.bindPopup(popup_6c08a4bcd537fabeb5710884db14cb42)
+        ;
+
+        
+    
+    
+            marker_86b4a8208b8cd6a35bf2fdd44015a92f.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 무릉리 973-1 대정읍 평지동 마을회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a98e1a922af755acad0bc211ba3221fc = L.marker(
+                [33.25783871, 126.2369151],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_af3b34b1da01c7d3294016bd2e802428 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fcab666360910db0c244a822290a87d = $(`<div id="html_3fcab666360910db0c244a822290a87d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 동일리 274 대정읍 동일2리 마을회관<br>         <b>위도:</b> 33.25783871<br>         <b>경도:</b> 126.2369151     </div>     </div>`)[0];
+                popup_af3b34b1da01c7d3294016bd2e802428.setContent(html_3fcab666360910db0c244a822290a87d);
+            
+        
+
+        marker_a98e1a922af755acad0bc211ba3221fc.bindPopup(popup_af3b34b1da01c7d3294016bd2e802428)
+        ;
+
+        
+    
+    
+            marker_a98e1a922af755acad0bc211ba3221fc.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 동일리 274 대정읍 동일2리 마을회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e986b01dc1beffdc6187a7d5a27fc64 = L.marker(
+                [33.28434914, 126.1845339],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_bea368301569aace0dbe74bb09bc493e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_773fa9ee744ea46b114570c434faebd6 = $(`<div id="html_773fa9ee744ea46b114570c434faebd6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 2072-13 대정읍 바자동삼거리<br>         <b>위도:</b> 33.28434914<br>         <b>경도:</b> 126.1845339     </div>     </div>`)[0];
+                popup_bea368301569aace0dbe74bb09bc493e.setContent(html_773fa9ee744ea46b114570c434faebd6);
+            
+        
+
+        marker_2e986b01dc1beffdc6187a7d5a27fc64.bindPopup(popup_bea368301569aace0dbe74bb09bc493e)
+        ;
+
+        
+    
+    
+            marker_2e986b01dc1beffdc6187a7d5a27fc64.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 2072-13 대정읍 바자동삼거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7866ecb9912794df1c36b99eaf25ae3 = L.marker(
+                [33.28669738, 126.1845098],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_571e9839b1569a18782c91d33f89da09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82ea3f1177680ffab946638708c40742 = $(`<div id="html_82ea3f1177680ffab946638708c40742" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 2067-24 대정읍 신도3리사무소<br>         <b>위도:</b> 33.28669738<br>         <b>경도:</b> 126.1845098     </div>     </div>`)[0];
+                popup_571e9839b1569a18782c91d33f89da09.setContent(html_82ea3f1177680ffab946638708c40742);
+            
+        
+
+        marker_d7866ecb9912794df1c36b99eaf25ae3.bindPopup(popup_571e9839b1569a18782c91d33f89da09)
+        ;
+
+        
+    
+    
+            marker_d7866ecb9912794df1c36b99eaf25ae3.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 2067-24 대정읍 신도3리사무소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b15f5fca659028ef99e6c221e4a38e9c = L.marker(
+                [33.28746044, 126.1865231],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_ca6eb5a1845211e09f3bc309cc90f799 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9bc5e6f7b37982f1a6a6e865ba7b5716 = $(`<div id="html_9bc5e6f7b37982f1a6a6e865ba7b5716" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 1920-9 대정읍 신도3리사무소 북쪽<br>         <b>위도:</b> 33.28746044<br>         <b>경도:</b> 126.1865231     </div>     </div>`)[0];
+                popup_ca6eb5a1845211e09f3bc309cc90f799.setContent(html_9bc5e6f7b37982f1a6a6e865ba7b5716);
+            
+        
+
+        marker_b15f5fca659028ef99e6c221e4a38e9c.bindPopup(popup_ca6eb5a1845211e09f3bc309cc90f799)
+        ;
+
+        
+    
+    
+            marker_b15f5fca659028ef99e6c221e4a38e9c.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 1920-9 대정읍 신도3리사무소 북쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_961ef6dcdf66901381d56547d13ade78 = L.marker(
+                [33.27629524, 126.1712424],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_80e9b60606f3cf929dbc970800d0d1f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d310068fd907335b7fb3e73041256948 = $(`<div id="html_d310068fd907335b7fb3e73041256948" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 3074 대정읍 신도리 해녀탈의장 옆<br>         <b>위도:</b> 33.27629524<br>         <b>경도:</b> 126.1712424     </div>     </div>`)[0];
+                popup_80e9b60606f3cf929dbc970800d0d1f5.setContent(html_d310068fd907335b7fb3e73041256948);
+            
+        
+
+        marker_961ef6dcdf66901381d56547d13ade78.bindPopup(popup_80e9b60606f3cf929dbc970800d0d1f5)
+        ;
+
+        
+    
+    
+            marker_961ef6dcdf66901381d56547d13ade78.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 3074 대정읍 신도리 해녀탈의장 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f387ca2a4f3022963e9436c4fcfb19e1 = L.marker(
+                [33.28010736, 126.1750507],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_2d16f5e41d42d1d85bb6ff5b401ab7b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dfca1d9ac1bcf58fca49bff108bce3be = $(`<div id="html_dfca1d9ac1bcf58fca49bff108bce3be" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 2633-4 대정읍 방앗동네<br>         <b>위도:</b> 33.28010736<br>         <b>경도:</b> 126.1750507     </div>     </div>`)[0];
+                popup_2d16f5e41d42d1d85bb6ff5b401ab7b1.setContent(html_dfca1d9ac1bcf58fca49bff108bce3be);
+            
+        
+
+        marker_f387ca2a4f3022963e9436c4fcfb19e1.bindPopup(popup_2d16f5e41d42d1d85bb6ff5b401ab7b1)
+        ;
+
+        
+    
+    
+            marker_f387ca2a4f3022963e9436c4fcfb19e1.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 2633-4 대정읍 방앗동네
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0432054843b62193dffc7ffa28929b15 = L.marker(
+                [33.27684584, 126.1733476],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_b2d468bc3fc34c9874294d2dfaf6050c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33b73b86b1f0d656823f3e2d8791f0f5 = $(`<div id="html_33b73b86b1f0d656823f3e2d8791f0f5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 신도리 3094-1 대정읍 어촌계창고<br>         <b>위도:</b> 33.27684584<br>         <b>경도:</b> 126.1733476     </div>     </div>`)[0];
+                popup_b2d468bc3fc34c9874294d2dfaf6050c.setContent(html_33b73b86b1f0d656823f3e2d8791f0f5);
+            
+        
+
+        marker_0432054843b62193dffc7ffa28929b15.bindPopup(popup_b2d468bc3fc34c9874294d2dfaf6050c)
+        ;
+
+        
+    
+    
+            marker_0432054843b62193dffc7ffa28929b15.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 신도리 3094-1 대정읍 어촌계창고
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3265cf91971ef8d45a7464036eb43e4b = L.marker(
+                [33.26305169, 126.2193289],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_891fafee302cba631294fbea310e1b66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_452c0210180722863eb19185ec6e1d46 = $(`<div id="html_452c0210180722863eb19185ec6e1d46" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 영락리 279-2 대정읍 독고동<br>         <b>위도:</b> 33.26305169<br>         <b>경도:</b> 126.2193289     </div>     </div>`)[0];
+                popup_891fafee302cba631294fbea310e1b66.setContent(html_452c0210180722863eb19185ec6e1d46);
+            
+        
+
+        marker_3265cf91971ef8d45a7464036eb43e4b.bindPopup(popup_891fafee302cba631294fbea310e1b66)
+        ;
+
+        
+    
+    
+            marker_3265cf91971ef8d45a7464036eb43e4b.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 영락리 279-2 대정읍 독고동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fe7818ffc993d3007e6efb0ce7f0f6e2 = L.marker(
+                [33.25223005, 126.2046871],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_9ff43ad0ff0427c3dae7dc9dc93868c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2de7390364f784759f62092ec9745dbf = $(`<div id="html_2de7390364f784759f62092ec9745dbf" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 영락리 1656-2 대정읍 하동삼거리<br>         <b>위도:</b> 33.25223005<br>         <b>경도:</b> 126.2046871     </div>     </div>`)[0];
+                popup_9ff43ad0ff0427c3dae7dc9dc93868c5.setContent(html_2de7390364f784759f62092ec9745dbf);
+            
+        
+
+        marker_fe7818ffc993d3007e6efb0ce7f0f6e2.bindPopup(popup_9ff43ad0ff0427c3dae7dc9dc93868c5)
+        ;
+
+        
+    
+    
+            marker_fe7818ffc993d3007e6efb0ce7f0f6e2.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 영락리 1656-2 대정읍 하동삼거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35a06299657c657a8590806b87bd2a71 = L.marker(
+                [33.25579427, 126.2253086],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_d6e47758534dfb1822046ca82213d232 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d579c7b266483f6154b27816c87266cd = $(`<div id="html_d579c7b266483f6154b27816c87266cd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 일과리 산 1-8 대정읍 농공단지 제주팩<br>         <b>위도:</b> 33.25579427<br>         <b>경도:</b> 126.2253086     </div>     </div>`)[0];
+                popup_d6e47758534dfb1822046ca82213d232.setContent(html_d579c7b266483f6154b27816c87266cd);
+            
+        
+
+        marker_35a06299657c657a8590806b87bd2a71.bindPopup(popup_d6e47758534dfb1822046ca82213d232)
+        ;
+
+        
+    
+    
+            marker_35a06299657c657a8590806b87bd2a71.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 일과리 산 1-8 대정읍 농공단지 제주팩
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_93b9a4fa4aedaa181c0d128dba9c8e45 = L.marker(
+                [33.22674747, 126.2499392],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_0e3cfb9517692173a826eb7508633174 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cd775ac772bdb98d25cd96aaceb0238 = $(`<div id="html_5cd775ac772bdb98d25cd96aaceb0238" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 2121-28 대정읍 신호등식당 북쪽<br>         <b>위도:</b> 33.22674747<br>         <b>경도:</b> 126.2499392     </div>     </div>`)[0];
+                popup_0e3cfb9517692173a826eb7508633174.setContent(html_5cd775ac772bdb98d25cd96aaceb0238);
+            
+        
+
+        marker_93b9a4fa4aedaa181c0d128dba9c8e45.bindPopup(popup_0e3cfb9517692173a826eb7508633174)
+        ;
+
+        
+    
+    
+            marker_93b9a4fa4aedaa181c0d128dba9c8e45.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 2121-28 대정읍 신호등식당 북쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee784f0e7dc4301dcc9eaa980a3eaa5f = L.marker(
+                [33.23031003, 126.2590404],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_6dfcdd2bc932ffe2eaf426d19270d4a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ceed02ded639612f8ed55b2805a72d = $(`<div id="html_49ceed02ded639612f8ed55b2805a72d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 3675-1 대정읍 힐링타운 입구<br>         <b>위도:</b> 33.23031003<br>         <b>경도:</b> 126.2590404     </div>     </div>`)[0];
+                popup_6dfcdd2bc932ffe2eaf426d19270d4a5.setContent(html_49ceed02ded639612f8ed55b2805a72d);
+            
+        
+
+        marker_ee784f0e7dc4301dcc9eaa980a3eaa5f.bindPopup(popup_6dfcdd2bc932ffe2eaf426d19270d4a5)
+        ;
+
+        
+    
+    
+            marker_ee784f0e7dc4301dcc9eaa980a3eaa5f.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 3675-1 대정읍 힐링타운 입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_890c0b6d6bbfa026f2fe8a8ca864b4be = L.marker(
+                [33.22166646, 126.2495684],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_2ef32f7f1812f5f60c85e101184f8645 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13b0b9dcf349f13a07c85314d39db8de = $(`<div id="html_13b0b9dcf349f13a07c85314d39db8de" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 1077-1 대정읍 하모3리 사무소 주차장<br>         <b>위도:</b> 33.22166646<br>         <b>경도:</b> 126.2495684     </div>     </div>`)[0];
+                popup_2ef32f7f1812f5f60c85e101184f8645.setContent(html_13b0b9dcf349f13a07c85314d39db8de);
+            
+        
+
+        marker_890c0b6d6bbfa026f2fe8a8ca864b4be.bindPopup(popup_2ef32f7f1812f5f60c85e101184f8645)
+        ;
+
+        
+    
+    
+            marker_890c0b6d6bbfa026f2fe8a8ca864b4be.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 1077-1 대정읍 하모3리 사무소 주차장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c6f9450a292fb9f68d473d419190e1f = L.marker(
+                [33.2229827, 126.261792],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_ec9ae1022ef891ceab210e52bb064664 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10d9a81ca000925d1a5d253e6fe4dfd2 = $(`<div id="html_10d9a81ca000925d1a5d253e6fe4dfd2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 3086 대정읍 상모대동경로당 앞 삼거리<br>         <b>위도:</b> 33.2229827<br>         <b>경도:</b> 126.261792     </div>     </div>`)[0];
+                popup_ec9ae1022ef891ceab210e52bb064664.setContent(html_10d9a81ca000925d1a5d253e6fe4dfd2);
+            
+        
+
+        marker_8c6f9450a292fb9f68d473d419190e1f.bindPopup(popup_ec9ae1022ef891ceab210e52bb064664)
+        ;
+
+        
+    
+    
+            marker_8c6f9450a292fb9f68d473d419190e1f.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 3086 대정읍 상모대동경로당 앞 삼거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_97ea80ff113f0f6f9a91266bf5723aec = L.marker(
+                [33.27898289, 126.2835247],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_2fecec2ff615d5aa61a8f23e151ad7a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0498b23b55d676953f281dc9d8b2e7c = $(`<div id="html_b0498b23b55d676953f281dc9d8b2e7c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 구억리 788-2 대정읍 상동입구 삼거리<br>         <b>위도:</b> 33.27898289<br>         <b>경도:</b> 126.2835247     </div>     </div>`)[0];
+                popup_2fecec2ff615d5aa61a8f23e151ad7a4.setContent(html_b0498b23b55d676953f281dc9d8b2e7c);
+            
+        
+
+        marker_97ea80ff113f0f6f9a91266bf5723aec.bindPopup(popup_2fecec2ff615d5aa61a8f23e151ad7a4)
+        ;
+
+        
+    
+    
+            marker_97ea80ff113f0f6f9a91266bf5723aec.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 구억리 788-2 대정읍 상동입구 삼거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cafe1bcbdc8faf152a493635d7fa012e = L.marker(
+                [33.22257694, 126.2572734],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_f40865365857f0d7d0a959ac44bb07fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59284304d9a69fad09f3cf3169525283 = $(`<div id="html_59284304d9a69fad09f3cf3169525283" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 3970-2 대정읍 상모아파트 동쪽 공용주차장<br>         <b>위도:</b> 33.22257694<br>         <b>경도:</b> 126.2572734     </div>     </div>`)[0];
+                popup_f40865365857f0d7d0a959ac44bb07fa.setContent(html_59284304d9a69fad09f3cf3169525283);
+            
+        
+
+        marker_cafe1bcbdc8faf152a493635d7fa012e.bindPopup(popup_f40865365857f0d7d0a959ac44bb07fa)
+        ;
+
+        
+    
+    
+            marker_cafe1bcbdc8faf152a493635d7fa012e.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 3970-2 대정읍 상모아파트 동쪽 공용주차장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60d8efb8072cd648353e2339a0078870 = L.marker(
+                [33.23901169, 126.230416],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_0a757f3ec0cae63941306e44c92dd569 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7937ba7b73b825c06e758244e0d6f01 = $(`<div id="html_f7937ba7b73b825c06e758244e0d6f01" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 일과리 1303-8 대정읍 일과1리 대수동 경로당 앞<br>         <b>위도:</b> 33.23901169<br>         <b>경도:</b> 126.230416     </div>     </div>`)[0];
+                popup_0a757f3ec0cae63941306e44c92dd569.setContent(html_f7937ba7b73b825c06e758244e0d6f01);
+            
+        
+
+        marker_60d8efb8072cd648353e2339a0078870.bindPopup(popup_0a757f3ec0cae63941306e44c92dd569)
+        ;
+
+        
+    
+    
+            marker_60d8efb8072cd648353e2339a0078870.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 일과리 1303-8 대정읍 일과1리 대수동 경로당 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6db1aae201ee424c975dfdc10534c2e1 = L.marker(
+                [33.22728056, 126.2549641],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_d168ceeb88895fa854389bae5d03fb4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d777747c9a3ebe429345b994e38c87c = $(`<div id="html_8d777747c9a3ebe429345b994e38c87c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 1401-2 대정읍 한창기계<br>         <b>위도:</b> 33.22728056<br>         <b>경도:</b> 126.2549641     </div>     </div>`)[0];
+                popup_d168ceeb88895fa854389bae5d03fb4d.setContent(html_8d777747c9a3ebe429345b994e38c87c);
+            
+        
+
+        marker_6db1aae201ee424c975dfdc10534c2e1.bindPopup(popup_d168ceeb88895fa854389bae5d03fb4d)
+        ;
+
+        
+    
+    
+            marker_6db1aae201ee424c975dfdc10534c2e1.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 1401-2 대정읍 한창기계
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_70856abf389d07d6baa515ffec25707d = L.marker(
+                [33.29084242, 126.2823798],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_4169226707cbf310cf1b3c568a410aa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5529d5300311a0ca3ccf6012607e1abc = $(`<div id="html_5529d5300311a0ca3ccf6012607e1abc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 보성리 2403 대정읍 영어교육도시내A-20블럭<br>         <b>위도:</b> 33.29084242<br>         <b>경도:</b> 126.2823798     </div>     </div>`)[0];
+                popup_4169226707cbf310cf1b3c568a410aa2.setContent(html_5529d5300311a0ca3ccf6012607e1abc);
+            
+        
+
+        marker_70856abf389d07d6baa515ffec25707d.bindPopup(popup_4169226707cbf310cf1b3c568a410aa2)
+        ;
+
+        
+    
+    
+            marker_70856abf389d07d6baa515ffec25707d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 보성리 2403 대정읍 영어교육도시내A-20블럭
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0943ecf54709f394840523c2358e8117 = L.marker(
+                [33.29550289, 126.291665],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_eec84884ce47184018ebc7676d68b471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_117a49ea1b681695afd6fe98f994cbb9 = $(`<div id="html_117a49ea1b681695afd6fe98f994cbb9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 구억리 1101 대정읍 NLC스쿨 축구장 앞<br>         <b>위도:</b> 33.29550289<br>         <b>경도:</b> 126.291665     </div>     </div>`)[0];
+                popup_eec84884ce47184018ebc7676d68b471.setContent(html_117a49ea1b681695afd6fe98f994cbb9);
+            
+        
+
+        marker_0943ecf54709f394840523c2358e8117.bindPopup(popup_eec84884ce47184018ebc7676d68b471)
+        ;
+
+        
+    
+    
+            marker_0943ecf54709f394840523c2358e8117.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 구억리 1101 대정읍 NLC스쿨 축구장 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_02083e660e4c8af4ce87e4452bea5528 = L.marker(
+                [33.28130781, 126.275622],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_97a00c96eb51d950e012c6d0ae6b23df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5eeec89aa446504adce191f16efbd2 = $(`<div id="html_0c5eeec89aa446504adce191f16efbd2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 보성리 2445-6 대정읍 영어교육도시내 곶자왈<br>         <b>위도:</b> 33.28130781<br>         <b>경도:</b> 126.275622     </div>     </div>`)[0];
+                popup_97a00c96eb51d950e012c6d0ae6b23df.setContent(html_0c5eeec89aa446504adce191f16efbd2);
+            
+        
+
+        marker_02083e660e4c8af4ce87e4452bea5528.bindPopup(popup_97a00c96eb51d950e012c6d0ae6b23df)
+        ;
+
+        
+    
+    
+            marker_02083e660e4c8af4ce87e4452bea5528.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 보성리 2445-6 대정읍 영어교육도시내 곶자왈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dccdb35770f1535e4118d67b22752a8e = L.marker(
+                [33.21841556, 126.253044],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_ad93acb5a2ff3bd387112ad5f28c8139 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a40549ff8dd0c106e6db20079693cb4 = $(`<div id="html_5a40549ff8dd0c106e6db20079693cb4" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 765-7 대정읍 서부보건소<br>         <b>위도:</b> 33.21841556<br>         <b>경도:</b> 126.253044     </div>     </div>`)[0];
+                popup_ad93acb5a2ff3bd387112ad5f28c8139.setContent(html_5a40549ff8dd0c106e6db20079693cb4);
+            
+        
+
+        marker_dccdb35770f1535e4118d67b22752a8e.bindPopup(popup_ad93acb5a2ff3bd387112ad5f28c8139)
+        ;
+
+        
+    
+    
+            marker_dccdb35770f1535e4118d67b22752a8e.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 765-7 대정읍 서부보건소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_455edcd4f524d12b12f8ff73259e92a8 = L.marker(
+                [33.22464863, 126.2681201],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_92328e40e19e67ce9e769876473a6984 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3c687a9c6343275bb0297b5833f6fe4 = $(`<div id="html_c3c687a9c6343275bb0297b5833f6fe4" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 상모리 2669-3 대정읍 구연청사무실 옆<br>         <b>위도:</b> 33.22464863<br>         <b>경도:</b> 126.2681201     </div>     </div>`)[0];
+                popup_92328e40e19e67ce9e769876473a6984.setContent(html_c3c687a9c6343275bb0297b5833f6fe4);
+            
+        
+
+        marker_455edcd4f524d12b12f8ff73259e92a8.bindPopup(popup_92328e40e19e67ce9e769876473a6984)
+        ;
+
+        
+    
+    
+            marker_455edcd4f524d12b12f8ff73259e92a8.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 상모리 2669-3 대정읍 구연청사무실 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_435f8a79b6708034e72360d39c938f2d = L.marker(
+                [33.27690577, 126.2318774],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_719117b89d0e1090e3da7e1c1656315c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a68bd2f6f824363a86ee74ff01e7ee6b = $(`<div id="html_a68bd2f6f824363a86ee74ff01e7ee6b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 무릉리 1139-3 대정읍 한길밭 사거리<br>         <b>위도:</b> 33.27690577<br>         <b>경도:</b> 126.2318774     </div>     </div>`)[0];
+                popup_719117b89d0e1090e3da7e1c1656315c.setContent(html_a68bd2f6f824363a86ee74ff01e7ee6b);
+            
+        
+
+        marker_435f8a79b6708034e72360d39c938f2d.bindPopup(popup_719117b89d0e1090e3da7e1c1656315c)
+        ;
+
+        
+    
+    
+            marker_435f8a79b6708034e72360d39c938f2d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 무릉리 1139-3 대정읍 한길밭 사거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5190e1d5c908c68b555ba5750aa6300d = L.marker(
+                [33.22366383, 126.2480871],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_7c2173f502708fe298371da8c0c32ba0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_859a309d2d6c0ff019ef581074cf5535 = $(`<div id="html_859a309d2d6c0ff019ef581074cf5535" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 1173-1 대정읍 서부 복지관 주차장<br>         <b>위도:</b> 33.22366383<br>         <b>경도:</b> 126.2480871     </div>     </div>`)[0];
+                popup_7c2173f502708fe298371da8c0c32ba0.setContent(html_859a309d2d6c0ff019ef581074cf5535);
+            
+        
+
+        marker_5190e1d5c908c68b555ba5750aa6300d.bindPopup(popup_7c2173f502708fe298371da8c0c32ba0)
+        ;
+
+        
+    
+    
+            marker_5190e1d5c908c68b555ba5750aa6300d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 1173-1 대정읍 서부 복지관 주차장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21bffaf6389308422f7d61586ec02bd5 = L.marker(
+                [33.2350905, 126.2431539],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_b5edb0239b5df10073097b4ef54ee084 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef294443dde12eadfbbfd88273ae19bc = $(`<div id="html_ef294443dde12eadfbbfd88273ae19bc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 일과리 253-3 대정읍 다솜어린이집 위쪽<br>         <b>위도:</b> 33.2350905<br>         <b>경도:</b> 126.2431539     </div>     </div>`)[0];
+                popup_b5edb0239b5df10073097b4ef54ee084.setContent(html_ef294443dde12eadfbbfd88273ae19bc);
+            
+        
+
+        marker_21bffaf6389308422f7d61586ec02bd5.bindPopup(popup_b5edb0239b5df10073097b4ef54ee084)
+        ;
+
+        
+    
+    
+            marker_21bffaf6389308422f7d61586ec02bd5.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 일과리 253-3 대정읍 다솜어린이집 위쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec5c7e30eb633b33ecb84c1556554ff2 = L.marker(
+                [33.24798871, 126.2849458],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_9d6975f930e82d7dcc07f4e1f0d9a3d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e5eb45932266b3596965c018f3bcd38 = $(`<div id="html_4e5eb45932266b3596965c018f3bcd38" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 안성리 1561-2 대정읍 영오종합상사 아래 사거리<br>         <b>위도:</b> 33.24798871<br>         <b>경도:</b> 126.2849458     </div>     </div>`)[0];
+                popup_9d6975f930e82d7dcc07f4e1f0d9a3d0.setContent(html_4e5eb45932266b3596965c018f3bcd38);
+            
+        
+
+        marker_ec5c7e30eb633b33ecb84c1556554ff2.bindPopup(popup_9d6975f930e82d7dcc07f4e1f0d9a3d0)
+        ;
+
+        
+    
+    
+            marker_ec5c7e30eb633b33ecb84c1556554ff2.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 안성리 1561-2 대정읍 영오종합상사 아래 사거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_770414acef41fa0f16a524841f221437 = L.marker(
+                [33.23009652, 126.2531122],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_46df027de22950999d21e8c1d2cab4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_163c02d2e0133957ceee1f1e5e5db8b1 = $(`<div id="html_163c02d2e0133957ceee1f1e5e5db8b1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 1331-3 대정읍 남제주요양원<br>         <b>위도:</b> 33.23009652<br>         <b>경도:</b> 126.2531122     </div>     </div>`)[0];
+                popup_46df027de22950999d21e8c1d2cab4dc.setContent(html_163c02d2e0133957ceee1f1e5e5db8b1);
+            
+        
+
+        marker_770414acef41fa0f16a524841f221437.bindPopup(popup_46df027de22950999d21e8c1d2cab4dc)
+        ;
+
+        
+    
+    
+            marker_770414acef41fa0f16a524841f221437.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 1331-3 대정읍 남제주요양원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30d44786b535a2e61f408d0ce3d66cdd = L.marker(
+                [33.22231058, 126.2530631],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_7e58d166ee7dd0eac0e626d36584f9e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b8e9f8b1bd3bd64d36c2391416d6d89 = $(`<div id="html_5b8e9f8b1bd3bd64d36c2391416d6d89" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 하모리 909 대정읍 일번지가든<br>         <b>위도:</b> 33.22231058<br>         <b>경도:</b> 126.2530631     </div>     </div>`)[0];
+                popup_7e58d166ee7dd0eac0e626d36584f9e8.setContent(html_5b8e9f8b1bd3bd64d36c2391416d6d89);
+            
+        
+
+        marker_30d44786b535a2e61f408d0ce3d66cdd.bindPopup(popup_7e58d166ee7dd0eac0e626d36584f9e8)
+        ;
+
+        
+    
+    
+            marker_30d44786b535a2e61f408d0ce3d66cdd.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 하모리 909 대정읍 일번지가든
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c90ecf170241c2eca4ec42be8e86620 = L.marker(
+                [33.24599203, 126.2774031],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_fe31db8818fa3aefc4f96afca934cace = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7284da573b9df9acb4f8bc28dc8a7a89 = $(`<div id="html_7284da573b9df9acb4f8bc28dc8a7a89" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대정읍 인성리 373-1 대정읍 대정모텔 옆<br>         <b>위도:</b> 33.24599203<br>         <b>경도:</b> 126.2774031     </div>     </div>`)[0];
+                popup_fe31db8818fa3aefc4f96afca934cace.setContent(html_7284da573b9df9acb4f8bc28dc8a7a89);
+            
+        
+
+        marker_7c90ecf170241c2eca4ec42be8e86620.bindPopup(popup_fe31db8818fa3aefc4f96afca934cace)
+        ;
+
+        
+    
+    
+            marker_7c90ecf170241c2eca4ec42be8e86620.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대정읍 인성리 373-1 대정읍 대정모텔 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_901a211eab541220dc1597113c66fa60 = L.marker(
+                [33.22692347, 126.3003856],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_82d58a2ae971d9492a3249720c8bbb31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b3a990e69976e65d69e9093418760dd = $(`<div id="html_9b3a990e69976e65d69e9093418760dd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 2294-28 안덕면 제주해안펜션 앞<br>         <b>위도:</b> 33.22692347<br>         <b>경도:</b> 126.3003856     </div>     </div>`)[0];
+                popup_82d58a2ae971d9492a3249720c8bbb31.setContent(html_9b3a990e69976e65d69e9093418760dd);
+            
+        
+
+        marker_901a211eab541220dc1597113c66fa60.bindPopup(popup_82d58a2ae971d9492a3249720c8bbb31)
+        ;
+
+        
+    
+    
+            marker_901a211eab541220dc1597113c66fa60.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 2294-28 안덕면 제주해안펜션 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a2c5b59693375ec03fd84127bc2b2455 = L.marker(
+                [33.25319923, 126.327835],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_0649118d82be842b49730430a2ebb818 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be32ad15fc6cf805f9d66cfc2c523712 = $(`<div id="html_be32ad15fc6cf805f9d66cfc2c523712" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 2107 안덕면 문화마을 내<br>         <b>위도:</b> 33.25319923<br>         <b>경도:</b> 126.327835     </div>     </div>`)[0];
+                popup_0649118d82be842b49730430a2ebb818.setContent(html_be32ad15fc6cf805f9d66cfc2c523712);
+            
+        
+
+        marker_a2c5b59693375ec03fd84127bc2b2455.bindPopup(popup_0649118d82be842b49730430a2ebb818)
+        ;
+
+        
+    
+    
+            marker_a2c5b59693375ec03fd84127bc2b2455.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 2107 안덕면 문화마을 내
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3124beb00e7a88995cc4d579a1e1688f = L.marker(
+                [33.2463104, 126.3346352],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_4900d72cd35a006bb5b53c2f47c785f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b6daa8ee063e625c94215ee3d333e93 = $(`<div id="html_9b6daa8ee063e625c94215ee3d333e93" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 1069-5 안덕면 안덕우체국 옆<br>         <b>위도:</b> 33.2463104<br>         <b>경도:</b> 126.3346352     </div>     </div>`)[0];
+                popup_4900d72cd35a006bb5b53c2f47c785f2.setContent(html_9b6daa8ee063e625c94215ee3d333e93);
+            
+        
+
+        marker_3124beb00e7a88995cc4d579a1e1688f.bindPopup(popup_4900d72cd35a006bb5b53c2f47c785f2)
+        ;
+
+        
+    
+    
+            marker_3124beb00e7a88995cc4d579a1e1688f.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 1069-5 안덕면 안덕우체국 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_338fcfb2e2a2a88fecb97665c86c9897 = L.marker(
+                [33.2436244, 126.3360973],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_9218aeb2c002d9114ffb4a3f6d14eb64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55684cbb640782c472c38002261d4595 = $(`<div id="html_55684cbb640782c472c38002261d4595" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 363-3 안덕면 엘림피렌체<br>         <b>위도:</b> 33.2436244<br>         <b>경도:</b> 126.3360973     </div>     </div>`)[0];
+                popup_9218aeb2c002d9114ffb4a3f6d14eb64.setContent(html_55684cbb640782c472c38002261d4595);
+            
+        
+
+        marker_338fcfb2e2a2a88fecb97665c86c9897.bindPopup(popup_9218aeb2c002d9114ffb4a3f6d14eb64)
+        ;
+
+        
+    
+    
+            marker_338fcfb2e2a2a88fecb97665c86c9897.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 363-3 안덕면 엘림피렌체
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f57651eb3bb273becafd9dce2c95ad8 = L.marker(
+                [33.25167948, 126.3272427],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_8a8366361aed3e73375b16dd955a09f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01ddbcc8aac0632c82c582decc1ab22f = $(`<div id="html_01ddbcc8aac0632c82c582decc1ab22f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 1999 안덕면 안덕지역아동센터 옆 (장원동)<br>         <b>위도:</b> 33.25167948<br>         <b>경도:</b> 126.3272427     </div>     </div>`)[0];
+                popup_8a8366361aed3e73375b16dd955a09f7.setContent(html_01ddbcc8aac0632c82c582decc1ab22f);
+            
+        
+
+        marker_8f57651eb3bb273becafd9dce2c95ad8.bindPopup(popup_8a8366361aed3e73375b16dd955a09f7)
+        ;
+
+        
+    
+    
+            marker_8f57651eb3bb273becafd9dce2c95ad8.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 1999 안덕면 안덕지역아동센터 옆 (장원동)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b307c3c4b3daaccf1a4e8d1db08835d8 = L.marker(
+                [33.24030165, 126.3376888],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_99c3656908850996ad883192ef770678 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9c880678274f43c90cf825943e73c17 = $(`<div id="html_a9c880678274f43c90cf825943e73c17" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 763-4 안덕면 소라민박 옆<br>         <b>위도:</b> 33.24030165<br>         <b>경도:</b> 126.3376888     </div>     </div>`)[0];
+                popup_99c3656908850996ad883192ef770678.setContent(html_a9c880678274f43c90cf825943e73c17);
+            
+        
+
+        marker_b307c3c4b3daaccf1a4e8d1db08835d8.bindPopup(popup_99c3656908850996ad883192ef770678)
+        ;
+
+        
+    
+    
+            marker_b307c3c4b3daaccf1a4e8d1db08835d8.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 763-4 안덕면 소라민박 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d63dd8aa45e60c7bcb1dfb573a8143c6 = L.marker(
+                [33.23353202, 126.3113275],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_7f75372b42b6c7afb2b3fcc549d29570 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ca853d4af73a17fe9560158a2a87cd9 = $(`<div id="html_2ca853d4af73a17fe9560158a2a87cd9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 116-4 안덕면 용머리 공영주차장 입구<br>         <b>위도:</b> 33.23353202<br>         <b>경도:</b> 126.3113275     </div>     </div>`)[0];
+                popup_7f75372b42b6c7afb2b3fcc549d29570.setContent(html_2ca853d4af73a17fe9560158a2a87cd9);
+            
+        
+
+        marker_d63dd8aa45e60c7bcb1dfb573a8143c6.bindPopup(popup_7f75372b42b6c7afb2b3fcc549d29570)
+        ;
+
+        
+    
+    
+            marker_d63dd8aa45e60c7bcb1dfb573a8143c6.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 116-4 안덕면 용머리 공영주차장 입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83e8ebaf476d3751aacb84d71c7530bb = L.marker(
+                [33.22806462, 126.3053947],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_c7b81b9e6a5ac718404fc7b448f7c827 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4972dcc10f1f120fedce0cc53b69e5d = $(`<div id="html_b4972dcc10f1f120fedce0cc53b69e5d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 2147-32 안덕면 사계포구<br>         <b>위도:</b> 33.22806462<br>         <b>경도:</b> 126.3053947     </div>     </div>`)[0];
+                popup_c7b81b9e6a5ac718404fc7b448f7c827.setContent(html_b4972dcc10f1f120fedce0cc53b69e5d);
+            
+        
+
+        marker_83e8ebaf476d3751aacb84d71c7530bb.bindPopup(popup_c7b81b9e6a5ac718404fc7b448f7c827)
+        ;
+
+        
+    
+    
+            marker_83e8ebaf476d3751aacb84d71c7530bb.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 2147-32 안덕면 사계포구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e77d37deee0cff0333b5a21e47f653a = L.marker(
+                [33.30850411, 126.3355593],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_504d57251fcc97b7d7ccf64b30a0b0fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e7f119bbcbe1ddefdbee6bca996aa95 = $(`<div id="html_8e7f119bbcbe1ddefdbee6bca996aa95" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 동광리 958-1 안덕면 동광 생활체육관<br>         <b>위도:</b> 33.30850411<br>         <b>경도:</b> 126.3355593     </div>     </div>`)[0];
+                popup_504d57251fcc97b7d7ccf64b30a0b0fa.setContent(html_8e7f119bbcbe1ddefdbee6bca996aa95);
+            
+        
+
+        marker_2e77d37deee0cff0333b5a21e47f653a.bindPopup(popup_504d57251fcc97b7d7ccf64b30a0b0fa)
+        ;
+
+        
+    
+    
+            marker_2e77d37deee0cff0333b5a21e47f653a.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 동광리 958-1 안덕면 동광 생활체육관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_623d5aac558e501566a683573488d125 = L.marker(
+                [33.30495009, 126.3381177],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_0467719672140e075891df5003395f29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecd329969a7e59b76a5383a96dd69f67 = $(`<div id="html_ecd329969a7e59b76a5383a96dd69f67" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 동광리 1590 안덕면 동광 해바른 작은도서관<br>         <b>위도:</b> 33.30495009<br>         <b>경도:</b> 126.3381177     </div>     </div>`)[0];
+                popup_0467719672140e075891df5003395f29.setContent(html_ecd329969a7e59b76a5383a96dd69f67);
+            
+        
+
+        marker_623d5aac558e501566a683573488d125.bindPopup(popup_0467719672140e075891df5003395f29)
+        ;
+
+        
+    
+    
+            marker_623d5aac558e501566a683573488d125.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 동광리 1590 안덕면 동광 해바른 작은도서관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a06385c00028abb4ec46b39f5f60350 = L.marker(
+                [33.31343052, 126.3595939],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_5da95afe9cdfd1f3803719c3362c1983 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af7d27b3db366222ed291cbd97de6e28 = $(`<div id="html_af7d27b3db366222ed291cbd97de6e28" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 동광리 5-157 안덕면 동광단지경로당<br>         <b>위도:</b> 33.31343052<br>         <b>경도:</b> 126.3595939     </div>     </div>`)[0];
+                popup_5da95afe9cdfd1f3803719c3362c1983.setContent(html_af7d27b3db366222ed291cbd97de6e28);
+            
+        
+
+        marker_9a06385c00028abb4ec46b39f5f60350.bindPopup(popup_5da95afe9cdfd1f3803719c3362c1983)
+        ;
+
+        
+    
+    
+            marker_9a06385c00028abb4ec46b39f5f60350.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 동광리 5-157 안덕면 동광단지경로당
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_15c39cbb1199c88916bb5c12412092c8 = L.marker(
+                [33.28772267, 126.3293201],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_18e9fedd5122bfa04d69c998592838d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b78c824ecbd6d5e41fde541d82a8ed9 = $(`<div id="html_7b78c824ecbd6d5e41fde541d82a8ed9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 서광리 324-3 안덕면 서광동리 새마을회관<br>         <b>위도:</b> 33.28772267<br>         <b>경도:</b> 126.3293201     </div>     </div>`)[0];
+                popup_18e9fedd5122bfa04d69c998592838d6.setContent(html_7b78c824ecbd6d5e41fde541d82a8ed9);
+            
+        
+
+        marker_15c39cbb1199c88916bb5c12412092c8.bindPopup(popup_18e9fedd5122bfa04d69c998592838d6)
+        ;
+
+        
+    
+    
+            marker_15c39cbb1199c88916bb5c12412092c8.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 서광리 324-3 안덕면 서광동리 새마을회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3284dfc40349eaa7212d8895dd14b046 = L.marker(
+                [33.28725449, 126.3268488],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_8e97ee16fadd2900c9e132e3b9781e5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6af664fc3c0cd0460f339103fc35bd3 = $(`<div id="html_e6af664fc3c0cd0460f339103fc35bd3" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 서광리 315-2 안덕면 서광초등학교 앞<br>         <b>위도:</b> 33.28725449<br>         <b>경도:</b> 126.3268488     </div>     </div>`)[0];
+                popup_8e97ee16fadd2900c9e132e3b9781e5a.setContent(html_e6af664fc3c0cd0460f339103fc35bd3);
+            
+        
+
+        marker_3284dfc40349eaa7212d8895dd14b046.bindPopup(popup_8e97ee16fadd2900c9e132e3b9781e5a)
+        ;
+
+        
+    
+    
+            marker_3284dfc40349eaa7212d8895dd14b046.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 서광리 315-2 안덕면 서광초등학교 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b0ccadd2d2f4a0950d454206a5c33790 = L.marker(
+                [33.30751672, 126.3816514],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_aa8612d63685d7fd489b1dda2ce548fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf6094680827eaadcf0ce0a171352c27 = $(`<div id="html_bf6094680827eaadcf0ce0a171352c27" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 상천리 470-2 안덕면 상천2교 남쪽(구 상천분교 옆)<br>         <b>위도:</b> 33.30751672<br>         <b>경도:</b> 126.3816514     </div>     </div>`)[0];
+                popup_aa8612d63685d7fd489b1dda2ce548fc.setContent(html_bf6094680827eaadcf0ce0a171352c27);
+            
+        
+
+        marker_b0ccadd2d2f4a0950d454206a5c33790.bindPopup(popup_aa8612d63685d7fd489b1dda2ce548fc)
+        ;
+
+        
+    
+    
+            marker_b0ccadd2d2f4a0950d454206a5c33790.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 상천리 470-2 안덕면 상천2교 남쪽(구 상천분교 옆)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8156a95c985d8fdc78cabb9a26d0df7f = L.marker(
+                [33.23833093, 126.365889],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_3010ff36f476a9180cef28ac973e6f17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cbeef245a2685cb850313c7b8081bbd = $(`<div id="html_2cbeef245a2685cb850313c7b8081bbd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 930-4 안덕면 대평리사무소 앞<br>         <b>위도:</b> 33.23833093<br>         <b>경도:</b> 126.365889     </div>     </div>`)[0];
+                popup_3010ff36f476a9180cef28ac973e6f17.setContent(html_2cbeef245a2685cb850313c7b8081bbd);
+            
+        
+
+        marker_8156a95c985d8fdc78cabb9a26d0df7f.bindPopup(popup_3010ff36f476a9180cef28ac973e6f17)
+        ;
+
+        
+    
+    
+            marker_8156a95c985d8fdc78cabb9a26d0df7f.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 930-4 안덕면 대평리사무소 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bca13de66b8f0663e328456c18bbd4a4 = L.marker(
+                [33.26455256, 126.370295],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_33846e384c34c678e5b08fe1388504da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa79bd83006d54237fdff1fec9354ed1 = $(`<div id="html_fa79bd83006d54237fdff1fec9354ed1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 160 안덕면 춘심이네 뒷(농협창고)<br>         <b>위도:</b> 33.26455256<br>         <b>경도:</b> 126.370295     </div>     </div>`)[0];
+                popup_33846e384c34c678e5b08fe1388504da.setContent(html_fa79bd83006d54237fdff1fec9354ed1);
+            
+        
+
+        marker_bca13de66b8f0663e328456c18bbd4a4.bindPopup(popup_33846e384c34c678e5b08fe1388504da)
+        ;
+
+        
+    
+    
+            marker_bca13de66b8f0663e328456c18bbd4a4.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 160 안덕면 춘심이네 뒷(농협창고)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff5b85f159a194c6ea4bba2e68c91bec = L.marker(
+                [33.26736018, 126.3691999],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_da2c6652c809edaf388b8a2c81f3a0ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_baa7ef121a300a805046d06572eac636 = $(`<div id="html_baa7ef121a300a805046d06572eac636" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 106-4 안덕면 건강관리실<br>         <b>위도:</b> 33.26736018<br>         <b>경도:</b> 126.3691999     </div>     </div>`)[0];
+                popup_da2c6652c809edaf388b8a2c81f3a0ab.setContent(html_baa7ef121a300a805046d06572eac636);
+            
+        
+
+        marker_ff5b85f159a194c6ea4bba2e68c91bec.bindPopup(popup_da2c6652c809edaf388b8a2c81f3a0ab)
+        ;
+
+        
+    
+    
+            marker_ff5b85f159a194c6ea4bba2e68c91bec.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 106-4 안덕면 건강관리실
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7605c426d29b57494c03fba29d1da7cf = L.marker(
+                [33.26271779, 126.3664873],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_252072ac34fce7e78ade857cf95ae644 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_303b742f70891e88a2a66a8722edc2df = $(`<div id="html_303b742f70891e88a2a66a8722edc2df" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 380-1 안덕면 서부락<br>         <b>위도:</b> 33.26271779<br>         <b>경도:</b> 126.3664873     </div>     </div>`)[0];
+                popup_252072ac34fce7e78ade857cf95ae644.setContent(html_303b742f70891e88a2a66a8722edc2df);
+            
+        
+
+        marker_7605c426d29b57494c03fba29d1da7cf.bindPopup(popup_252072ac34fce7e78ade857cf95ae644)
+        ;
+
+        
+    
+    
+            marker_7605c426d29b57494c03fba29d1da7cf.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 380-1 안덕면 서부락
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_05c283cadb09643b5c22700d3273b315 = L.marker(
+                [33.28286849, 126.2979504],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_4a34772c728f73659a39f34183afcb2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a25fc527a5049101cc263ae35e39a8ef = $(`<div id="html_a25fc527a5049101cc263ae35e39a8ef" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 서광리 2051-2 안덕면 서광-구억 경계 (서광기계 북쪽)<br>         <b>위도:</b> 33.28286849<br>         <b>경도:</b> 126.2979504     </div>     </div>`)[0];
+                popup_4a34772c728f73659a39f34183afcb2e.setContent(html_a25fc527a5049101cc263ae35e39a8ef);
+            
+        
+
+        marker_05c283cadb09643b5c22700d3273b315.bindPopup(popup_4a34772c728f73659a39f34183afcb2e)
+        ;
+
+        
+    
+    
+            marker_05c283cadb09643b5c22700d3273b315.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 서광리 2051-2 안덕면 서광-구억 경계 (서광기계 북쪽)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a4d12049f638b1c9c398e86457412ee = L.marker(
+                [33.27200881, 126.3654986],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_9a505be43334651a9392aeb15748b56d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2206a1d4c42d1d357bb4ffb42126730 = $(`<div id="html_c2206a1d4c42d1d357bb4ffb42126730" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 상창리 650-6 안덕면 상창리사무소 입구<br>         <b>위도:</b> 33.27200881<br>         <b>경도:</b> 126.3654986     </div>     </div>`)[0];
+                popup_9a505be43334651a9392aeb15748b56d.setContent(html_c2206a1d4c42d1d357bb4ffb42126730);
+            
+        
+
+        marker_3a4d12049f638b1c9c398e86457412ee.bindPopup(popup_9a505be43334651a9392aeb15748b56d)
+        ;
+
+        
+    
+    
+            marker_3a4d12049f638b1c9c398e86457412ee.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 상창리 650-6 안덕면 상창리사무소 입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b0d81cc9aab6e473f489b539d4aaa2d = L.marker(
+                [33.27402061, 126.3627587],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_5834c625bd2bd613242d37e4afdafee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b9e7abf029d19f4385bb48da7f71f3c = $(`<div id="html_3b9e7abf029d19f4385bb48da7f71f3c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 상창리 621 안덕면 상창리보건진료소 남쪽<br>         <b>위도:</b> 33.27402061<br>         <b>경도:</b> 126.3627587     </div>     </div>`)[0];
+                popup_5834c625bd2bd613242d37e4afdafee0.setContent(html_3b9e7abf029d19f4385bb48da7f71f3c);
+            
+        
+
+        marker_1b0d81cc9aab6e473f489b539d4aaa2d.bindPopup(popup_5834c625bd2bd613242d37e4afdafee0)
+        ;
+
+        
+    
+    
+            marker_1b0d81cc9aab6e473f489b539d4aaa2d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 상창리 621 안덕면 상창리보건진료소 남쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_01e264819cf745735be727b4d62a68c2 = L.marker(
+                [33.25430946, 126.311252],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_ce15bae191dffeae610c34167c42b58c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_614701c198231ae63b98f86ec9e9d4b0 = $(`<div id="html_614701c198231ae63b98f86ec9e9d4b0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 덕수리 792-3 안덕면 동부락<br>         <b>위도:</b> 33.25430946<br>         <b>경도:</b> 126.311252     </div>     </div>`)[0];
+                popup_ce15bae191dffeae610c34167c42b58c.setContent(html_614701c198231ae63b98f86ec9e9d4b0);
+            
+        
+
+        marker_01e264819cf745735be727b4d62a68c2.bindPopup(popup_ce15bae191dffeae610c34167c42b58c)
+        ;
+
+        
+    
+    
+            marker_01e264819cf745735be727b4d62a68c2.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 덕수리 792-3 안덕면 동부락
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3620ffc11f018357dce21ca9c080809d = L.marker(
+                [33.27824435, 126.3139042],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_a364bbc0ca99f230503b05b1f509dc92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb339d6fc9d014e441554b009229a118 = $(`<div id="html_fb339d6fc9d014e441554b009229a118" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 덕수리 1474 안덕면 신신펜션<br>         <b>위도:</b> 33.27824435<br>         <b>경도:</b> 126.3139042     </div>     </div>`)[0];
+                popup_a364bbc0ca99f230503b05b1f509dc92.setContent(html_fb339d6fc9d014e441554b009229a118);
+            
+        
+
+        marker_3620ffc11f018357dce21ca9c080809d.bindPopup(popup_a364bbc0ca99f230503b05b1f509dc92)
+        ;
+
+        
+    
+    
+            marker_3620ffc11f018357dce21ca9c080809d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 덕수리 1474 안덕면 신신펜션
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a56c818ae2b8b9f6fe9642afd899bd46 = L.marker(
+                [33.23519843, 126.367138],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_a9345547fdae3e081978b20e0972ad4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f9ed45ec52e3be3ce7f1c0a136f523e = $(`<div id="html_3f9ed45ec52e3be3ce7f1c0a136f523e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 777-11 안덕면 대평 버스정류장<br>         <b>위도:</b> 33.23519843<br>         <b>경도:</b> 126.367138     </div>     </div>`)[0];
+                popup_a9345547fdae3e081978b20e0972ad4d.setContent(html_3f9ed45ec52e3be3ce7f1c0a136f523e);
+            
+        
+
+        marker_a56c818ae2b8b9f6fe9642afd899bd46.bindPopup(popup_a9345547fdae3e081978b20e0972ad4d)
+        ;
+
+        
+    
+    
+            marker_a56c818ae2b8b9f6fe9642afd899bd46.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 777-11 안덕면 대평 버스정류장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e05e7178e7f9b810d727f135162b550a = L.marker(
+                [33.26465594, 126.3466935],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_e63d05137a38459be5ff493fcee0e17a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d687301d8497444ac0914438aaf3c9c = $(`<div id="html_1d687301d8497444ac0914438aaf3c9c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 상창리 2449-4 안덕면 상창 신남밭<br>         <b>위도:</b> 33.26465594<br>         <b>경도:</b> 126.3466935     </div>     </div>`)[0];
+                popup_e63d05137a38459be5ff493fcee0e17a.setContent(html_1d687301d8497444ac0914438aaf3c9c);
+            
+        
+
+        marker_e05e7178e7f9b810d727f135162b550a.bindPopup(popup_e63d05137a38459be5ff493fcee0e17a)
+        ;
+
+        
+    
+    
+            marker_e05e7178e7f9b810d727f135162b550a.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 상창리 2449-4 안덕면 상창 신남밭
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_af42af8ff86156cfc18d1b37b85c5ba3 = L.marker(
+                [33.25736286, 126.3494599],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_de9c49e9367aa511c37399fc3c253066 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3511f5b3a3f961dce4c3ed5ebc51c319 = $(`<div id="html_3511f5b3a3f961dce4c3ed5ebc51c319" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 감산리 1508-1 안덕면 우리가든 옆<br>         <b>위도:</b> 33.25736286<br>         <b>경도:</b> 126.3494599     </div>     </div>`)[0];
+                popup_de9c49e9367aa511c37399fc3c253066.setContent(html_3511f5b3a3f961dce4c3ed5ebc51c319);
+            
+        
+
+        marker_af42af8ff86156cfc18d1b37b85c5ba3.bindPopup(popup_de9c49e9367aa511c37399fc3c253066)
+        ;
+
+        
+    
+    
+            marker_af42af8ff86156cfc18d1b37b85c5ba3.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 감산리 1508-1 안덕면 우리가든 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a26f467082ccdf82800ce214fcc6517 = L.marker(
+                [33.25588576, 126.3516124],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_450f711da00341cb8167e1e3a43b6b11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_361fa2f8310b6226a5ece00349e037b7 = $(`<div id="html_361fa2f8310b6226a5ece00349e037b7" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 감산리 439-3 안덕면 안덕계곡서쪽<br>         <b>위도:</b> 33.25588576<br>         <b>경도:</b> 126.3516124     </div>     </div>`)[0];
+                popup_450f711da00341cb8167e1e3a43b6b11.setContent(html_361fa2f8310b6226a5ece00349e037b7);
+            
+        
+
+        marker_1a26f467082ccdf82800ce214fcc6517.bindPopup(popup_450f711da00341cb8167e1e3a43b6b11)
+        ;
+
+        
+    
+    
+            marker_1a26f467082ccdf82800ce214fcc6517.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 감산리 439-3 안덕면 안덕계곡서쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39f853aaf1896df0802dcf77f3eb3b31 = L.marker(
+                [33.235698, 126.3682765],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_1682ccda6ee5e14686fa1f7e6cf6fb05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e51edade58cebf588cbfcf6d1760fc90 = $(`<div id="html_e51edade58cebf588cbfcf6d1760fc90" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 창천리 771-2 안덕면 대평 소기왓로<br>         <b>위도:</b> 33.235698<br>         <b>경도:</b> 126.3682765     </div>     </div>`)[0];
+                popup_1682ccda6ee5e14686fa1f7e6cf6fb05.setContent(html_e51edade58cebf588cbfcf6d1760fc90);
+            
+        
+
+        marker_39f853aaf1896df0802dcf77f3eb3b31.bindPopup(popup_1682ccda6ee5e14686fa1f7e6cf6fb05)
+        ;
+
+        
+    
+    
+            marker_39f853aaf1896df0802dcf77f3eb3b31.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 창천리 771-2 안덕면 대평 소기왓로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e3a2acf1979fafa7b74bfed20dd135be = L.marker(
+                [33.23300715, 126.3014405],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_8e99177454440b1da8feef1fe954c32f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_426ecc0da84c0005ee9f887482fd3847 = $(`<div id="html_426ecc0da84c0005ee9f887482fd3847" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 1838-2 안덕면 산방복지회관<br>         <b>위도:</b> 33.23300715<br>         <b>경도:</b> 126.3014405     </div>     </div>`)[0];
+                popup_8e99177454440b1da8feef1fe954c32f.setContent(html_426ecc0da84c0005ee9f887482fd3847);
+            
+        
+
+        marker_e3a2acf1979fafa7b74bfed20dd135be.bindPopup(popup_8e99177454440b1da8feef1fe954c32f)
+        ;
+
+        
+    
+    
+            marker_e3a2acf1979fafa7b74bfed20dd135be.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 1838-2 안덕면 산방복지회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e5de8e6bfcbd04f27a5d7cd05da1788c = L.marker(
+                [33.26165739, 126.3517294],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_ffd6b0f491b701214c0b658ca05d8ad5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_712d721f6fa7aa71997e4b2a23ffa1c2 = $(`<div id="html_712d721f6fa7aa71997e4b2a23ffa1c2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 상창리 1560 안덕면 통물(감산리)<br>         <b>위도:</b> 33.26165739<br>         <b>경도:</b> 126.3517294     </div>     </div>`)[0];
+                popup_ffd6b0f491b701214c0b658ca05d8ad5.setContent(html_712d721f6fa7aa71997e4b2a23ffa1c2);
+            
+        
+
+        marker_e5de8e6bfcbd04f27a5d7cd05da1788c.bindPopup(popup_ffd6b0f491b701214c0b658ca05d8ad5)
+        ;
+
+        
+    
+    
+            marker_e5de8e6bfcbd04f27a5d7cd05da1788c.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 상창리 1560 안덕면 통물(감산리)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e469e8d7e22122d1c044457d717bf42c = L.marker(
+                [33.25041053, 126.3225706],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_762147d89158e2b83c1f7d3c5c432cd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23d03eaa1c0c6c91071f7fc04ec2a149 = $(`<div id="html_23d03eaa1c0c6c91071f7fc04ec2a149" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 3602 안덕면 신항동(조각공원 맞은편)<br>         <b>위도:</b> 33.25041053<br>         <b>경도:</b> 126.3225706     </div>     </div>`)[0];
+                popup_762147d89158e2b83c1f7d3c5c432cd0.setContent(html_23d03eaa1c0c6c91071f7fc04ec2a149);
+            
+        
+
+        marker_e469e8d7e22122d1c044457d717bf42c.bindPopup(popup_762147d89158e2b83c1f7d3c5c432cd0)
+        ;
+
+        
+    
+    
+            marker_e469e8d7e22122d1c044457d717bf42c.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 3602 안덕면 신항동(조각공원 맞은편)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2009debb513e4ae07740c7401f04daa0 = L.marker(
+                [33.22936542, 126.2932454],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_411f9a46e55a44cb03dace17f62b2c4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1393a83b28254737ea882392b1c1ba0 = $(`<div id="html_f1393a83b28254737ea882392b1c1ba0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 사계리 2449 안덕면 하상못<br>         <b>위도:</b> 33.22936542<br>         <b>경도:</b> 126.2932454     </div>     </div>`)[0];
+                popup_411f9a46e55a44cb03dace17f62b2c4e.setContent(html_f1393a83b28254737ea882392b1c1ba0);
+            
+        
+
+        marker_2009debb513e4ae07740c7401f04daa0.bindPopup(popup_411f9a46e55a44cb03dace17f62b2c4e)
+        ;
+
+        
+    
+    
+            marker_2009debb513e4ae07740c7401f04daa0.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 사계리 2449 안덕면 하상못
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47ff11991f9b813ef3b25884febcaea3 = L.marker(
+                [33.28516625, 126.3024786],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_f2db889f1a96669ce55acc2362a7f67f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_597b1183929532f1259f492bf9a25b0e = $(`<div id="html_597b1183929532f1259f492bf9a25b0e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 서광리 2165-5 안덕면 서광서리 복지회관<br>         <b>위도:</b> 33.28516625<br>         <b>경도:</b> 126.3024786     </div>     </div>`)[0];
+                popup_f2db889f1a96669ce55acc2362a7f67f.setContent(html_597b1183929532f1259f492bf9a25b0e);
+            
+        
+
+        marker_47ff11991f9b813ef3b25884febcaea3.bindPopup(popup_f2db889f1a96669ce55acc2362a7f67f)
+        ;
+
+        
+    
+    
+            marker_47ff11991f9b813ef3b25884febcaea3.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 서광리 2165-5 안덕면 서광서리 복지회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4fab9d5f8be8f813e17f099fa196c69a = L.marker(
+                [33.25059165, 126.3345434],
+                {
+}
+            ).addTo(marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4);
+        
+    
+        var popup_cae355c9fa6476d74ca969cf17f2c7e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c97d37a4e63494f1346fcfd512284eec = $(`<div id="html_c97d37a4e63494f1346fcfd512284eec" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 안덕면 화순리 1141-1 안덕면 안덕 초등학교 북쪽<br>         <b>위도:</b> 33.25059165<br>         <b>경도:</b> 126.3345434     </div>     </div>`)[0];
+                popup_cae355c9fa6476d74ca969cf17f2c7e3.setContent(html_c97d37a4e63494f1346fcfd512284eec);
+            
+        
+
+        marker_4fab9d5f8be8f813e17f099fa196c69a.bindPopup(popup_cae355c9fa6476d74ca969cf17f2c7e3)
+        ;
+
+        
+    
+    
+            marker_4fab9d5f8be8f813e17f099fa196c69a.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 안덕면 화순리 1141-1 안덕면 안덕 초등학교 북쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_fbb3f9e9e321a1dffb16be38639b5bf4.addTo(map_3763b97ccd8343d490a31a6dde2961ef);
+        
+</script>
+</html>

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0719ff66bd99804a0c0c6a896aa12900 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0719ff66bd99804a0c0c6a896aa12900" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0719ff66bd99804a0c0c6a896aa12900 = L.map(
+                "map_0719ff66bd99804a0c0c6a896aa12900",
+                {
+                    center: [33.309378, 126.441323],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf20d026649de7bb124bebbd2f5d5988 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bf20d026649de7bb124bebbd2f5d5988.addTo(map_0719ff66bd99804a0c0c6a896aa12900);
+        
+    
+            var marker_cluster_f1a54ca39c29687b83430f34f260a5b5 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_0c87579e0d8b23a69839e8bac13b2617 = L.marker(
+                [33.25736912, 126.4251058],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_ab9b0baacc71cf8ea90605910556d634 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fda994ba932a7f539565851bcb5d762 = $(`<div id="html_1fda994ba932a7f539565851bcb5d762" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중문동 1454 중문동 솔빛바다빌라 앞 (까사 올리브)<br>         <b>위도:</b> 33.25736912<br>         <b>경도:</b> 126.4251058     </div>     </div>`)[0];
+                popup_ab9b0baacc71cf8ea90605910556d634.setContent(html_1fda994ba932a7f539565851bcb5d762);
+            
+        
+
+        marker_0c87579e0d8b23a69839e8bac13b2617.bindPopup(popup_ab9b0baacc71cf8ea90605910556d634)
+        ;
+
+        
+    
+    
+            marker_0c87579e0d8b23a69839e8bac13b2617.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중문동 1454 중문동 솔빛바다빌라 앞 (까사 올리브)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c51228535e8d951a78f45e4125d48ee = L.marker(
+                [33.2572068, 126.4238597],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_ab6bb70231cab5b44c59847b3e73a155 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e31bd7a8d0d603a8206ec4131b12bb95 = $(`<div id="html_e31bd7a8d0d603a8206ec4131b12bb95" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중문동 1543-1 중문동 하우스 더 부자<br>         <b>위도:</b> 33.2572068<br>         <b>경도:</b> 126.4238597     </div>     </div>`)[0];
+                popup_ab6bb70231cab5b44c59847b3e73a155.setContent(html_e31bd7a8d0d603a8206ec4131b12bb95);
+            
+        
+
+        marker_0c51228535e8d951a78f45e4125d48ee.bindPopup(popup_ab6bb70231cab5b44c59847b3e73a155)
+        ;
+
+        
+    
+    
+            marker_0c51228535e8d951a78f45e4125d48ee.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중문동 1543-1 중문동 하우스 더 부자
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_715641e702fee8694c5dd633d22b7034 = L.marker(
+                [33.25476847, 126.4269057],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_1651da736bb3a8c1319a156595022d4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46da11744a5c849e630a62b8083dbac0 = $(`<div id="html_46da11744a5c849e630a62b8083dbac0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중문동 1684-2 중문동 슬기샘어린이집 입구<br>         <b>위도:</b> 33.25476847<br>         <b>경도:</b> 126.4269057     </div>     </div>`)[0];
+                popup_1651da736bb3a8c1319a156595022d4d.setContent(html_46da11744a5c849e630a62b8083dbac0);
+            
+        
+
+        marker_715641e702fee8694c5dd633d22b7034.bindPopup(popup_1651da736bb3a8c1319a156595022d4d)
+        ;
+
+        
+    
+    
+            marker_715641e702fee8694c5dd633d22b7034.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중문동 1684-2 중문동 슬기샘어린이집 입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e40ef30c0e289e925b5e077f53de73b = L.marker(
+                [33.25149114, 126.422977],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_4b44cdbe45c5f4bd5fc3c91fa063ddfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf083d8eaba6accc26f0bad40b7cf3d7 = $(`<div id="html_bf083d8eaba6accc26f0bad40b7cf3d7" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중문동 2116-4 중문동 우체국사거리 앞<br>         <b>위도:</b> 33.25149114<br>         <b>경도:</b> 126.422977     </div>     </div>`)[0];
+                popup_4b44cdbe45c5f4bd5fc3c91fa063ddfb.setContent(html_bf083d8eaba6accc26f0bad40b7cf3d7);
+            
+        
+
+        marker_2e40ef30c0e289e925b5e077f53de73b.bindPopup(popup_4b44cdbe45c5f4bd5fc3c91fa063ddfb)
+        ;
+
+        
+    
+    
+            marker_2e40ef30c0e289e925b5e077f53de73b.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중문동 2116-4 중문동 우체국사거리 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d397bc3f9ebf8998c4520de299e62890 = L.marker(
+                [33.25031853, 126.4264961],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_7b9199e8c65083b4ff7462308369bd46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acce537052f4de9402957574d8745e08 = $(`<div id="html_acce537052f4de9402957574d8745e08" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중문동 2036 중문동 타운하우스 앞<br>         <b>위도:</b> 33.25031853<br>         <b>경도:</b> 126.4264961     </div>     </div>`)[0];
+                popup_7b9199e8c65083b4ff7462308369bd46.setContent(html_acce537052f4de9402957574d8745e08);
+            
+        
+
+        marker_d397bc3f9ebf8998c4520de299e62890.bindPopup(popup_7b9199e8c65083b4ff7462308369bd46)
+        ;
+
+        
+    
+    
+            marker_d397bc3f9ebf8998c4520de299e62890.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중문동 2036 중문동 타운하우스 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c74a900d88860e8cb58a8b1eda0b2b74 = L.marker(
+                [33.24688887, 126.4326414],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_bd302e093f0d38ef6dd98c02ac313589 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9084da0634ed19c4e5cecadfee1215f5 = $(`<div id="html_9084da0634ed19c4e5cecadfee1215f5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대포동 778 중문동 동산낚시 앞<br>         <b>위도:</b> 33.24688887<br>         <b>경도:</b> 126.4326414     </div>     </div>`)[0];
+                popup_bd302e093f0d38ef6dd98c02ac313589.setContent(html_9084da0634ed19c4e5cecadfee1215f5);
+            
+        
+
+        marker_c74a900d88860e8cb58a8b1eda0b2b74.bindPopup(popup_bd302e093f0d38ef6dd98c02ac313589)
+        ;
+
+        
+    
+    
+            marker_c74a900d88860e8cb58a8b1eda0b2b74.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대포동 778 중문동 동산낚시 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_33ba7d9485759d8178e1e87eac191ca0 = L.marker(
+                [33.24291534, 126.4320044],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_6a74d90d45adbff30c5609afde079c23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8bf31632f85e323795fe91276bf2ebd = $(`<div id="html_a8bf31632f85e323795fe91276bf2ebd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대포동 1598-4 중문동 대포마을회관 앞<br>         <b>위도:</b> 33.24291534<br>         <b>경도:</b> 126.4320044     </div>     </div>`)[0];
+                popup_6a74d90d45adbff30c5609afde079c23.setContent(html_a8bf31632f85e323795fe91276bf2ebd);
+            
+        
+
+        marker_33ba7d9485759d8178e1e87eac191ca0.bindPopup(popup_6a74d90d45adbff30c5609afde079c23)
+        ;
+
+        
+    
+    
+            marker_33ba7d9485759d8178e1e87eac191ca0.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대포동 1598-4 중문동 대포마을회관 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87e583940a5109a307666d5e82fae000 = L.marker(
+                [33.23975533, 126.4317708],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_6a332d2ba848ad892e28adbb98a6ad64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f6001627066ab77606fa036e483f338 = $(`<div id="html_0f6001627066ab77606fa036e483f338" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 대포동 1908-3 중문동 보우힐 (소공원)<br>         <b>위도:</b> 33.23975533<br>         <b>경도:</b> 126.4317708     </div>     </div>`)[0];
+                popup_6a332d2ba848ad892e28adbb98a6ad64.setContent(html_0f6001627066ab77606fa036e483f338);
+            
+        
+
+        marker_87e583940a5109a307666d5e82fae000.bindPopup(popup_6a332d2ba848ad892e28adbb98a6ad64)
+        ;
+
+        
+    
+    
+            marker_87e583940a5109a307666d5e82fae000.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 대포동 1908-3 중문동 보우힐 (소공원)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c9a145c2ff5cfa27da286e1da475839 = L.marker(
+                [33.26279133, 126.4404066],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_9c080fc07c20360f39476a21d3c192a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b967ade55c1a8cd95c1f32b267868f9 = $(`<div id="html_8b967ade55c1a8cd95c1f32b267868f9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 회수동 799-4 중문동 회수로터리서쪽<br>         <b>위도:</b> 33.26279133<br>         <b>경도:</b> 126.4404066     </div>     </div>`)[0];
+                popup_9c080fc07c20360f39476a21d3c192a2.setContent(html_8b967ade55c1a8cd95c1f32b267868f9);
+            
+        
+
+        marker_9c9a145c2ff5cfa27da286e1da475839.bindPopup(popup_9c080fc07c20360f39476a21d3c192a2)
+        ;
+
+        
+    
+    
+            marker_9c9a145c2ff5cfa27da286e1da475839.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 회수동 799-4 중문동 회수로터리서쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3d0f1c2f9ffa5a1004c281c4d41acaad = L.marker(
+                [33.26318179, 126.4472176],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_020a8e91d1ad99c435acfe3693181876 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74c8399de61753ecf95beaea8e9bc37d = $(`<div id="html_74c8399de61753ecf95beaea8e9bc37d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 회수동 355-1 중문동 회수다리 옆<br>         <b>위도:</b> 33.26318179<br>         <b>경도:</b> 126.4472176     </div>     </div>`)[0];
+                popup_020a8e91d1ad99c435acfe3693181876.setContent(html_74c8399de61753ecf95beaea8e9bc37d);
+            
+        
+
+        marker_3d0f1c2f9ffa5a1004c281c4d41acaad.bindPopup(popup_020a8e91d1ad99c435acfe3693181876)
+        ;
+
+        
+    
+    
+            marker_3d0f1c2f9ffa5a1004c281c4d41acaad.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 회수동 355-1 중문동 회수다리 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_96dadc945ff54ea629ddc84cf69a33ef = L.marker(
+                [33.25886347, 126.4554138],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_6c1e890b406d12b7545d1e683c6ca45b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2b74f1a2fb306073dd82884fc149d65 = $(`<div id="html_d2b74f1a2fb306073dd82884fc149d65" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하원동 1202-1 중문동 마을서쪽자비사가는길<br>         <b>위도:</b> 33.25886347<br>         <b>경도:</b> 126.4554138     </div>     </div>`)[0];
+                popup_6c1e890b406d12b7545d1e683c6ca45b.setContent(html_d2b74f1a2fb306073dd82884fc149d65);
+            
+        
+
+        marker_96dadc945ff54ea629ddc84cf69a33ef.bindPopup(popup_6c1e890b406d12b7545d1e683c6ca45b)
+        ;
+
+        
+    
+    
+            marker_96dadc945ff54ea629ddc84cf69a33ef.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하원동 1202-1 중문동 마을서쪽자비사가는길
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_818f0eceb79807b44ae8339e948d988d = L.marker(
+                [33.25740773, 126.4576829],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_e364e947a7cd63ec7a49765b088404de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0c0f2385324dfdfe49e99dcf2639453 = $(`<div id="html_e0c0f2385324dfdfe49e99dcf2639453" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하원동 1276 중문동 하원동 예가<br>         <b>위도:</b> 33.25740773<br>         <b>경도:</b> 126.4576829     </div>     </div>`)[0];
+                popup_e364e947a7cd63ec7a49765b088404de.setContent(html_e0c0f2385324dfdfe49e99dcf2639453);
+            
+        
+
+        marker_818f0eceb79807b44ae8339e948d988d.bindPopup(popup_e364e947a7cd63ec7a49765b088404de)
+        ;
+
+        
+    
+    
+            marker_818f0eceb79807b44ae8339e948d988d.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하원동 1276 중문동 하원동 예가
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b92b324bd20037b09bc7d8858fcc7dc0 = L.marker(
+                [33.25502689, 126.4590876],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_b51c6b7069430efe908fe091383cc70d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13dbe0de433dc0eeb4b884ce95bda265 = $(`<div id="html_13dbe0de433dc0eeb4b884ce95bda265" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하원동 406-5 중문동 마을회관입구 앞(AN빌라 남)<br>         <b>위도:</b> 33.25502689<br>         <b>경도:</b> 126.4590876     </div>     </div>`)[0];
+                popup_b51c6b7069430efe908fe091383cc70d.setContent(html_13dbe0de433dc0eeb4b884ce95bda265);
+            
+        
+
+        marker_b92b324bd20037b09bc7d8858fcc7dc0.bindPopup(popup_b51c6b7069430efe908fe091383cc70d)
+        ;
+
+        
+    
+    
+            marker_b92b324bd20037b09bc7d8858fcc7dc0.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하원동 406-5 중문동 마을회관입구 앞(AN빌라 남)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_43ffa499dd9b026c2fedf1b073856225 = L.marker(
+                [33.25739136, 126.4600012],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_5bd5cef343f061b784dc9815166404a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6d3e6db67a174e1e3b50a7770c9ee93 = $(`<div id="html_d6d3e6db67a174e1e3b50a7770c9ee93" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하원동 493 중문동 하원마을회관 뒤쪽<br>         <b>위도:</b> 33.25739136<br>         <b>경도:</b> 126.4600012     </div>     </div>`)[0];
+                popup_5bd5cef343f061b784dc9815166404a9.setContent(html_d6d3e6db67a174e1e3b50a7770c9ee93);
+            
+        
+
+        marker_43ffa499dd9b026c2fedf1b073856225.bindPopup(popup_5bd5cef343f061b784dc9815166404a9)
+        ;
+
+        
+    
+    
+            marker_43ffa499dd9b026c2fedf1b073856225.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하원동 493 중문동 하원마을회관 뒤쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62cc29d23ac30c2ebfcbcda92d6ef4f1 = L.marker(
+                [33.26539136, 126.3775472],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_8fb2827c0610ab0be0df1b03ea66b320 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5cc9db1dcd4288d6dda04b767f68965 = $(`<div id="html_a5cc9db1dcd4288d6dda04b767f68965" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 4625-4 예래동 상예 2 (3통)<br>         <b>위도:</b> 33.26539136<br>         <b>경도:</b> 126.3775472     </div>     </div>`)[0];
+                popup_8fb2827c0610ab0be0df1b03ea66b320.setContent(html_a5cc9db1dcd4288d6dda04b767f68965);
+            
+        
+
+        marker_62cc29d23ac30c2ebfcbcda92d6ef4f1.bindPopup(popup_8fb2827c0610ab0be0df1b03ea66b320)
+        ;
+
+        
+    
+    
+            marker_62cc29d23ac30c2ebfcbcda92d6ef4f1.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 4625-4 예래동 상예 2 (3통)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4fdbece819cd26d6fa8fe3326fc16bfb = L.marker(
+                [33.26447952, 126.3916695],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_1f62a32bca043d0bf9a1f4d878c8e455 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd4c8bc01a23026d54563bcdb932dd79 = $(`<div id="html_dd4c8bc01a23026d54563bcdb932dd79" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 1718-15 예래동 우남동<br>         <b>위도:</b> 33.26447952<br>         <b>경도:</b> 126.3916695     </div>     </div>`)[0];
+                popup_1f62a32bca043d0bf9a1f4d878c8e455.setContent(html_dd4c8bc01a23026d54563bcdb932dd79);
+            
+        
+
+        marker_4fdbece819cd26d6fa8fe3326fc16bfb.bindPopup(popup_1f62a32bca043d0bf9a1f4d878c8e455)
+        ;
+
+        
+    
+    
+            marker_4fdbece819cd26d6fa8fe3326fc16bfb.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 1718-15 예래동 우남동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f5ea6b93b0f69518a3436fab536a36c = L.marker(
+                [33.2501495, 126.3941971],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_61298f3c296dc768a0044cc30a5cb90b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bad854c082adf18e12f818d5d91a2bc = $(`<div id="html_2bad854c082adf18e12f818d5d91a2bc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 1442-5 예래동 정문동 (2통)<br>         <b>위도:</b> 33.2501495<br>         <b>경도:</b> 126.3941971     </div>     </div>`)[0];
+                popup_61298f3c296dc768a0044cc30a5cb90b.setContent(html_2bad854c082adf18e12f818d5d91a2bc);
+            
+        
+
+        marker_0f5ea6b93b0f69518a3436fab536a36c.bindPopup(popup_61298f3c296dc768a0044cc30a5cb90b)
+        ;
+
+        
+    
+    
+            marker_0f5ea6b93b0f69518a3436fab536a36c.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 1442-5 예래동 정문동 (2통)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83aa7714cc70fc1d2f617bb7ecfb7bb6 = L.marker(
+                [33.23334216, 126.3742293],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_e5b50d2e0478002566f914aa6556d8a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_358a54bf786edbca7cfee0ed73fe0213 = $(`<div id="html_358a54bf786edbca7cfee0ed73fe0213" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하예동 1744-2 예래동 하예 포구<br>         <b>위도:</b> 33.23334216<br>         <b>경도:</b> 126.3742293     </div>     </div>`)[0];
+                popup_e5b50d2e0478002566f914aa6556d8a9.setContent(html_358a54bf786edbca7cfee0ed73fe0213);
+            
+        
+
+        marker_83aa7714cc70fc1d2f617bb7ecfb7bb6.bindPopup(popup_e5b50d2e0478002566f914aa6556d8a9)
+        ;
+
+        
+    
+    
+            marker_83aa7714cc70fc1d2f617bb7ecfb7bb6.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하예동 1744-2 예래동 하예 포구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_27a892b472c14925cc3d595603fa793c = L.marker(
+                [33.27141173, 126.3742891],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_5d38b714acacf06c3280f8a94daf87d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_414b0b5366d6bc776707390934927c0e = $(`<div id="html_414b0b5366d6bc776707390934927c0e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 4563-1 예래동 가가동<br>         <b>위도:</b> 33.27141173<br>         <b>경도:</b> 126.3742891     </div>     </div>`)[0];
+                popup_5d38b714acacf06c3280f8a94daf87d7.setContent(html_414b0b5366d6bc776707390934927c0e);
+            
+        
+
+        marker_27a892b472c14925cc3d595603fa793c.bindPopup(popup_5d38b714acacf06c3280f8a94daf87d7)
+        ;
+
+        
+    
+    
+            marker_27a892b472c14925cc3d595603fa793c.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 4563-1 예래동 가가동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c3beb9ba3c1ba5c353e2bc6a18216063 = L.marker(
+                [33.25273422, 126.3904973],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_0978c5dc52c7eadedbbdd28068da9727 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a40c83d770e80e57445ccf269b41244 = $(`<div id="html_6a40c83d770e80e57445ccf269b41244" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 1364-1 예래동 상예복지센터 밑<br>         <b>위도:</b> 33.25273422<br>         <b>경도:</b> 126.3904973     </div>     </div>`)[0];
+                popup_0978c5dc52c7eadedbbdd28068da9727.setContent(html_6a40c83d770e80e57445ccf269b41244);
+            
+        
+
+        marker_c3beb9ba3c1ba5c353e2bc6a18216063.bindPopup(popup_0978c5dc52c7eadedbbdd28068da9727)
+        ;
+
+        
+    
+    
+            marker_c3beb9ba3c1ba5c353e2bc6a18216063.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 1364-1 예래동 상예복지센터 밑
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_73568bae76bad68dbc596210a4c15fd1 = L.marker(
+                [33.24874825, 126.3904173],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_d116bb49767c63a623f0f2ed7d792826 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8063dec35554edd7765f593e9f740e3e = $(`<div id="html_8063dec35554edd7765f593e9f740e3e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 1279 예래동 상예마을회관 옆<br>         <b>위도:</b> 33.24874825<br>         <b>경도:</b> 126.3904173     </div>     </div>`)[0];
+                popup_d116bb49767c63a623f0f2ed7d792826.setContent(html_8063dec35554edd7765f593e9f740e3e);
+            
+        
+
+        marker_73568bae76bad68dbc596210a4c15fd1.bindPopup(popup_d116bb49767c63a623f0f2ed7d792826)
+        ;
+
+        
+    
+    
+            marker_73568bae76bad68dbc596210a4c15fd1.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 1279 예래동 상예마을회관 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_72ef8b5c67353fc0af1871fc38503577 = L.marker(
+                [33.24528335, 126.3881096],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_a5699fea8131f39468c00e0dcf02e928 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d44cafa044c909c68562757339a8f3f9 = $(`<div id="html_d44cafa044c909c68562757339a8f3f9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 하예동 266 예래동 하예동무료주차장<br>         <b>위도:</b> 33.24528335<br>         <b>경도:</b> 126.3881096     </div>     </div>`)[0];
+                popup_a5699fea8131f39468c00e0dcf02e928.setContent(html_d44cafa044c909c68562757339a8f3f9);
+            
+        
+
+        marker_72ef8b5c67353fc0af1871fc38503577.bindPopup(popup_a5699fea8131f39468c00e0dcf02e928)
+        ;
+
+        
+    
+    
+            marker_72ef8b5c67353fc0af1871fc38503577.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 하예동 266 예래동 하예동무료주차장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8ec1ea8ff28def5218c2c8bcb8d7a0e = L.marker(
+                [33.25352336, 126.3985496],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_dbe217f0c8a48e462885ff1b4e39ea89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19304ca0faa025571e2b9f447cb2e266 = $(`<div id="html_19304ca0faa025571e2b9f447cb2e266" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 531-5 예래동 주민센터 밑<br>         <b>위도:</b> 33.25352336<br>         <b>경도:</b> 126.3985496     </div>     </div>`)[0];
+                popup_dbe217f0c8a48e462885ff1b4e39ea89.setContent(html_19304ca0faa025571e2b9f447cb2e266);
+            
+        
+
+        marker_c8ec1ea8ff28def5218c2c8bcb8d7a0e.bindPopup(popup_dbe217f0c8a48e462885ff1b4e39ea89)
+        ;
+
+        
+    
+    
+            marker_c8ec1ea8ff28def5218c2c8bcb8d7a0e.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 531-5 예래동 주민센터 밑
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf0e5315080ae7a725ad113dc732a3e0 = L.marker(
+                [33.24698541, 126.3879603],
+                {
+}
+            ).addTo(marker_cluster_f1a54ca39c29687b83430f34f260a5b5);
+        
+    
+        var popup_03403ef7d5fd011254228e47ed582226 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3116eade970d32fc6f08cb9e2bd3400c = $(`<div id="html_3116eade970d32fc6f08cb9e2bd3400c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 상예동 3172-1 예래동새마을금고 서쪽<br>         <b>위도:</b> 33.24698541<br>         <b>경도:</b> 126.3879603     </div>     </div>`)[0];
+                popup_03403ef7d5fd011254228e47ed582226.setContent(html_3116eade970d32fc6f08cb9e2bd3400c);
+            
+        
+
+        marker_bf0e5315080ae7a725ad113dc732a3e0.bindPopup(popup_03403ef7d5fd011254228e47ed582226)
+        ;
+
+        
+    
+    
+            marker_bf0e5315080ae7a725ad113dc732a3e0.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 상예동 3172-1 예래동새마을금고 서쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_f1a54ca39c29687b83430f34f260a5b5.addTo(map_0719ff66bd99804a0c0c6a896aa12900);
+        
+</script>
+</html>

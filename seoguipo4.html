@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71248e3725bd3ecd89bf921ae3587704 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_71248e3725bd3ecd89bf921ae3587704" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71248e3725bd3ecd89bf921ae3587704 = L.map(
+                "map_71248e3725bd3ecd89bf921ae3587704",
+                {
+                    center: [33.246559, 126.566031],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ed5a2c4804bbb74fd0c99bea87997beb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ed5a2c4804bbb74fd0c99bea87997beb.addTo(map_71248e3725bd3ecd89bf921ae3587704);
+        
+    
+            var marker_cluster_83cf83954107d90e1efcc1e2848b5289 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_0153421ad1cbd37daa9b383e8729aeba = L.marker(
+                [33.24680097, 126.5651731],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_e22717c370b8065d1c0fdf20d488a046 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a268f66e33619f7312eea4d76f1dae9 = $(`<div id="html_0a268f66e33619f7312eea4d76f1dae9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 413-14 정방동 사무소 정문 앞<br>         <b>위도:</b> 33.24680097<br>         <b>경도:</b> 126.5651731     </div>     </div>`)[0];
+                popup_e22717c370b8065d1c0fdf20d488a046.setContent(html_0a268f66e33619f7312eea4d76f1dae9);
+            
+        
+
+        marker_0153421ad1cbd37daa9b383e8729aeba.bindPopup(popup_e22717c370b8065d1c0fdf20d488a046)
+        ;
+
+        
+    
+    
+            marker_0153421ad1cbd37daa9b383e8729aeba.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 413-14 정방동 사무소 정문 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79a6fd934307b11619e61580e024bde2 = L.marker(
+                [33.24555389, 126.5610164],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_03ee00a8a6863b12b8fa3a0ac2833406 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5032e7a17794a722c262bab1ffedc131 = $(`<div id="html_5032e7a17794a722c262bab1ffedc131" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 443-1 정방동 엄마손맛 옆<br>         <b>위도:</b> 33.24555389<br>         <b>경도:</b> 126.5610164     </div>     </div>`)[0];
+                popup_03ee00a8a6863b12b8fa3a0ac2833406.setContent(html_5032e7a17794a722c262bab1ffedc131);
+            
+        
+
+        marker_79a6fd934307b11619e61580e024bde2.bindPopup(popup_03ee00a8a6863b12b8fa3a0ac2833406)
+        ;
+
+        
+    
+    
+            marker_79a6fd934307b11619e61580e024bde2.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 443-1 정방동 엄마손맛 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e1ba39e68bc91ab7e1c3b7bda5f4c5d0 = L.marker(
+                [33.24683704, 126.5675193],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_8b11ece312ea956f7236101a9278d783 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4fedc65e291972217b5628889d848b6 = $(`<div id="html_b4fedc65e291972217b5628889d848b6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 172 정방동 대건아파트 옆<br>         <b>위도:</b> 33.24683704<br>         <b>경도:</b> 126.5675193     </div>     </div>`)[0];
+                popup_8b11ece312ea956f7236101a9278d783.setContent(html_b4fedc65e291972217b5628889d848b6);
+            
+        
+
+        marker_e1ba39e68bc91ab7e1c3b7bda5f4c5d0.bindPopup(popup_8b11ece312ea956f7236101a9278d783)
+        ;
+
+        
+    
+    
+            marker_e1ba39e68bc91ab7e1c3b7bda5f4c5d0.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 172 정방동 대건아파트 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39431b965bae9df04a1383959c1cf3a3 = L.marker(
+                [33.24596015, 126.5696689],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_edfccda14cd40895509a8eeaa9e53a96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5193edee385c44fb77ce59454d4ed0a = $(`<div id="html_b5193edee385c44fb77ce59454d4ed0a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 961-31 정방동 명지아파트 입구<br>         <b>위도:</b> 33.24596015<br>         <b>경도:</b> 126.5696689     </div>     </div>`)[0];
+                popup_edfccda14cd40895509a8eeaa9e53a96.setContent(html_b5193edee385c44fb77ce59454d4ed0a);
+            
+        
+
+        marker_39431b965bae9df04a1383959c1cf3a3.bindPopup(popup_edfccda14cd40895509a8eeaa9e53a96)
+        ;
+
+        
+    
+    
+            marker_39431b965bae9df04a1383959c1cf3a3.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 961-31 정방동 명지아파트 입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce56f891c886bf2d7c7c91205742b2e3 = L.marker(
+                [33.24572698, 126.5635137],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_c3f892293eb1c70c5ec7d164ecc66b88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6057db0277e97fd913e680c45b605127 = $(`<div id="html_6057db0277e97fd913e680c45b605127" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 509 정방동 작은 프랑스 옆<br>         <b>위도:</b> 33.24572698<br>         <b>경도:</b> 126.5635137     </div>     </div>`)[0];
+                popup_c3f892293eb1c70c5ec7d164ecc66b88.setContent(html_6057db0277e97fd913e680c45b605127);
+            
+        
+
+        marker_ce56f891c886bf2d7c7c91205742b2e3.bindPopup(popup_c3f892293eb1c70c5ec7d164ecc66b88)
+        ;
+
+        
+    
+    
+            marker_ce56f891c886bf2d7c7c91205742b2e3.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 509 정방동 작은 프랑스 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_91522ae6fc6933913879d3225786de21 = L.marker(
+                [33.24640531, 126.5681704],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_c40c71298d86da48b29416084f476e81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e3b657c8f4a436192f8f05f6a4d6d08 = $(`<div id="html_4e3b657c8f4a436192f8f05f6a4d6d08" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 127-3 정방동 가야밀면 남쪽<br>         <b>위도:</b> 33.24640531<br>         <b>경도:</b> 126.5681704     </div>     </div>`)[0];
+                popup_c40c71298d86da48b29416084f476e81.setContent(html_4e3b657c8f4a436192f8f05f6a4d6d08);
+            
+        
+
+        marker_91522ae6fc6933913879d3225786de21.bindPopup(popup_c40c71298d86da48b29416084f476e81)
+        ;
+
+        
+    
+    
+            marker_91522ae6fc6933913879d3225786de21.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 127-3 정방동 가야밀면 남쪽
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b3508d00ecd68eabf6fc53dadcdb9e72 = L.marker(
+                [33.25157457, 126.5662852],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_fd99a4c7af6324647a91c3dfb13320b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_540454a28f96e24f60321715db6d9b40 = $(`<div id="html_540454a28f96e24f60321715db6d9b40" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 260-52 중앙동 시민회관<br>         <b>위도:</b> 33.25157457<br>         <b>경도:</b> 126.5662852     </div>     </div>`)[0];
+                popup_fd99a4c7af6324647a91c3dfb13320b5.setContent(html_540454a28f96e24f60321715db6d9b40);
+            
+        
+
+        marker_b3508d00ecd68eabf6fc53dadcdb9e72.bindPopup(popup_fd99a4c7af6324647a91c3dfb13320b5)
+        ;
+
+        
+    
+    
+            marker_b3508d00ecd68eabf6fc53dadcdb9e72.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 260-52 중앙동 시민회관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f27154a3ca60646f8e0506db33844a7b = L.marker(
+                [33.24941108, 126.5694733],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_5e0533722df09ad9aa574e22de71d9ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_679890f8796a246fc132403d8e34ec45 = $(`<div id="html_679890f8796a246fc132403d8e34ec45" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 중앙동 250-6 중앙동 한로물산<br>         <b>위도:</b> 33.24941108<br>         <b>경도:</b> 126.5694733     </div>     </div>`)[0];
+                popup_5e0533722df09ad9aa574e22de71d9ec.setContent(html_679890f8796a246fc132403d8e34ec45);
+            
+        
+
+        marker_f27154a3ca60646f8e0506db33844a7b.bindPopup(popup_5e0533722df09ad9aa574e22de71d9ec)
+        ;
+
+        
+    
+    
+            marker_f27154a3ca60646f8e0506db33844a7b.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 중앙동 250-6 중앙동 한로물산
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_25d621bfc8ce43e009ad928b4c2d8b46 = L.marker(
+                [33.24839678, 126.5586664],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_8c8e1930a90fad42db132c7909b523da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b32550aba4348263f9cad65c42880aa0 = $(`<div id="html_b32550aba4348263f9cad65c42880aa0" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 320-7 천지동 알레그리아 호텔<br>         <b>위도:</b> 33.24839678<br>         <b>경도:</b> 126.5586664     </div>     </div>`)[0];
+                popup_8c8e1930a90fad42db132c7909b523da.setContent(html_b32550aba4348263f9cad65c42880aa0);
+            
+        
+
+        marker_25d621bfc8ce43e009ad928b4c2d8b46.bindPopup(popup_8c8e1930a90fad42db132c7909b523da)
+        ;
+
+        
+    
+    
+            marker_25d621bfc8ce43e009ad928b4c2d8b46.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 320-7 천지동 알레그리아 호텔
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35eb122850118698b9f1f711156031b6 = L.marker(
+                [33.25220435, 126.5576024],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_2cde81e3e0a8d7cb6aca9759737d861d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba2a89f821c392f557da32e76bb39823 = $(`<div id="html_ba2a89f821c392f557da32e76bb39823" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 330-10 천지동 탐나마트 옆 (태영전자 맞은편)<br>         <b>위도:</b> 33.25220435<br>         <b>경도:</b> 126.5576024     </div>     </div>`)[0];
+                popup_2cde81e3e0a8d7cb6aca9759737d861d.setContent(html_ba2a89f821c392f557da32e76bb39823);
+            
+        
+
+        marker_35eb122850118698b9f1f711156031b6.bindPopup(popup_2cde81e3e0a8d7cb6aca9759737d861d)
+        ;
+
+        
+    
+    
+            marker_35eb122850118698b9f1f711156031b6.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 330-10 천지동 탐나마트 옆 (태영전자 맞은편)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d2cb1f9fe1ffc96a150664b0332f4759 = L.marker(
+                [33.25158421, 126.5562176],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_2e365b8237cd5ab6b761ea7260e1e8cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61810ca77d62cfbae6f4dff38e5a1ff2 = $(`<div id="html_61810ca77d62cfbae6f4dff38e5a1ff2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 332-7 천지동 골드슈퍼 앞<br>         <b>위도:</b> 33.25158421<br>         <b>경도:</b> 126.5562176     </div>     </div>`)[0];
+                popup_2e365b8237cd5ab6b761ea7260e1e8cc.setContent(html_61810ca77d62cfbae6f4dff38e5a1ff2);
+            
+        
+
+        marker_d2cb1f9fe1ffc96a150664b0332f4759.bindPopup(popup_2e365b8237cd5ab6b761ea7260e1e8cc)
+        ;
+
+        
+    
+    
+            marker_d2cb1f9fe1ffc96a150664b0332f4759.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 332-7 천지동 골드슈퍼 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fab6ffee521bf7eb711b5d15393ac244 = L.marker(
+                [33.25118702, 126.5585097],
+                {
+}
+            ).addTo(marker_cluster_83cf83954107d90e1efcc1e2848b5289);
+        
+    
+        var popup_4d0ced539d2a343020e5d2fef9eda7df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_023a65de343c52d7443753e1243552b5 = $(`<div id="html_023a65de343c52d7443753e1243552b5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 제주특별자치도 서귀포시 서귀동 304-4 천지동 어린이놀이터앞<br>         <b>위도:</b> 33.25118702<br>         <b>경도:</b> 126.5585097     </div>     </div>`)[0];
+                popup_4d0ced539d2a343020e5d2fef9eda7df.setContent(html_023a65de343c52d7443753e1243552b5);
+            
+        
+
+        marker_fab6ffee521bf7eb711b5d15393ac244.bindPopup(popup_4d0ced539d2a343020e5d2fef9eda7df)
+        ;
+
+        
+    
+    
+            marker_fab6ffee521bf7eb711b5d15393ac244.bindTooltip(
+                `<div>
+                     제주특별자치도 서귀포시 서귀동 304-4 천지동 어린이놀이터앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_83cf83954107d90e1efcc1e2848b5289.addTo(map_71248e3725bd3ecd89bf921ae3587704);
+        
+</script>
+</html>
