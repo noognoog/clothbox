@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4910f214c95d6650c47b1b885337bdec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4910f214c95d6650c47b1b885337bdec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4910f214c95d6650c47b1b885337bdec = L.map(
+                "map_4910f214c95d6650c47b1b885337bdec",
+                {
+                    center: [35.166539, 126.749239],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f8a9ed1c1c52c473f0f5dfe00463b19 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8f8a9ed1c1c52c473f0f5dfe00463b19.addTo(map_4910f214c95d6650c47b1b885337bdec);
+        
+    
+            var marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_d31607af37e5ca0d5ffcd6455bfb8412 = L.marker(
+                [35.18569529, 126.8271164],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_39d88f93af13e6916b51fa0314deb82c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdeacb07552bd6af57d4376c771892f1 = $(`<div id="html_cdeacb07552bd6af57d4376c771892f1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 수완로9번길 22-12(신가동) 수완중학교 앞 (너를그리다 앞)<br>         <b>위도:</b> 35.18569529<br>         <b>경도:</b> 126.8271164     </div>     </div>`)[0];
+                popup_39d88f93af13e6916b51fa0314deb82c.setContent(html_cdeacb07552bd6af57d4376c771892f1);
+            
+        
+
+        marker_d31607af37e5ca0d5ffcd6455bfb8412.bindPopup(popup_39d88f93af13e6916b51fa0314deb82c)
+        ;
+
+        
+    
+    
+            marker_d31607af37e5ca0d5ffcd6455bfb8412.bindTooltip(
+                `<div>
+                     광주광역시 광산구 수완로9번길 22-12(신가동) 수완중학교 앞 (너를그리다 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_901e5fc3da2e901099b9bfa9b970fb79 = L.marker(
+                [35.18539848, 126.8266124],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_f71121b5a589a70cbe75888ba981f0a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b511933c60add9bacf31e98e02b7033 = $(`<div id="html_8b511933c60add9bacf31e98e02b7033" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 수완로9번길 34-3 (신가동) 아름공원 앞 (H커피 앞)<br>         <b>위도:</b> 35.18539848<br>         <b>경도:</b> 126.8266124     </div>     </div>`)[0];
+                popup_f71121b5a589a70cbe75888ba981f0a7.setContent(html_8b511933c60add9bacf31e98e02b7033);
+            
+        
+
+        marker_901e5fc3da2e901099b9bfa9b970fb79.bindPopup(popup_f71121b5a589a70cbe75888ba981f0a7)
+        ;
+
+        
+    
+    
+            marker_901e5fc3da2e901099b9bfa9b970fb79.bindTooltip(
+                `<div>
+                     광주광역시 광산구 수완로9번길 34-3 (신가동) 아름공원 앞 (H커피 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c5f4a29c238e65a6c7c620da95b4b3f4 = L.marker(
+                [35.18643558, 126.8344755],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_1b38768defe11a572cc3b1e6dd409aba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9edbc3ce268c01211ed2e719b30bfba = $(`<div id="html_c9edbc3ce268c01211ed2e719b30bfba" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신가삼효로 19 (신가동) 비젼지역아동센터 앞 (자연숲마트 앞)<br>         <b>위도:</b> 35.18643558<br>         <b>경도:</b> 126.8344755     </div>     </div>`)[0];
+                popup_1b38768defe11a572cc3b1e6dd409aba.setContent(html_c9edbc3ce268c01211ed2e719b30bfba);
+            
+        
+
+        marker_c5f4a29c238e65a6c7c620da95b4b3f4.bindPopup(popup_1b38768defe11a572cc3b1e6dd409aba)
+        ;
+
+        
+    
+    
+            marker_c5f4a29c238e65a6c7c620da95b4b3f4.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신가삼효로 19 (신가동) 비젼지역아동센터 앞 (자연숲마트 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8dcab3bc0b8515136ba71842e9f8006b = L.marker(
+                [35.18745914, 126.8362565],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_6c5bc08049a451172beedbc66d94008c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f623642ef8d69b9fda8b9706214e94c5 = $(`<div id="html_f623642ef8d69b9fda8b9706214e94c5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신가삼효로 37 (신가동) 베베클린 앞<br>         <b>위도:</b> 35.18745914<br>         <b>경도:</b> 126.8362565     </div>     </div>`)[0];
+                popup_6c5bc08049a451172beedbc66d94008c.setContent(html_f623642ef8d69b9fda8b9706214e94c5);
+            
+        
+
+        marker_8dcab3bc0b8515136ba71842e9f8006b.bindPopup(popup_6c5bc08049a451172beedbc66d94008c)
+        ;
+
+        
+    
+    
+            marker_8dcab3bc0b8515136ba71842e9f8006b.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신가삼효로 37 (신가동) 베베클린 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b67708dd31ec76cfd4fadbd6bbc1a759 = L.marker(
+                [35.18785204, 126.8354541],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_e0441923e42c9b6fa8d4cefe7f52556b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21c48cc8a719a3f6566412667db2e4ba = $(`<div id="html_21c48cc8a719a3f6566412667db2e4ba" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로35번길 29-15 (신가동) 광선교회 앞<br>         <b>위도:</b> 35.18785204<br>         <b>경도:</b> 126.8354541     </div>     </div>`)[0];
+                popup_e0441923e42c9b6fa8d4cefe7f52556b.setContent(html_21c48cc8a719a3f6566412667db2e4ba);
+            
+        
+
+        marker_b67708dd31ec76cfd4fadbd6bbc1a759.bindPopup(popup_e0441923e42c9b6fa8d4cefe7f52556b)
+        ;
+
+        
+    
+    
+            marker_b67708dd31ec76cfd4fadbd6bbc1a759.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로35번길 29-15 (신가동) 광선교회 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0166a6174c8ae9ca56073affe8b55b99 = L.marker(
+                [35.18802277, 126.8366666],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_b5b27058030e0a0c06e0e8208ba69288 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7bfbb1c3e10147b5f85cd1ea7858335 = $(`<div id="html_a7bfbb1c3e10147b5f85cd1ea7858335" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신가삼효로 45(신가동) 삼성유리집 앞<br>         <b>위도:</b> 35.18802277<br>         <b>경도:</b> 126.8366666     </div>     </div>`)[0];
+                popup_b5b27058030e0a0c06e0e8208ba69288.setContent(html_a7bfbb1c3e10147b5f85cd1ea7858335);
+            
+        
+
+        marker_0166a6174c8ae9ca56073affe8b55b99.bindPopup(popup_b5b27058030e0a0c06e0e8208ba69288)
+        ;
+
+        
+    
+    
+            marker_0166a6174c8ae9ca56073affe8b55b99.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신가삼효로 45(신가동) 삼성유리집 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce5f368ee3f5ad48ac7bf24801ac8caa = L.marker(
+                [35.1838212, 126.8329684],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_d24e46dabd99afc3d01adca4b5b98e89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb72bd5b0094ee74a5674fd364e5e987 = $(`<div id="html_eb72bd5b0094ee74a5674fd364e5e987" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 목련로394번길 9 (신가동) 세븐일레븐 앞<br>         <b>위도:</b> 35.1838212<br>         <b>경도:</b> 126.8329684     </div>     </div>`)[0];
+                popup_d24e46dabd99afc3d01adca4b5b98e89.setContent(html_eb72bd5b0094ee74a5674fd364e5e987);
+            
+        
+
+        marker_ce5f368ee3f5ad48ac7bf24801ac8caa.bindPopup(popup_d24e46dabd99afc3d01adca4b5b98e89)
+        ;
+
+        
+    
+    
+            marker_ce5f368ee3f5ad48ac7bf24801ac8caa.bindTooltip(
+                `<div>
+                     광주광역시 광산구 목련로394번길 9 (신가동) 세븐일레븐 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_15d6645eacd806bbe08156efe0071456 = L.marker(
+                [35.1838212, 126.8329684],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_3dd7b3fee3ed3e78edd1be14c15511fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1788bb5ddd0397ab3f8747873d756b55 = $(`<div id="html_1788bb5ddd0397ab3f8747873d756b55" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 목련로394번길 9 (신가동) 유앤미유치원 건너편<br>         <b>위도:</b> 35.1838212<br>         <b>경도:</b> 126.8329684     </div>     </div>`)[0];
+                popup_3dd7b3fee3ed3e78edd1be14c15511fa.setContent(html_1788bb5ddd0397ab3f8747873d756b55);
+            
+        
+
+        marker_15d6645eacd806bbe08156efe0071456.bindPopup(popup_3dd7b3fee3ed3e78edd1be14c15511fa)
+        ;
+
+        
+    
+    
+            marker_15d6645eacd806bbe08156efe0071456.bindTooltip(
+                `<div>
+                     광주광역시 광산구 목련로394번길 9 (신가동) 유앤미유치원 건너편
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_009e35d7e2a230bbe4d85b25cd324881 = L.marker(
+                [35.18392582, 126.8322302],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_6444d69f9fbbc6ef22b784d5beaa7154 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_697b8a5b0c0b1f8fd86232036fe736d8 = $(`<div id="html_697b8a5b0c0b1f8fd86232036fe736d8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 목련로397번길 7 (신가동) 미니스톱 앞  (리스트3,실제2)<br>         <b>위도:</b> 35.18392582<br>         <b>경도:</b> 126.8322302     </div>     </div>`)[0];
+                popup_6444d69f9fbbc6ef22b784d5beaa7154.setContent(html_697b8a5b0c0b1f8fd86232036fe736d8);
+            
+        
+
+        marker_009e35d7e2a230bbe4d85b25cd324881.bindPopup(popup_6444d69f9fbbc6ef22b784d5beaa7154)
+        ;
+
+        
+    
+    
+            marker_009e35d7e2a230bbe4d85b25cd324881.bindTooltip(
+                `<div>
+                     광주광역시 광산구 목련로397번길 7 (신가동) 미니스톱 앞  (리스트3,실제2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_611f1e2f6300d9d8d1c3c24d8bc7be97 = L.marker(
+                [35.18388837, 126.8308993],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_e4540db06c94790b5eafc01c40d3abb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e42e7a5c7adb5ff644c47c5f480ffca = $(`<div id="html_1e42e7a5c7adb5ff644c47c5f480ffca" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신가로40번길 71 (신가동) 하일마트 앞 (리스트3,실제2)<br>         <b>위도:</b> 35.18388837<br>         <b>경도:</b> 126.8308993     </div>     </div>`)[0];
+                popup_e4540db06c94790b5eafc01c40d3abb8.setContent(html_1e42e7a5c7adb5ff644c47c5f480ffca);
+            
+        
+
+        marker_611f1e2f6300d9d8d1c3c24d8bc7be97.bindPopup(popup_e4540db06c94790b5eafc01c40d3abb8)
+        ;
+
+        
+    
+    
+            marker_611f1e2f6300d9d8d1c3c24d8bc7be97.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신가로40번길 71 (신가동) 하일마트 앞 (리스트3,실제2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c52656bf795d16e26371c3aa1563103d = L.marker(
+                [35.18446466, 126.8264758],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_719b2b9b47574cdaa4c2f5f3001fa69d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c453148a041512cdb7b7832f8969b68d = $(`<div id="html_c453148a041512cdb7b7832f8969b68d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 수등로 161 (신가동) 기독교백화점 앞<br>         <b>위도:</b> 35.18446466<br>         <b>경도:</b> 126.8264758     </div>     </div>`)[0];
+                popup_719b2b9b47574cdaa4c2f5f3001fa69d.setContent(html_c453148a041512cdb7b7832f8969b68d);
+            
+        
+
+        marker_c52656bf795d16e26371c3aa1563103d.bindPopup(popup_719b2b9b47574cdaa4c2f5f3001fa69d)
+        ;
+
+        
+    
+    
+            marker_c52656bf795d16e26371c3aa1563103d.bindTooltip(
+                `<div>
+                     광주광역시 광산구 수등로 161 (신가동) 기독교백화점 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a223ab0dd95b3b5f60899e59de68d2fd = L.marker(
+                [35.18553175, 126.8268424],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_839a453bfe4e41faaee6ecca3f0ab879 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6320ab38680c22753c8f83e58d92e75 = $(`<div id="html_e6320ab38680c22753c8f83e58d92e75" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 수완로9번길 40-8 (신가동) 너를그리다 앞<br>         <b>위도:</b> 35.18553175<br>         <b>경도:</b> 126.8268424     </div>     </div>`)[0];
+                popup_839a453bfe4e41faaee6ecca3f0ab879.setContent(html_e6320ab38680c22753c8f83e58d92e75);
+            
+        
+
+        marker_a223ab0dd95b3b5f60899e59de68d2fd.bindPopup(popup_839a453bfe4e41faaee6ecca3f0ab879)
+        ;
+
+        
+    
+    
+            marker_a223ab0dd95b3b5f60899e59de68d2fd.bindTooltip(
+                `<div>
+                     광주광역시 광산구 수완로9번길 40-8 (신가동) 너를그리다 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8cdc6dd224f9ae204447e5e92bcf0b6 = L.marker(
+                [35.19344886, 126.8476134],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_15c4ef12f03fb28eb02f6e44ddb40897 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_690c9954afcb7d40e6715a44dc0b3fd1 = $(`<div id="html_690c9954afcb7d40e6715a44dc0b3fd1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 북문대로419번길 14-11 (신창동) CH푸드 앞<br>         <b>위도:</b> 35.19344886<br>         <b>경도:</b> 126.8476134     </div>     </div>`)[0];
+                popup_15c4ef12f03fb28eb02f6e44ddb40897.setContent(html_690c9954afcb7d40e6715a44dc0b3fd1);
+            
+        
+
+        marker_e8cdc6dd224f9ae204447e5e92bcf0b6.bindPopup(popup_15c4ef12f03fb28eb02f6e44ddb40897)
+        ;
+
+        
+    
+    
+            marker_e8cdc6dd224f9ae204447e5e92bcf0b6.bindTooltip(
+                `<div>
+                     광주광역시 광산구 북문대로419번길 14-11 (신창동) CH푸드 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f1a257ce7e3e668ca7edb9ab74c98420 = L.marker(
+                [35.19377336, 126.8479103],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_154b87403d4db3b27504ebb444f588cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc9a760a24d0397ba902069a041253f3 = $(`<div id="html_fc9a760a24d0397ba902069a041253f3" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 북문대로 423 (신창동) 에덴동산 빌라 앞<br>         <b>위도:</b> 35.19377336<br>         <b>경도:</b> 126.8479103     </div>     </div>`)[0];
+                popup_154b87403d4db3b27504ebb444f588cd.setContent(html_fc9a760a24d0397ba902069a041253f3);
+            
+        
+
+        marker_f1a257ce7e3e668ca7edb9ab74c98420.bindPopup(popup_154b87403d4db3b27504ebb444f588cd)
+        ;
+
+        
+    
+    
+            marker_f1a257ce7e3e668ca7edb9ab74c98420.bindTooltip(
+                `<div>
+                     광주광역시 광산구 북문대로 423 (신창동) 에덴동산 빌라 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eff08b560ab5d09f575eb673924ef865 = L.marker(
+                [35.19302123, 126.847449],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_2b37f6420a5479ca99ada1cc419e6d38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_681bb393bb63ff56c11e90e8f8321614 = $(`<div id="html_681bb393bb63ff56c11e90e8f8321614" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 북문대로419번길 30 (신창동) 우리마트 앞<br>         <b>위도:</b> 35.19302123<br>         <b>경도:</b> 126.847449     </div>     </div>`)[0];
+                popup_2b37f6420a5479ca99ada1cc419e6d38.setContent(html_681bb393bb63ff56c11e90e8f8321614);
+            
+        
+
+        marker_eff08b560ab5d09f575eb673924ef865.bindPopup(popup_2b37f6420a5479ca99ada1cc419e6d38)
+        ;
+
+        
+    
+    
+            marker_eff08b560ab5d09f575eb673924ef865.bindTooltip(
+                `<div>
+                     광주광역시 광산구 북문대로419번길 30 (신창동) 우리마트 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5dcea5b27e57d0e73c67259bbecb0399 = L.marker(
+                [35.19291671, 126.8433145],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_29e16046a4215443989affec7581679f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c15d1e06c2781c0017cc88dd2eb1950 = $(`<div id="html_1c15d1e06c2781c0017cc88dd2eb1950" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 장신로309번길 14 (신창동) 메가트리움 빌라 옆<br>         <b>위도:</b> 35.19291671<br>         <b>경도:</b> 126.8433145     </div>     </div>`)[0];
+                popup_29e16046a4215443989affec7581679f.setContent(html_1c15d1e06c2781c0017cc88dd2eb1950);
+            
+        
+
+        marker_5dcea5b27e57d0e73c67259bbecb0399.bindPopup(popup_29e16046a4215443989affec7581679f)
+        ;
+
+        
+    
+    
+            marker_5dcea5b27e57d0e73c67259bbecb0399.bindTooltip(
+                `<div>
+                     광주광역시 광산구 장신로309번길 14 (신창동) 메가트리움 빌라 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62ddc3ac1341dbaf696d2ea3670454fd = L.marker(
+                [35.19260117, 126.8435364],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_4cced666771ff60de19fe4d2bb5dfe12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_972fb4e86acdcdd520605b1e7d695af8 = $(`<div id="html_972fb4e86acdcdd520605b1e7d695af8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 장신로309번길 4-3 (신창동) 늘봄 빌라 옆<br>         <b>위도:</b> 35.19260117<br>         <b>경도:</b> 126.8435364     </div>     </div>`)[0];
+                popup_4cced666771ff60de19fe4d2bb5dfe12.setContent(html_972fb4e86acdcdd520605b1e7d695af8);
+            
+        
+
+        marker_62ddc3ac1341dbaf696d2ea3670454fd.bindPopup(popup_4cced666771ff60de19fe4d2bb5dfe12)
+        ;
+
+        
+    
+    
+            marker_62ddc3ac1341dbaf696d2ea3670454fd.bindTooltip(
+                `<div>
+                     광주광역시 광산구 장신로309번길 4-3 (신창동) 늘봄 빌라 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16c7e41f9a4d3d95f91633ad41fc162f = L.marker(
+                [35.19292999, 126.844169],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_c1249475542ba22ea829cbc45635e92a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ae6a25fb28192df5b9273512a195f3f = $(`<div id="html_3ae6a25fb28192df5b9273512a195f3f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 장신로309번길 4-17 (신창동) 타워펠리스 빌라 앞<br>         <b>위도:</b> 35.19292999<br>         <b>경도:</b> 126.844169     </div>     </div>`)[0];
+                popup_c1249475542ba22ea829cbc45635e92a.setContent(html_3ae6a25fb28192df5b9273512a195f3f);
+            
+        
+
+        marker_16c7e41f9a4d3d95f91633ad41fc162f.bindPopup(popup_c1249475542ba22ea829cbc45635e92a)
+        ;
+
+        
+    
+    
+            marker_16c7e41f9a4d3d95f91633ad41fc162f.bindTooltip(
+                `<div>
+                     광주광역시 광산구 장신로309번길 4-17 (신창동) 타워펠리스 빌라 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f8a7fc9aca438041d2a4b6f983030e1 = L.marker(
+                [35.19407627, 126.8441274],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_ea4cf98d4e3593691e9d1faddeb0a887 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f987f9693b974b9856d2533d07db2d9 = $(`<div id="html_7f987f9693b974b9856d2533d07db2d9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 장신로333번길 19 (신창동) 전원마을 빌라 앞<br>         <b>위도:</b> 35.19407627<br>         <b>경도:</b> 126.8441274     </div>     </div>`)[0];
+                popup_ea4cf98d4e3593691e9d1faddeb0a887.setContent(html_7f987f9693b974b9856d2533d07db2d9);
+            
+        
+
+        marker_4f8a7fc9aca438041d2a4b6f983030e1.bindPopup(popup_ea4cf98d4e3593691e9d1faddeb0a887)
+        ;
+
+        
+    
+    
+            marker_4f8a7fc9aca438041d2a4b6f983030e1.bindTooltip(
+                `<div>
+                     광주광역시 광산구 장신로333번길 19 (신창동) 전원마을 빌라 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08fbdc7bcf320284c4ef355be775bbe9 = L.marker(
+                [35.19581351, 126.8400267],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_f32e7103fbfb63c60378f38017bd96b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21416caf1edc01cde7718e87382de980 = $(`<div id="html_21416caf1edc01cde7718e87382de980" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로 285 (신창동) 프라임 캐슬 앞<br>         <b>위도:</b> 35.19581351<br>         <b>경도:</b> 126.8400267     </div>     </div>`)[0];
+                popup_f32e7103fbfb63c60378f38017bd96b0.setContent(html_21416caf1edc01cde7718e87382de980);
+            
+        
+
+        marker_08fbdc7bcf320284c4ef355be775bbe9.bindPopup(popup_f32e7103fbfb63c60378f38017bd96b0)
+        ;
+
+        
+    
+    
+            marker_08fbdc7bcf320284c4ef355be775bbe9.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로 285 (신창동) 프라임 캐슬 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7ce92de522b7e81e671128c8a62eb70 = L.marker(
+                [35.19708676, 126.84167],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_217052ffd160782d8c4b38ce9711b014 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0b5650b42ecb79be853a790bb26e062 = $(`<div id="html_d0b5650b42ecb79be853a790bb26e062" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로289번길 43 (신창동) 송둘라모터스 앞<br>         <b>위도:</b> 35.19708676<br>         <b>경도:</b> 126.84167     </div>     </div>`)[0];
+                popup_217052ffd160782d8c4b38ce9711b014.setContent(html_d0b5650b42ecb79be853a790bb26e062);
+            
+        
+
+        marker_d7ce92de522b7e81e671128c8a62eb70.bindPopup(popup_217052ffd160782d8c4b38ce9711b014)
+        ;
+
+        
+    
+    
+            marker_d7ce92de522b7e81e671128c8a62eb70.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로289번길 43 (신창동) 송둘라모터스 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d917dff1a0e25d683a265a1f39567617 = L.marker(
+                [35.1975661, 126.8422886],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_308c778b0738c5863e175fff7fc350aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d0114d8202f365e00a7579b745c0049 = $(`<div id="html_0d0114d8202f365e00a7579b745c0049" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로289번길 59 (신창동) 홈디자인 앞<br>         <b>위도:</b> 35.1975661<br>         <b>경도:</b> 126.8422886     </div>     </div>`)[0];
+                popup_308c778b0738c5863e175fff7fc350aa.setContent(html_0d0114d8202f365e00a7579b745c0049);
+            
+        
+
+        marker_d917dff1a0e25d683a265a1f39567617.bindPopup(popup_308c778b0738c5863e175fff7fc350aa)
+        ;
+
+        
+    
+    
+            marker_d917dff1a0e25d683a265a1f39567617.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로289번길 59 (신창동) 홈디자인 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aaef9083eb51edf76ccca0cbb7586387 = L.marker(
+                [35.19888029, 126.843274],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_9696c95f8e9bf09f2c62118d7fb2e364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc1477a8ee7ebcfcf5d6868b7e20072e = $(`<div id="html_bc1477a8ee7ebcfcf5d6868b7e20072e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로178번길 28 (신창동) 칼미아 빌라 옆<br>         <b>위도:</b> 35.19888029<br>         <b>경도:</b> 126.843274     </div>     </div>`)[0];
+                popup_9696c95f8e9bf09f2c62118d7fb2e364.setContent(html_bc1477a8ee7ebcfcf5d6868b7e20072e);
+            
+        
+
+        marker_aaef9083eb51edf76ccca0cbb7586387.bindPopup(popup_9696c95f8e9bf09f2c62118d7fb2e364)
+        ;
+
+        
+    
+    
+            marker_aaef9083eb51edf76ccca0cbb7586387.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로178번길 28 (신창동) 칼미아 빌라 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb6a64022f338edc8ae505b8acf1b41e = L.marker(
+                [35.19964066, 126.8424351],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_05f4ecfba5b6162a6d158be56a6dc317 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b36ce9ce2a3742accb77b66354c6dfb5 = $(`<div id="html_b36ce9ce2a3742accb77b66354c6dfb5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로178번길 4 (신창동) 더 홈스타일 옆<br>         <b>위도:</b> 35.19964066<br>         <b>경도:</b> 126.8424351     </div>     </div>`)[0];
+                popup_05f4ecfba5b6162a6d158be56a6dc317.setContent(html_b36ce9ce2a3742accb77b66354c6dfb5);
+            
+        
+
+        marker_cb6a64022f338edc8ae505b8acf1b41e.bindPopup(popup_05f4ecfba5b6162a6d158be56a6dc317)
+        ;
+
+        
+    
+    
+            marker_cb6a64022f338edc8ae505b8acf1b41e.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로178번길 4 (신창동) 더 홈스타일 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_622a75a62ac4d182449cf5a36b11be4c = L.marker(
+                [35.1990358, 126.8417013],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_3e423e22fb81d4d83edde7097420f751 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b313842d0c7966a14ecd61c75dc0e21e = $(`<div id="html_b313842d0c7966a14ecd61c75dc0e21e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로166번길 3 (신창동) 엘리트 빌라 옆<br>         <b>위도:</b> 35.1990358<br>         <b>경도:</b> 126.8417013     </div>     </div>`)[0];
+                popup_3e423e22fb81d4d83edde7097420f751.setContent(html_b313842d0c7966a14ecd61c75dc0e21e);
+            
+        
+
+        marker_622a75a62ac4d182449cf5a36b11be4c.bindPopup(popup_3e423e22fb81d4d83edde7097420f751)
+        ;
+
+        
+    
+    
+            marker_622a75a62ac4d182449cf5a36b11be4c.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로166번길 3 (신창동) 엘리트 빌라 옆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b8b7de12510ecbf4d042491b7727f0a7 = L.marker(
+                [35.19567226, 126.837579],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_f41b6b894615a56d23cf343f5c496bb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b63226753a4b32047be36d71e9574f1 = $(`<div id="html_2b63226753a4b32047be36d71e9574f1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로105번길 6-19 (신창동) 그 여자의 맥주집 앞<br>         <b>위도:</b> 35.19567226<br>         <b>경도:</b> 126.837579     </div>     </div>`)[0];
+                popup_f41b6b894615a56d23cf343f5c496bb0.setContent(html_2b63226753a4b32047be36d71e9574f1);
+            
+        
+
+        marker_b8b7de12510ecbf4d042491b7727f0a7.bindPopup(popup_f41b6b894615a56d23cf343f5c496bb0)
+        ;
+
+        
+    
+    
+            marker_b8b7de12510ecbf4d042491b7727f0a7.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로105번길 6-19 (신창동) 그 여자의 맥주집 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_496d3e0e499d13f04231dc133664a24e = L.marker(
+                [35.19508239, 126.8356956],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_218a3e4775d3f9045d53b69cc8ad0b85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a30c3d3db055b55cac46689a6c9bd9e8 = $(`<div id="html_a30c3d3db055b55cac46689a6c9bd9e8" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로252번길 33 (신창동) 하나수산 포차 앞<br>         <b>위도:</b> 35.19508239<br>         <b>경도:</b> 126.8356956     </div>     </div>`)[0];
+                popup_218a3e4775d3f9045d53b69cc8ad0b85.setContent(html_a30c3d3db055b55cac46689a6c9bd9e8);
+            
+        
+
+        marker_496d3e0e499d13f04231dc133664a24e.bindPopup(popup_218a3e4775d3f9045d53b69cc8ad0b85)
+        ;
+
+        
+    
+    
+            marker_496d3e0e499d13f04231dc133664a24e.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로252번길 33 (신창동) 하나수산 포차 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_97474111a80c3a67a54fe926517cdb19 = L.marker(
+                [35.19517409, 126.8398168],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_271c089039a883ada337dc7a21c33454 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa1558bc50fe428fb89414a018274f5a = $(`<div id="html_fa1558bc50fe428fb89414a018274f5a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로106번길 31-17 (신창동) 스쿨룩스 신창점 앞<br>         <b>위도:</b> 35.19517409<br>         <b>경도:</b> 126.8398168     </div>     </div>`)[0];
+                popup_271c089039a883ada337dc7a21c33454.setContent(html_fa1558bc50fe428fb89414a018274f5a);
+            
+        
+
+        marker_97474111a80c3a67a54fe926517cdb19.bindPopup(popup_271c089039a883ada337dc7a21c33454)
+        ;
+
+        
+    
+    
+            marker_97474111a80c3a67a54fe926517cdb19.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로106번길 31-17 (신창동) 스쿨룩스 신창점 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f86657caa7168c87d0b32ed6c6093bd = L.marker(
+                [35.18971759, 126.8388839],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_1c12c033f684fab8fc0542057ee8fc60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2ac7adb0b45423b93399fb9d65fe231 = $(`<div id="html_b2ac7adb0b45423b93399fb9d65fe231" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로48번길 31 (신창동) 장군 알부자집 앞<br>         <b>위도:</b> 35.18971759<br>         <b>경도:</b> 126.8388839     </div>     </div>`)[0];
+                popup_1c12c033f684fab8fc0542057ee8fc60.setContent(html_b2ac7adb0b45423b93399fb9d65fe231);
+            
+        
+
+        marker_8f86657caa7168c87d0b32ed6c6093bd.bindPopup(popup_1c12c033f684fab8fc0542057ee8fc60)
+        ;
+
+        
+    
+    
+            marker_8f86657caa7168c87d0b32ed6c6093bd.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로48번길 31 (신창동) 장군 알부자집 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58a9b81dac1c624a85e36a64dc991e9c = L.marker(
+                [35.19717934, 126.8420369],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_c9d0782090f265f554a7aaf1b213e5b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bad5725386d49611b6f48b9f88ede9d9 = $(`<div id="html_bad5725386d49611b6f48b9f88ede9d9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로 289번길(신창동) 신창초등학교(신창스타빌 앞)<br>         <b>위도:</b> 35.19717934<br>         <b>경도:</b> 126.8420369     </div>     </div>`)[0];
+                popup_c9d0782090f265f554a7aaf1b213e5b3.setContent(html_bad5725386d49611b6f48b9f88ede9d9);
+            
+        
+
+        marker_58a9b81dac1c624a85e36a64dc991e9c.bindPopup(popup_c9d0782090f265f554a7aaf1b213e5b3)
+        ;
+
+        
+    
+    
+            marker_58a9b81dac1c624a85e36a64dc991e9c.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로 289번길(신창동) 신창초등학교(신창스타빌 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7f552cbb228112e26dcf8ae2ca22056 = L.marker(
+                [35.19536633, 126.8389255],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_c829d485d523bd162c6317063d26e17f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a03853971a3bd4912a9397c64acea2e = $(`<div id="html_7a03853971a3bd4912a9397c64acea2e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로106번길 15-19 (신창동) 주택관리공단 광주전남지사(신성원 한약방)<br>         <b>위도:</b> 35.19536633<br>         <b>경도:</b> 126.8389255     </div>     </div>`)[0];
+                popup_c829d485d523bd162c6317063d26e17f.setContent(html_7a03853971a3bd4912a9397c64acea2e);
+            
+        
+
+        marker_e7f552cbb228112e26dcf8ae2ca22056.bindPopup(popup_c829d485d523bd162c6317063d26e17f)
+        ;
+
+        
+    
+    
+            marker_e7f552cbb228112e26dcf8ae2ca22056.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로106번길 15-19 (신창동) 주택관리공단 광주전남지사(신성원 한약방)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bba71b977667b140ba950dc2bf0b8772 = L.marker(
+                [35.19369222, 126.8383631],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_d74ff0b5b2e8e8f6b02013f35e37237c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a53b7d17f2a238ec9c958d8c98e1e46 = $(`<div id="html_9a53b7d17f2a238ec9c958d8c98e1e46" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로106번길 16-20 (신창동) 신창중학교(엔티엠)<br>         <b>위도:</b> 35.19369222<br>         <b>경도:</b> 126.8383631     </div>     </div>`)[0];
+                popup_d74ff0b5b2e8e8f6b02013f35e37237c.setContent(html_9a53b7d17f2a238ec9c958d8c98e1e46);
+            
+        
+
+        marker_bba71b977667b140ba950dc2bf0b8772.bindPopup(popup_d74ff0b5b2e8e8f6b02013f35e37237c)
+        ;
+
+        
+    
+    
+            marker_bba71b977667b140ba950dc2bf0b8772.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로106번길 16-20 (신창동) 신창중학교(엔티엠)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b285461dbc4e84122d736e281f75621f = L.marker(
+                [35.19027001, 126.8384668],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_e6961112f4f59d8741d2828a55ee5b47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f2954ef0192fe04faffeb1de80e4c3a = $(`<div id="html_3f2954ef0192fe04faffeb1de80e4c3a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로48번길 21-14 (신창동) 광주신창동우체국(신창빌라 앞)<br>         <b>위도:</b> 35.19027001<br>         <b>경도:</b> 126.8384668     </div>     </div>`)[0];
+                popup_e6961112f4f59d8741d2828a55ee5b47.setContent(html_3f2954ef0192fe04faffeb1de80e4c3a);
+            
+        
+
+        marker_b285461dbc4e84122d736e281f75621f.bindPopup(popup_e6961112f4f59d8741d2828a55ee5b47)
+        ;
+
+        
+    
+    
+            marker_b285461dbc4e84122d736e281f75621f.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로48번길 21-14 (신창동) 광주신창동우체국(신창빌라 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f94f347889c62adf5da16046b80cb0dc = L.marker(
+                [35.1902664, 126.8375853],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_975cd941420045990315d5d051358c4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bca20ad1ca6fd764ebcff63a832af887 = $(`<div id="html_bca20ad1ca6fd764ebcff63a832af887" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로48번길 5-14 (신창동) 광주신창동우체국(파밀리에 앞)<br>         <b>위도:</b> 35.1902664<br>         <b>경도:</b> 126.8375853     </div>     </div>`)[0];
+                popup_975cd941420045990315d5d051358c4c.setContent(html_bca20ad1ca6fd764ebcff63a832af887);
+            
+        
+
+        marker_f94f347889c62adf5da16046b80cb0dc.bindPopup(popup_975cd941420045990315d5d051358c4c)
+        ;
+
+        
+    
+    
+            marker_f94f347889c62adf5da16046b80cb0dc.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로48번길 5-14 (신창동) 광주신창동우체국(파밀리에 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae44cab954eb726005d766e3ec1bcf6f = L.marker(
+                [35.18938568, 126.8381876],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_dbe283210b1db67cf71e75ca99197ec1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d060190805e3f5eeb4f20147cde79dc = $(`<div id="html_0d060190805e3f5eeb4f20147cde79dc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로48번길 6-21 (신창동) 광주성일교회(하이드파크 앞)<br>         <b>위도:</b> 35.18938568<br>         <b>경도:</b> 126.8381876     </div>     </div>`)[0];
+                popup_dbe283210b1db67cf71e75ca99197ec1.setContent(html_0d060190805e3f5eeb4f20147cde79dc);
+            
+        
+
+        marker_ae44cab954eb726005d766e3ec1bcf6f.bindPopup(popup_dbe283210b1db67cf71e75ca99197ec1)
+        ;
+
+        
+    
+    
+            marker_ae44cab954eb726005d766e3ec1bcf6f.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로48번길 6-21 (신창동) 광주성일교회(하이드파크 앞)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39f2e090e65f315649215914ddd80235 = L.marker(
+                [35.19388747, 126.8435923],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_da930a174585fa7a712d25bfb10f36f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c7af970c4a381f27bbee2883bc2df44 = $(`<div id="html_2c7af970c4a381f27bbee2883bc2df44" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로322번길 15 (신창동) 전남공업고등학교(루비나 옆)<br>         <b>위도:</b> 35.19388747<br>         <b>경도:</b> 126.8435923     </div>     </div>`)[0];
+                popup_da930a174585fa7a712d25bfb10f36f0.setContent(html_2c7af970c4a381f27bbee2883bc2df44);
+            
+        
+
+        marker_39f2e090e65f315649215914ddd80235.bindPopup(popup_da930a174585fa7a712d25bfb10f36f0)
+        ;
+
+        
+    
+    
+            marker_39f2e090e65f315649215914ddd80235.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로322번길 15 (신창동) 전남공업고등학교(루비나 옆)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_74506b22772be8a119835e67c6b9cfb6 = L.marker(
+                [35.19344468, 126.8446101],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_f553a994e28aa37f66ce8c3c0ab253ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7678ac555246b059e6c552f23eec77a1 = $(`<div id="html_7678ac555246b059e6c552f23eec77a1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 장신로309번길 4-31(신창동) 광주보건대학교(뉴 엘도라도)<br>         <b>위도:</b> 35.19344468<br>         <b>경도:</b> 126.8446101     </div>     </div>`)[0];
+                popup_f553a994e28aa37f66ce8c3c0ab253ca.setContent(html_7678ac555246b059e6c552f23eec77a1);
+            
+        
+
+        marker_74506b22772be8a119835e67c6b9cfb6.bindPopup(popup_f553a994e28aa37f66ce8c3c0ab253ca)
+        ;
+
+        
+    
+    
+            marker_74506b22772be8a119835e67c6b9cfb6.bindTooltip(
+                `<div>
+                     광주광역시 광산구 장신로309번길 4-31(신창동) 광주보건대학교(뉴 엘도라도)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0a1123f07fa6896c088fefd77ab47bb = L.marker(
+                [35.19563201, 126.8402546],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_bdb5216f905b81391ba05ee3bef2d5dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eacbc36fd0dd65176a277f4b18a67ba = $(`<div id="html_1eacbc36fd0dd65176a277f4b18a67ba" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 왕버들로 287 (신창동) 신창동행정복지센터(시민문고)<br>         <b>위도:</b> 35.19563201<br>         <b>경도:</b> 126.8402546     </div>     </div>`)[0];
+                popup_bdb5216f905b81391ba05ee3bef2d5dd.setContent(html_1eacbc36fd0dd65176a277f4b18a67ba);
+            
+        
+
+        marker_d0a1123f07fa6896c088fefd77ab47bb.bindPopup(popup_bdb5216f905b81391ba05ee3bef2d5dd)
+        ;
+
+        
+    
+    
+            marker_d0a1123f07fa6896c088fefd77ab47bb.bindTooltip(
+                `<div>
+                     광주광역시 광산구 왕버들로 287 (신창동) 신창동행정복지센터(시민문고)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c51b9a048678dc4ada3aabdf94677493 = L.marker(
+                [35.19586369, 126.8369615],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_90255d2723d310220ef9fc8d6a50baa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbde2900e45667c145df4033848ff95a = $(`<div id="html_cbde2900e45667c145df4033848ff95a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로105번길 24-22 (신창동) 주택관리공단 광주전남지사(메기하우스)<br>         <b>위도:</b> 35.19586369<br>         <b>경도:</b> 126.8369615     </div>     </div>`)[0];
+                popup_90255d2723d310220ef9fc8d6a50baa6.setContent(html_cbde2900e45667c145df4033848ff95a);
+            
+        
+
+        marker_c51b9a048678dc4ada3aabdf94677493.bindPopup(popup_90255d2723d310220ef9fc8d6a50baa6)
+        ;
+
+        
+    
+    
+            marker_c51b9a048678dc4ada3aabdf94677493.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로105번길 24-22 (신창동) 주택관리공단 광주전남지사(메기하우스)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_94bf2b3b4d0c8a3e72c520156d12295e = L.marker(
+                [35.19509728, 126.8367075],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_4596f14ec5c87ac20c899fc615c43f89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91c611fad78be2aef29d1ca159c73b5f = $(`<div id="html_91c611fad78be2aef29d1ca159c73b5f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 신창로105번길 24-2 (신창동) 수문초등학교(노랑통닭)<br>         <b>위도:</b> 35.19509728<br>         <b>경도:</b> 126.8367075     </div>     </div>`)[0];
+                popup_4596f14ec5c87ac20c899fc615c43f89.setContent(html_91c611fad78be2aef29d1ca159c73b5f);
+            
+        
+
+        marker_94bf2b3b4d0c8a3e72c520156d12295e.bindPopup(popup_4596f14ec5c87ac20c899fc615c43f89)
+        ;
+
+        
+    
+    
+            marker_94bf2b3b4d0c8a3e72c520156d12295e.bindTooltip(
+                `<div>
+                     광주광역시 광산구 신창로105번길 24-2 (신창동) 수문초등학교(노랑통닭)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98de6b63980fe1cf40b12c076c3b2a09 = L.marker(
+                [35.17727601, 126.8237442],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_ccc0fac99bf419c33c9e795607df1741 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c08867b0d83199565c20d17d40bf429a = $(`<div id="html_c08867b0d83199565c20d17d40bf429a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 목련로219번길 132 (운남동) 김인곤왕족발보쌈 앞<br>         <b>위도:</b> 35.17727601<br>         <b>경도:</b> 126.8237442     </div>     </div>`)[0];
+                popup_ccc0fac99bf419c33c9e795607df1741.setContent(html_c08867b0d83199565c20d17d40bf429a);
+            
+        
+
+        marker_98de6b63980fe1cf40b12c076c3b2a09.bindPopup(popup_ccc0fac99bf419c33c9e795607df1741)
+        ;
+
+        
+    
+    
+            marker_98de6b63980fe1cf40b12c076c3b2a09.bindTooltip(
+                `<div>
+                     광주광역시 광산구 목련로219번길 132 (운남동) 김인곤왕족발보쌈 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67847ad2cf48ef5fb705ce17461cf694 = L.marker(
+                [35.17690638, 126.8232597],
+                {
+}
+            ).addTo(marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2);
+        
+    
+        var popup_42e5656c959be2664f9b50bf46dbfcfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_898ae67b29fe9d5ab3293acc7cf2bd80 = $(`<div id="html_898ae67b29fe9d5ab3293acc7cf2bd80" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">  <!-- 팝업의 너비를 300px로 설정 -->         <b>주소:</b> 광주광역시 광산구 목련로219번길 121 (운남동) 효광노인복지센터 앞<br>         <b>위도:</b> 35.17690638<br>         <b>경도:</b> 126.8232597     </div>     </div>`)[0];
+                popup_42e5656c959be2664f9b50bf46dbfcfe.setContent(html_898ae67b29fe9d5ab3293acc7cf2bd80);
+            
+        
+
+        marker_67847ad2cf48ef5fb705ce17461cf694.bindPopup(popup_42e5656c959be2664f9b50bf46dbfcfe)
+        ;
+
+        
+    
+    
+            marker_67847ad2cf48ef5fb705ce17461cf694.bindTooltip(
+                `<div>
+                     광주광역시 광산구 목련로219번길 121 (운남동) 효광노인복지센터 앞
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_238f76e7a09a76586cbd98c40a5dbfb2.addTo(map_4910f214c95d6650c47b1b885337bdec);
+        
+</script>
+</html>
